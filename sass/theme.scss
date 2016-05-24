@@ -1,6 +1,16 @@
-// Import skeleton styles first
-@import "theme/variables";
-@import "../src/skeleton-scss/skeleton";
+/*
+== THEME - MAIN SCSS FILE ==
+Import main theme files. variables before skeleton in order to override its values
 
-// Then import theme styles
-@import "theme/_typography";
+ADDING MY OWN STYLES: You can add your own 
+styles in `/sass/themes/_theme_styles.scss`
+*/
+
+// == Skeleton Imports
+@import "theme/variables",
+  "../src/skeleton-scss/skeleton";
+// !== Skeleton Imports
+
+// == Import Themes Imports
+@import "theme/_theme_styles";
+// == Import Themes Imports

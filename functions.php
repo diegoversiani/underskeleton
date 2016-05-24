@@ -114,7 +114,7 @@ add_action( 'widgets_init', 'underskeleton_widgets_init' );
  * Enqueue scripts and styles.
  */
 function underskeleton_scripts() {
-	wp_enqueue_style( 'underskeleton-style', get_stylesheet_directory_uri() . '/css/theme.css' );
+	wp_enqueue_style( 'underskeleton-style', get_stylesheet_directory_uri() . '/css/theme.min.css' );
 
 	wp_enqueue_script( 'underskeleton-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
