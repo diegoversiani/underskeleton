@@ -1,0 +1,26 @@
+/*
+Theme Name: UnderSkeleton
+Theme URI: http://github.com/dvlopes/underskeleton
+Author: Diego Versiani
+Author URI: http://dvlopes.github.io
+Description: Underscores ( _s ) + Skeleton Boilerplate = Fast, easy to change WordPress Starter Theme. https://github.com/dvlopes/underskeleton
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: underskeleton
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+UnderSkeleton is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*
+This file is just used to identify the theme in WordPress. The compiled CSS output can be found in /css/theme.css
+The SASS sources for it can be found in this folder: /sass/
+*/

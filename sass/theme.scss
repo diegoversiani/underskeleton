@@ -1,0 +1,6 @@
+// Import skeleton styles first
+@import "theme/variables";
+@import "../src/skeleton-scss/skeleton";
+
+// Then import theme styles
+@import "theme/_typography";
