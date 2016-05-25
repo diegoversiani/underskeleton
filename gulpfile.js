@@ -58,7 +58,8 @@ gulp.task('cssnano', ['cleancss'], function(){
     .pipe(plumber())
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano({discardComments: {removeAll: true}}))
-    .pipe(gulp.dest('./css/'));
+    .pipe(gulp.dest('./css/'))
+    .pipe(browserSync.stream());
 }); 
 
 gulp.task('cleancss', function() {
