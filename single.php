@@ -9,7 +9,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div class="row">
+
+	<div id="primary" class="content-area nine columns">
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -32,4 +34,9 @@ get_header(); ?>
 
 <?php
 get_sidebar();
+?>
+
+</div> <!-- .row -->
+
+<?php
 get_footer();
