@@ -6,11 +6,18 @@ ADDING MY OWN STYLES: You can add your own
 styles in `/sass/themes/_theme_styles.scss`
 */
 
-// == Skeleton Imports
-@import "theme/variables",
-  "../src/skeleton-scss/skeleton";
-// !== Skeleton Imports
+// == Import Variables
+@import
+  "theme/variables",
+  "underskeleton/variables";
+// !== Import Variables
 
-// == Import Themes Imports
+// == Import Skeleton and Underskeleton
+@import 
+  "../src/skeleton-scss/skeleton",
+  "underskeleton/navigation";
+// !== Import Skeleton and Underskeleton
+
+// == Import Theme Styles
 @import "theme/_theme_styles";
-// == Import Themes Imports
+// == Import Theme Styles

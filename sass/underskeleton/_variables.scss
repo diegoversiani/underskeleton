@@ -1,0 +1,20 @@
+/* == UNDERSKELETON VARIABLES ==
+This file overrides default Skeleton and
+adds Underskeleton custom variables
+*/
+
+// == Underskeleton Variables
+
+// Colors
+$border-color:          #bbb !default; // needed for $menu-border variable
+
+// Menu
+$menu-border:           $border-color solid 1px !default;
+$menu-bg-color:         #fff !default;
+$menu-dropdown-shadow:  0 3px 3px rgba(0, 0, 0, 0.2) !default;
+$menu-item-padding:     .5rem !default;
+$menu-subitem-width:    15rem !default;
+$menu-subitem-indent:   2rem !default;
+$menu-submenu-top:      ($menu-item-padding * 2) + 1.6rem !default;
+
+// == Add your own variables
