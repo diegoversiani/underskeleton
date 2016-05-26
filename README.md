@@ -8,6 +8,12 @@ Underskeleton is a starter theme with minimalist, dead simple css grid system an
 
 It got most of the _s PHP and JS files + Skeleton styles and grid system.
 
+#### Want to contribute?
+
+Underskeleton is in it's early stages and a lot has to be done yet.
+
+Watch or Star the repository to keep up to date. Fork the project, make the change you want to see. Or send me an e-mail on [diegoversiani@gmail.com](mailto:diegoversiani@gmail.com).
+
 ## Features
 
 - Combines Underscore’s PHP/JS files and Skeleton Boilerplate HTML/CSS.
