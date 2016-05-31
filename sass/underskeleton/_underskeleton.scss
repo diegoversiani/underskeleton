@@ -1,3 +1,20 @@
 /* == UNDERSKELETON STYLES ==
 This file contains underskeleton default styles
 */
+
+.alignleft {
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.alignright {
+  float: right;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
