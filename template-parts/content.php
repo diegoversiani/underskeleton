@@ -26,6 +26,16 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
+	<?php if ( has_post_thumbnail() ) : ?>
+		<?php if ( is_single() ) : ?>
+  		<?php the_post_thumbnail(); ?>
+  	<?php else : ?>
+	  	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+	  	<?php the_post_thumbnail(); ?>
+	  	</a>
+	  <?php endif; ?>
+	<?php endif; ?>
+
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(
