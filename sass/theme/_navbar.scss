@@ -1,5 +1,13 @@
 /* == NAVIGATION STYLES == */
 
+// == Site header
+.site-header {
+  border-top: solid 1px $border-color;
+  border-bottom: solid 1px $border-color;
+  margin: 1rem auto;
+}
+// !== Site header
+
 // == Site branding
 // Site name and description styles
 .site-branding {
@@ -7,11 +15,15 @@
 
   .site-title {
     font-size: 3rem;
-    margin-bottom: 0;
+    margin: 1rem 0 0 0;
 
     a {
       text-decoration: none;
     }
+  }
+
+  .site-description {
+    margin: 0 0 1rem 0;
   }
 }
 // !== Site branding
