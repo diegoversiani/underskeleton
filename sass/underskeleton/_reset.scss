@@ -1,3 +1,7 @@
+/* == UNDERSKELETON RESET ==
+This file resets element styles for underskeleton
+*/
+
 html {
   box-sizing: border-box;
 }
@@ -13,6 +17,11 @@ table,
 p,
 ul,
 ol,
-form {
-  margin: 0 0 2.5rem 0;
+form,
+address {
+  margin: 0 0 2.5rem;
+}
+
+dd {
+  margin-bottom: 1rem;
 }
