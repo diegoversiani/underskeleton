@@ -1,5 +1,21 @@
 /* == NAVIGATION STYLES == */
 
+// == Site branding
+// Site name and description styles
+.site-branding {
+  float: left;
+
+  .site-title {
+    font-size: 3rem;
+    margin-bottom: 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+// !== Site branding
+
 // == Main Menu
 .main-navigation {
   clear: both;
