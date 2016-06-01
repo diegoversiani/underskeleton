@@ -1,12 +1,12 @@
-/*
-== THEME - MAIN SCSS FILE ==
-Import main theme files. variables before skeleton in order to override its values
-
-ADDING MY OWN STYLES: You can add your own 
-styles in `/sass/themes/_theme_styles.scss`
+/* == THEME - MAIN SCSS FILE ==
+* Import main theme files.
+* 
+* ADDING YOUR OWN STYLES: You can add your  
+* styles in `/sass/themes/_theme_styles.scss`
 */
 
 // == Import Variables
+// before skeleton in order to override its values
 @import
   "theme/variables",
   "underskeleton/variables";
