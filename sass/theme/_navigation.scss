@@ -7,9 +7,8 @@
 
 // == Site header
 .site-header {
-  border-top: solid 1px $border-color;
   border-bottom: solid 1px $border-color;
-  margin: 2.5rem auto 5rem;
+  margin: 1.5rem auto 5rem;
 }
 // !== Site header
 
@@ -108,7 +107,7 @@
   // !== Menu
 
   // Menu toggled
-  &.toggled .menu ul {
+  &.toggled .menu > ul {
     display: block;
   }
 }
