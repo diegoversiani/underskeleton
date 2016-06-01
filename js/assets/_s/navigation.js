@@ -69,7 +69,19 @@
 			// On li elements toggle the class .focus.
 			if ( 'li' === self.tagName.toLowerCase() ) {
 				if ( -1 !== self.className.indexOf( 'focus' ) ) {
-					self.className = self.className.replace( ' focus', '' );
+
+					// == Handles tab key navigation in submenus
+					if ( 'true' !== self.getAttribute('aria-haspopup') ) {
+						self.className = self.className.replace( ' focus', '' );
+					}
+
+					if ( null === self.nextSibling ) {
+						var parent = self.parentElement.parentElement;
+						parent.className = parent.className.replace( ' focus', '' );
+						return;
+					}
+					// !== Handles tab key navigation in submenus
+
 				} else {
 					self.className += ' focus';
 				}

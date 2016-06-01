@@ -199,6 +199,7 @@
         // == Dropdown menu on hover
         &:hover,
         &:focus,
+        &.focus, // class toggled with javascript for tab key navigation
         &:active {
           position: relative;
 
