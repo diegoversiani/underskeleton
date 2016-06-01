@@ -1,6 +1,18 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin: 0 0 2.5rem 0;
 }

@@ -4,13 +4,14 @@ This file contains underskeleton default element styles
 
 img,
 figure {
-  margin: 0;
   max-width: 100%;
   height: auto;
 }
 
-figure {
-  margin-bottom: 1.5rem;
+figure.alignleft,
+figure.alignright,
+figure.aligncenter {
+  margin-bottom: 2.5rem;
 }
 
 figcaption {
