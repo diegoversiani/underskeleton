@@ -1,10 +1,15 @@
 /* == NAVIGATION STYLES == */
 
+// Hide screen reader text
+.screen-reader-text {
+    display: none;
+}
+
 // == Site header
 .site-header {
   border-top: solid 1px $border-color;
   border-bottom: solid 1px $border-color;
-  margin: 1rem auto;
+  margin: 2.5rem auto 5rem;
 }
 // !== Site header
 
@@ -61,15 +66,15 @@
     clear: both;
     width: 100%;
 
+    // Level 1
     ul {
       display: none;
       margin: 0;
       list-style: none;
       background-color: $menu-bg-color;
 
-      // Submenu
+      // Level 2
       ul {
-        // Level 2
         a {
           font-size: 90%;
           padding-left: $menu-subitem-indent;
@@ -100,16 +105,39 @@
       }
     }
   }
+  // !== Menu
 
   // Menu toggled
   &.toggled .menu ul {
     display: block;
   }
-
-  // !== Menu
 }
+// !== Main Menu
 
-// Disable mobile menu button
+// == Posts and Comments navigation
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+  .site-main & {
+    margin: 0 0 1.5rem;
+    overflow: hidden;
+  }
+
+  .nav-previous {
+    float: left;
+    width: 50%;
+  }
+
+  .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
+}
+// !== Posts and Comments navigation
+
+// == Navigation styles for columns layout
 @media (#{$column-starts-at-breakpoint}) {
   // == Main Menu
   .main-navigation {
@@ -212,57 +240,8 @@
       }
       // !== Menu Item
     }
+    // == Menu
   }
   // !== Main Menu
-
-  // .main-navigation {
-  //   a {
-  //     width: auto;
-  //   }
-
-  //   ul {
-  //     display: block;
-
-  //     li {
-  //       border: 0;
-  //       float: left;
-  //       position: relative;
-
-  //       &:first-child {
-  //         border-top: 0;
-  //       }
-
-  //       // == Dropdown Menu on Hover
-  //       &:hover,
-  //       &:focus,
-  //       &.focus {
-  //         > ul {
-  //           display: block;
-  //         }
-  //       }
-
-  //       ul {
-  //         z-index: 99999;
-  //         display: none;
-  //         position: absolute;
-  //         top: $menu-submenu-top;
-  //         box-shadow: $menu-dropdown-shadow;
-
-  //         li {
-  //           a {
-  //             width: $menu-subitem-width;
-  //             padding-left: $menu-item-padding;
-  //           }
-
-  //           ul {
-  //             left: 100%;
-  //             top: 0;
-  //           }
-  //         }
-  //       }
-  //       // !== Dropdown Menu on Hover
-  //     }
-  //   }
-  // }
 }
-// !== Main Menu
+// == Navigation styles for columns layout
