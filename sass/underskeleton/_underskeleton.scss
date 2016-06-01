@@ -7,6 +7,33 @@ blockquote {
   padding-left: 1rem;
 }
 
+kbd, tt, samp {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: lighten($light-grey, 6.4%);
+  border: 1px solid $light-grey;
+  border-radius: $global-radius;
+}
+
+
+pre {
+  padding: .2rem .5rem;
+  font-size: 90%;
+  background: lighten($light-grey, 6.4%);
+  border: 1px solid $light-grey;
+  border-radius: $global-radius;
+
+  > kbd,
+  > tt,
+  > samp {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+  }
+}
+
 .alignleft {
   float: left;
   margin-right: 1.5rem;
