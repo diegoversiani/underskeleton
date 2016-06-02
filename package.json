@@ -1,7 +1,7 @@
 {
   "name": "underskeleton",
-  "version": "0.1.2",
-  "description": "A starter theme for WordPress built with _s starter theme and skeleton css boilerplate. https://github.com/dvlopes/underskeleton",
+  "version": "0.1.1",
+  "description": "A starter theme for WordPress built with _s starter theme and skeleton css boilerplate. http://dvlopes.github.io/underskeleton",
   "main": "style.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/dvlopes/underskeleton/issues"
   },
-  "homepage": "https://github.com/dvlopes/underskeleton",
+  "homepage": "http://dvlopes.github.io/underskeleton",
   "dependencies": {
     "bower": "^1.7.9",
     "gulp": "^3.9.0",

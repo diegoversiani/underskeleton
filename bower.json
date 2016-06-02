@@ -1,11 +1,11 @@
 {
   "name": "underskeleton",
-  "version": "0.1.2",
-  "homepage": "http://dvlopes.github.io",
+  "version": "0.1.1",
+  "homepage": "http://dvlopes.github.io/underskeleton",
   "authors": [
     "Diego Versiani <diegoversiani@gmail.com>"
   ],
-  "description": "A starter theme for WordPress built with _s starter theme and skeleton css boilerplate. https://github.com/dvlopes/underskeleton",
+  "description": "A starter theme for WordPress built with _s starter theme and skeleton css boilerplate. http://dvlopes.github.io/underskeleton",
   "moduleType": "globals",
   "main": [
     "sass/style.scss"
@@ -28,7 +28,7 @@
     "normalize.css": "3.0.3"
   },
   "_source": "https://github.com/dvlopes/underskeleton.git",
-  "_target": "~0.0.1",
+  "_target": "~0.1.1",
   "_originalSource": "underskeleton"
 }
 

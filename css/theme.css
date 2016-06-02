@@ -813,7 +813,7 @@ pre {
       text-decoration: none;
       text-transform: uppercase; }
 
-.main-navigation.toggled > ul.menu {
+.main-navigation.toggled ul.menu {
   display: block; }
 
 .site-main .comment-navigation, .site-main

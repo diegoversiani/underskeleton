@@ -2,6 +2,14 @@
 
 Underscores ( _s ) + Skeleton Boilerplate = Fast to load with a minimalist css grid for your next WordPress Theme.
 
+## Changelog
+
+        == v0.1.1 May 2nd 2016 ==
+               - First stable version, with minor fixes from previous.
+
+        == v0.1.0 May 1st 2016 ==
+               - First version.
+
 ## About
 
 Underskeleton is a starter theme with minimalist, dead simple css grid system and just enough styling to get starter with your next awesome WordPress theme.
@@ -109,6 +117,6 @@ Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web
 
 Skeleton-Sass was created by [Seth Coelen](http://sethcoelen.com) for a better Skeleton.
 
-Underskeleton was created by [Diego Versiani](http://dvlopes.github.io) for better WordPress.
+Underskeleton was created by [Diego Versiani](http://dvlopes.github.io) for a better WordPress.
 
 <a href='https://ko-fi.com/A0212ZQ' target='_blank'><img height='32' style='border:0px;height:32px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=a' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
