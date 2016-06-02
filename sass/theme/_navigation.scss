@@ -60,29 +60,29 @@
   // !== Mobile menu button
 
   // == Menu
-  .menu {
+  ul.menu {
     float: right;
     clear: both;
     width: 100%;
+  }
 
-    // Level 1
+  // Level 1
+  ul {
+    display: none;
+    margin: 0;
+    list-style: none;
+    background-color: $menu-bg-color;
+
+    // Level 2
     ul {
-      display: none;
-      margin: 0;
-      list-style: none;
-      background-color: $menu-bg-color;
+      a {
+        font-size: 90%;
+        padding-left: $menu-subitem-indent;
+      }
 
-      // Level 2
-      ul {
-        a {
-          font-size: 90%;
-          padding-left: $menu-subitem-indent;
-        }
-
-        // Level 3
-        ul a {
-          padding-left: $menu-subitem-indent * 2;
-        }
+      // Level 3
+      ul a {
+        padding-left: $menu-subitem-indent * 2;
       }
     }
 
@@ -107,7 +107,7 @@
   // !== Menu
 
   // Menu toggled
-  &.toggled .menu > ul {
+  &.toggled > ul.menu {
     display: block;
   }
 }
@@ -147,38 +147,35 @@
     }
 
     // == Menu
-    .menu {
+    ul.menu {
+      display: block;
       width: auto;
       clear: none;
       margin: 1.6rem 0 1rem;
 
+      // Submenu
       ul {
-        display: block;
+        display: none;
 
-        // Submenu
-        ul {
-          display: none;
-
-          li {
-            display: block;
-            float: none;
-            margin-left: 0;
-          }
-
-          // Reset depth padding
-          a, ul a {
-            padding-left: 0;
-          }
+        li {
+          display: block;
+          float: none;
+          margin-left: 0;
         }
 
-        > li {
-          &:first-child {
-            margin-left: 0;
-          }
+        // Reset depth padding
+        a, ul a {
+          padding-left: 0;
+        }
+      }
 
-          &:last-child a {
-            padding-right: 0;
-          }
+      > li {
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child a {
+          padding-right: 0;
         }
       }
 
@@ -230,7 +227,7 @@
       }
 
       // First level with submenu hover effect
-      > ul > li[aria-haspopup=true] {
+      > li[aria-haspopup=true] {
         &:hover,
         &:focus,
         &:active {

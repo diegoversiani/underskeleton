@@ -784,24 +784,25 @@ pre {
     .main-navigation .menu-toggle .bars:last-child {
       margin-bottom: 0; }
 
-.main-navigation .menu {
+.main-navigation ul.menu {
   float: right;
   clear: both;
   width: 100%; }
-  .main-navigation .menu ul {
-    display: none;
-    margin: 0;
-    list-style: none;
-    background-color: #fff; }
-    .main-navigation .menu ul ul a {
-      font-size: 90%;
-      padding-left: 2rem; }
-    .main-navigation .menu ul ul ul a {
-      padding-left: 4rem; }
-  .main-navigation .menu li {
+
+.main-navigation ul {
+  display: none;
+  margin: 0;
+  list-style: none;
+  background-color: #fff; }
+  .main-navigation ul ul a {
+    font-size: 90%;
+    padding-left: 2rem; }
+  .main-navigation ul ul ul a {
+    padding-left: 4rem; }
+  .main-navigation ul li {
     border-top: #bbb solid 1px;
     margin-bottom: 0; }
-    .main-navigation .menu li a {
+    .main-navigation ul li a {
       display: block;
       width: 100%;
       padding: 1rem 0.5rem;
@@ -812,7 +813,7 @@ pre {
       text-decoration: none;
       text-transform: uppercase; }
 
-.main-navigation.toggled .menu > ul {
+.main-navigation.toggled > ul.menu {
   display: block; }
 
 .site-main .comment-navigation, .site-main
@@ -837,47 +838,46 @@ pre {
 @media (min-width: 550px) {
   .main-navigation .menu-toggle {
     display: none; }
-  .main-navigation .menu {
+  .main-navigation ul.menu {
+    display: block;
     width: auto;
     clear: none;
     margin: 1.6rem 0 1rem; }
-    .main-navigation .menu ul {
-      display: block; }
-      .main-navigation .menu ul ul {
-        display: none; }
-        .main-navigation .menu ul ul li {
-          display: block;
-          float: none;
-          margin-left: 0; }
-        .main-navigation .menu ul ul a, .main-navigation .menu ul ul ul a {
-          padding-left: 0; }
-      .main-navigation .menu ul > li:first-child {
+    .main-navigation ul.menu ul {
+      display: none; }
+      .main-navigation ul.menu ul li {
+        display: block;
+        float: none;
         margin-left: 0; }
-      .main-navigation .menu ul > li:last-child a {
-        padding-right: 0; }
-    .main-navigation .menu li {
+      .main-navigation ul.menu ul a, .main-navigation ul.menu ul ul a {
+        padding-left: 0; }
+    .main-navigation ul.menu > li:first-child {
+      margin-left: 0; }
+    .main-navigation ul.menu > li:last-child a {
+      padding-right: 0; }
+    .main-navigation ul.menu li {
       border-top: 0;
       float: left;
       margin-left: 1rem; }
-      .main-navigation .menu li a:hover, .main-navigation .menu li a:focus, .main-navigation .menu li a:active {
+      .main-navigation ul.menu li a:hover, .main-navigation ul.menu li a:focus, .main-navigation ul.menu li a:active {
         color: #33c3f0; }
-      .main-navigation .menu li:hover, .main-navigation .menu li:focus, .main-navigation .menu li:active {
+      .main-navigation ul.menu li:hover, .main-navigation ul.menu li:focus, .main-navigation ul.menu li:active {
         position: relative; }
-        .main-navigation .menu li:hover > ul, .main-navigation .menu li:focus > ul, .main-navigation .menu li:active > ul {
+        .main-navigation ul.menu li:hover > ul, .main-navigation ul.menu li:focus > ul, .main-navigation ul.menu li:active > ul {
           display: block; }
-      .main-navigation .menu li ul {
+      .main-navigation ul.menu li ul {
         z-index: 99999;
         display: none;
         position: absolute;
         top: 3.4rem;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
-        .main-navigation .menu li ul li a {
+        .main-navigation ul.menu li ul li a {
           width: 20rem;
           padding-left: 0.5rem; }
-        .main-navigation .menu li ul li ul {
+        .main-navigation ul.menu li ul li ul {
           left: 100%;
           top: 0; }
-    .main-navigation .menu > ul > li[aria-haspopup=true]:hover, .main-navigation .menu > ul > li[aria-haspopup=true]:focus, .main-navigation .menu > ul > li[aria-haspopup=true]:active {
+    .main-navigation ul.menu > li[aria-haspopup=true]:hover, .main-navigation ul.menu > li[aria-haspopup=true]:focus, .main-navigation ul.menu > li[aria-haspopup=true]:active {
       box-shadow: 0 -0.5px 2px rgba(0, 0, 0, 0.2); } }
 
 /* == TYPOGRAPHY STYLES == */
