@@ -42,10 +42,15 @@ section.screenshot {
 }
 
 section.footer-cta {
+  color: #fff;
   text-align: center;
   background-color: $primary-color;
   padding-top: 9rem;
   padding-bottom: 7rem;
+
+  a {
+    color: inherit;
+  }
 
   .button.download {
     color: #fff;
