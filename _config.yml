@@ -16,7 +16,7 @@ description: > # this means to ignore newlines until "baseurl:"
   grid system and just enough styling to get starter with your next 
   awesome WordPress theme.
   It got most of the _s PHP and JS files + Skeleton styles and grid system.
-baseurl: "/underskeleton" # the subpath of your site, e.g. /blog
+baseurl: "/underskeleton" # the subpath of your site, e.g. /blog 
 url: "http://dvlopes.github.io" # the base hostname & protocol for your site
 
 source_version: "v0.1.0"
