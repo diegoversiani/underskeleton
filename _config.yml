@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-exclude: ['bower_components','node_modules']
+exclude: ['bower_components','node_modules','bower.json','package.json','gulpfile.js','README.md']
 
 # Site settings
 title: Underskeleton
