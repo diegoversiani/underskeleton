@@ -109,7 +109,7 @@ var browserSyncOptions = {
 
 ## License
 
-All parts of Underskeleton are free to use and abuse under the [open-source MIT license](http://opensource.org/licenses/mit-license.php).
+TODO: Check licence compatibility between components
 
 ## Acknowledgement
 
