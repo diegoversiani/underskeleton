@@ -80,5 +80,10 @@ a img.aligncenter,
   padding: .3rem .5rem;
   font-size: 90%;
 }
-
 // !== WordPress Core
+
+// == Background
+body {
+  background-color: $bg-color;
+}
+// !== Background

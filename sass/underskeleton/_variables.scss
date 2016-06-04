@@ -8,6 +8,7 @@ adds Underskeleton custom variables
 // Colors
 $border-color:          #bbb !default; // needed for $menu-border variable
 $font-color:            #222 !default; // needed for $menu-color variable
+$bg-color:              #fff !default;
 
 // Menu
 $menu-font-size:        1.1rem !default;
@@ -22,4 +23,4 @@ $menu-subitem-width:    20rem !default;
 $menu-subitem-indent:   2rem !default;
 $menu-submenu-top:      ($menu-item-padding * 2) + 2.4rem !default;
 
-// == Add your own variables
+// !== Underskeleton Variables

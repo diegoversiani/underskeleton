@@ -1,0 +1,21 @@
+/* == POSTS STYLES == */
+
+.sticky {
+  position: relative;
+  background-color: $bg-color; 
+
+  &:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 1.5rem;
+    right: 1rem;
+    left: auto;
+    width: 50%;
+    top: 80%;
+    max-width: 50%;
+    background: $dark-grey;
+    box-shadow: 0 1.5rem 1rem $dark-grey;
+    transform: rotate(3deg);
+  }
+}

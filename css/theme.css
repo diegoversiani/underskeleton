@@ -771,6 +771,9 @@ a img.aligncenter,
   padding: .3rem .5rem;
   font-size: 90%; }
 
+body {
+  background-color: #fff; }
+
 /* == THEME STYLES ==
 *
 * Your awesome design goes here.
@@ -924,6 +927,24 @@ a img.aligncenter,
   margin-bottom: 0; }
   .entry-title a {
     text-decoration: none; }
+
+/* == POSTS STYLES == */
+.sticky {
+  position: relative;
+  background-color: #fff; }
+  .sticky:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 1.5rem;
+    right: 1rem;
+    left: auto;
+    width: 50%;
+    top: 80%;
+    max-width: 50%;
+    background: #333;
+    box-shadow: 0 1.5rem 1rem #333;
+    transform: rotate(3deg); }
 
 .comment-list {
   list-style: none; }
