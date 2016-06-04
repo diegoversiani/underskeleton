@@ -20,7 +20,7 @@
   		<div class="site-info">
   			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'underskeleton' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'underskeleton' ), 'WordPress' ); ?></a>
   			<span class="sep"> | </span>
-  			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'underskeleton' ), 'underskeleton', '<a href="http://dvlopes.github.io" rel="designer">Diego Versiani</a>' ); ?>
+  			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'underskeleton' ), __( 'Underskeleton' , 'underskeleton'), __( '<a href="http://dvlopes.github.io/underskeleton" rel="designer">Diego Versiani</a>' , 'underskeleton') ); ?>
   		</div><!-- .site-info -->
 
     </div><!-- .row -->
