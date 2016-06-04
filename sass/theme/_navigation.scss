@@ -108,29 +108,6 @@
 }
 // !== Main Menu
 
-// == Posts and Comments navigation
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-  .site-main & {
-    margin: 0 0 1.5rem;
-    overflow: hidden;
-  }
-
-  .nav-previous {
-    float: left;
-    width: 50%;
-  }
-
-  .nav-next {
-    float: right;
-    text-align: right;
-    width: 50%;
-  }
-}
-// !== Posts and Comments navigation
-
 // == Navigation styles for columns layout
 @media (#{$column-starts-at-breakpoint}) {
   // == Main Menu
@@ -235,4 +212,27 @@
   }
   // !== Main Menu
 }
-// == Navigation styles for columns layout
+// !== Navigation styles for columns layout
+
+// == Posts and Comments navigation
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+  .site-main & {
+    margin: 0 0 1.5rem;
+    overflow: hidden;
+  }
+
+  .nav-previous {
+    float: left;
+    width: 50%;
+  }
+
+  .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
+}
+// !== Posts and Comments navigation
