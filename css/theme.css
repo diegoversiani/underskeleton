@@ -645,6 +645,30 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  clip: auto !important;
+  color: #33c3f0;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  height: auto;
+  line-height: normal;
+  padding: 2rem 2.5rem;
+  text-decoration: none;
+  top: 5px;
+  left: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
 /* == UNDERSKELETON RESET ==
 This file resets element styles for underskeleton
 */
@@ -684,9 +708,6 @@ figure.alignright,
 figure.aligncenter {
   margin-bottom: 2.5rem; }
 
-figcaption {
-  font-size: 90%; }
-
 input,
 textarea,
 select {
@@ -721,19 +742,34 @@ pre {
     padding: 1rem 1.5rem;
     white-space: pre; }
 
-.alignleft {
+.alignleft,
+a img.alignleft,
+.wp-caption.alignleft {
   float: left;
   margin-right: 1.5rem;
   margin-bottom: 1rem; }
 
-.alignright {
+.alignright,
+a img.alignright,
+.wp-caption.alignright {
   float: right;
   margin-left: 1.5rem;
   margin-bottom: 1rem; }
 
-.aligncenter {
+.aligncenter,
+a img.aligncenter,
+.wp-caption.aligncenter {
   margin-left: auto;
   margin-right: auto; }
+
+.wp-caption.alignleft, .wp-caption.alignright, .wp-caption.aligncenter {
+  margin-bottom: 2.5rem; }
+
+.wp-caption-text,
+.gallery-caption {
+  background-color: #eeeeee;
+  padding: .3rem .5rem;
+  font-size: 90%; }
 
 /* == THEME STYLES ==
 *
@@ -752,9 +788,6 @@ pre {
  |     └── ...
 */
 /* == NAVIGATION STYLES == */
-.screen-reader-text {
-  display: none; }
-
 .site-header {
   border-bottom: solid 1px #bbb;
   margin: 1.5rem auto 5rem; }
@@ -891,6 +924,31 @@ pre {
   margin-bottom: 0; }
   .entry-title a {
     text-decoration: none; }
+
+.comment-list {
+  list-style: none; }
+  .comment-list ol.children,
+  .comment-list ul.children {
+    margin-left: 2rem;
+    margin-bottom: 0; }
+    .comment-list ol.children li:last-child,
+    .comment-list ul.children li:last-child {
+      margin-bottom: 0; }
+
+.comment-meta .vcard {
+  line-height: 1; }
+  .comment-meta .vcard img {
+    float: left;
+    margin-right: 1rem; }
+
+.comment {
+  padding: 0.5rem; }
+  .comment .comment-content p:last-child {
+    margin-bottom: 0.5rem; }
+
+.bypostauthor {
+  background-color: #f1fbfe;
+  border-radius: 4px; }
 
 /* == FOOTER STYLES == */
 .site-footer {

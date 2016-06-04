@@ -1,0 +1,36 @@
+// == COMMENTS STYLES
+
+.comment-list {
+  list-style: none;
+
+  ol.children,
+  ul.children {
+    margin-left: 2rem;
+    margin-bottom: 0;
+
+    li:last-child {
+      margin-bottom: 0;      
+    }
+  }
+}
+
+.comment-meta .vcard {
+  line-height: 1;
+  img {
+    float: left;
+    margin-right: 1rem;
+  }
+}
+
+.comment {
+  padding: 0.5rem;
+
+  .comment-content p:last-child {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.bypostauthor {
+  background-color: lighten($primary-color, 40%);
+  border-radius: $global-radius;
+}

@@ -15,11 +15,12 @@
 // == Import Skeleton and Underskeleton
 @import 
   "../src/skeleton-scss/skeleton",
+  "underskeleton/screen-readers",
   "underskeleton/reset",
   "underskeleton/elements",
   "underskeleton/underskeleton";
 // !== Import Skeleton and Underskeleton
 
 // == Import Theme Styles
-@import "theme/_theme_styles";
+@import "theme/theme-styles";
 // == Import Theme Styles
