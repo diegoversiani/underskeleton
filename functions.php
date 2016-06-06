@@ -116,6 +116,8 @@ add_action( 'widgets_init', 'underskeleton_widgets_init' );
 function underskeleton_scripts() {
 	wp_enqueue_style( 'underskeleton-style', get_stylesheet_directory_uri() . '/css/theme.min.css' );
 
+	wp_enqueue_style( 'underskeleton-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:300,400,600' );
+
 	wp_enqueue_script( 'underskeleton-navigation', get_template_directory_uri() . '/js/theme.min.js', array(), '0.0.1', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
