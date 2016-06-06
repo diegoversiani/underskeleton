@@ -25,8 +25,14 @@
 .comment {
   padding: 0.5rem;
 
-  .comment-content p:last-child {
-    margin-bottom: 0.5rem;
+  .comment-content {
+    a {
+      word-wrap: break-word;
+    }
+
+    p:last-child {
+      margin-bottom: 0.5rem;
+    }
   }
 }
 

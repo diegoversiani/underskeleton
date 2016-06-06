@@ -645,37 +645,18 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden; }
-
-.screen-reader-text:focus {
-  background-color: #f1f1f1;
-  clip: auto !important;
-  color: #33c3f0;
-  display: block;
-  font-size: 1rem;
-  font-weight: bold;
-  height: auto;
-  line-height: normal;
-  padding: 2rem 2.5rem;
-  text-decoration: none;
-  top: 5px;
-  left: 5px;
-  width: auto;
-  z-index: 100000;
-  /* Above WP toolbar. */ }
-
+/* == UNDERSKELETON MIXINS ==
+This file contains mixins for underskeleton default styles
+*/
 /* == UNDERSKELETON RESET ==
 This file resets element styles for underskeleton
 */
 html {
   box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit; }
 
 blockquote,
@@ -692,56 +673,52 @@ address {
 dd {
   margin-bottom: 1rem; }
 
-acronym {
-  border-bottom: 1px dotted; }
-
-/* == UNDERSKELETON ELEMENTS STYLES ==
-This file contains elements default styles for underskeleton
-*/
 img,
 figure {
   max-width: 100%;
   height: auto; }
-
-figure.alignleft,
-figure.alignright,
-figure.aligncenter {
-  margin-bottom: 2.5rem; }
 
 input,
 textarea,
 select {
   max-width: 100%; }
 
-/* == UNDERSKELETON STYLES ==
-This file contains underskeleton default styles
+/* == ACCESSIBILITY ==
+This file contains styles for accessibility support
 */
-blockquote {
-  border-left: 0.3rem solid #bbb;
-  padding-left: 1rem; }
-
-kbd, tt, samp {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px; }
-
-pre {
-  padding: .2rem .5rem;
-  font-size: 90%;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px; }
-  pre > kbd,
-  pre > tt,
-  pre > samp {
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #0073aa;
     display: block;
-    padding: 1rem 1.5rem;
-    white-space: pre; }
+    font-size: 1rem;
+    font-weight: bold;
+    height: auto;
+    line-height: normal;
+    padding: 2rem 2.5rem;
+    text-decoration: none;
+    top: .5rem;
+    left: .5rem;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
 
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0; }
+
+/* == WORDPRESS ALIGNMENT ==
+This file contains elements WordPress Alignment classes definition
+*/
 .alignleft,
 a img.alignleft,
 .wp-caption.alignleft {
@@ -767,9 +744,107 @@ a img.aligncenter,
 
 .wp-caption-text,
 .gallery-caption {
-  background-color: #eeeeee;
-  padding: .3rem .5rem;
   font-size: 90%; }
+
+/* == GALLERIES STYLES ==
+This file contains WordPress gallery default styles
+*/
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
+/* == UNDERSKELETON STYLES ==
+This file contains underskeleton default styles
+*/
+blockquote {
+  border-left: 0.3rem solid #bbb;
+  padding-left: 1rem; }
+
+code,
+kbd,
+tt,
+var,
+samp {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px; }
+
+pre {
+  padding: .2rem .5rem;
+  font-size: 90%;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px; }
+  pre > code,
+  pre > kbd,
+  pre > tt,
+  pre > var,
+  pre > samp {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre; }
+
+abbr,
+acronym {
+  border-bottom: 1px dotted; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both; }
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed; }
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both; }
+
+.entry-footer > span {
+  margin-right: 1rem; }
 
 /* == THEME STYLES ==
 *
@@ -863,7 +938,8 @@ a img.aligncenter,
         display: block;
         float: none;
         margin-left: 0; }
-      .main-navigation ul.menu ul a, .main-navigation ul.menu ul ul a {
+      .main-navigation ul.menu ul a,
+      .main-navigation ul.menu ul ul a {
         padding-left: 0; }
     .main-navigation ul.menu > li:first-child {
       margin-left: 0; }
@@ -930,6 +1006,14 @@ a img.aligncenter,
   border-bottom: #bbb solid 1px;
   padding-bottom: 2.5rem; }
 
+.byline,
+.updated:not(.published) {
+  display: none; }
+
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
 .comment-list {
   list-style: none; }
   .comment-list ol.children,
@@ -948,6 +1032,8 @@ a img.aligncenter,
 
 .comment {
   padding: 0.5rem; }
+  .comment .comment-content a {
+    word-wrap: break-word; }
   .comment .comment-content p:last-child {
     margin-bottom: 0.5rem; }
 

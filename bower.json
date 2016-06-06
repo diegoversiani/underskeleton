@@ -24,8 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "skeleton-scss": "https://github.com/dvlopes/Skeleton-Sass.git",
-    "normalize.css": "3.0.3"
+    "skeleton-scss": "https://github.com/dvlopes/Skeleton-Sass.git"
   },
   "_source": "https://github.com/dvlopes/underskeleton.git",
   "_target": "~0.1.1",

@@ -15,9 +15,11 @@
 // == Import Skeleton and Underskeleton
 @import 
   "../src/skeleton-scss/skeleton",
-  "underskeleton/screen-readers",
+  "underskeleton/mixins",
   "underskeleton/reset",
-  "underskeleton/elements",
+  "underskeleton/accessibility",
+  "underskeleton/alignment",
+  "underskeleton/galleries",
   "underskeleton/underskeleton";
 // !== Import Skeleton and Underskeleton
 

@@ -2,14 +2,20 @@
 This file resets element styles for underskeleton
 */
 
+// == Set all elements to use `box-sizing: border-box`
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
+// !== Set all elements to use `box-sizing: border-box`
 
+// == Margins
+// More margins settings can be found in _alignment.scss file
 blockquote,
 dl,
 figure,
@@ -25,7 +31,18 @@ address {
 dd {
   margin-bottom: 1rem;
 }
+// !== Margins
 
-acronym {
-  border-bottom: 1px dotted;
+// == Max-size and proportions
+img,
+figure {
+  max-width: 100%;
+  height: auto;
 }
+
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+// !== Max-size and proportions

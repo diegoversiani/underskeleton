@@ -103,10 +103,6 @@ gulp.task('scripts', function() {
 // Run this task after bower install or bower update
 gulp.task('copy-assets', function() {
 
-  // normalize.css
-  gulp.src(basePaths.bower + 'normalize.css/normalize.css')
-    .pipe(gulp.dest(basePaths.dev + '/normalize.css'));
-
   // skeleton-scss
   gulp.src(basePaths.bower + 'skeleton-scss/scss/**/*.scss')
     .pipe(gulp.dest(basePaths.dev + '/skeleton-scss'));

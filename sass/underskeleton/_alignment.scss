@@ -1,0 +1,50 @@
+/* == WORDPRESS ALIGNMENT ==
+This file contains elements WordPress Alignment classes definition
+*/
+
+// == WordPress Core
+.alignnone,
+a img.alignnone,
+.wp-caption.alignnone { }
+
+// Align Left
+.alignleft,
+a img.alignleft,
+.wp-caption.alignleft {
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+// Align Right
+.alignright,
+a img.alignright,
+.wp-caption.alignright {
+  float: right;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+// Align Center
+.aligncenter,
+a img.aligncenter,
+.wp-caption.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Caption margins
+.wp-caption {
+  &.alignleft,
+  &.alignright,
+  &.aligncenter {
+    margin-bottom: 2.5rem;
+  }
+}
+
+// Caption text
+.wp-caption-text,
+.gallery-caption {
+  font-size: 90%;
+}
+// !== WordPress Core
