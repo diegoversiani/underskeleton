@@ -10,8 +10,8 @@ Use this file to override default Skeleton and Underskeleton
 variables or add your own
 */
 /* == UNDERSKELETON VARIABLES ==
-This file overrides default Skeleton and
-adds Underskeleton custom variables
+This file overrides default Skeleton variables
+and adds Underskeleton custom variables
 */
 /*
 * Skeleton V2.0.4
@@ -770,9 +770,6 @@ a img.aligncenter,
   background-color: #eeeeee;
   padding: .3rem .5rem;
   font-size: 90%; }
-
-body {
-  background-color: #fff; }
 
 /* == THEME STYLES ==
 *
