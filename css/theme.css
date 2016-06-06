@@ -930,21 +930,8 @@ body {
 
 /* == POSTS STYLES == */
 .sticky {
-  position: relative;
-  background-color: #fff; }
-  .sticky:after {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 1.5rem;
-    right: 1rem;
-    left: auto;
-    width: 50%;
-    top: 80%;
-    max-width: 50%;
-    background: #333;
-    box-shadow: 0 1.5rem 1rem #333;
-    transform: rotate(3deg); }
+  border-bottom: #bbb solid 1px;
+  padding-bottom: 2.5rem; }
 
 .comment-list {
   list-style: none; }
