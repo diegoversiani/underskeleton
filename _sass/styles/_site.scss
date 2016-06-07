@@ -11,6 +11,15 @@ img {
   max-width: 100%;
 }
 
+// == Text light color on dark backgrounds
+.light-text {
+  color: #fff;
+  a {
+    color: inherit;
+  }
+}
+// !== Text light color on dark backgrounds
+
 .site-header {
   margin-top: 6rem;
   text-align: center;
@@ -40,7 +49,7 @@ section.value-props {
 
 section.about {
   background-color: $light-grey;
-  
+
   @include section-paddings();
 }
 
@@ -49,15 +58,10 @@ section.dev-features {
 }
 
 section.footer-cta {
-  color: #fff;
   text-align: center;
   background-color: $primary-color;
   
   @include section-paddings();
-
-  a {
-    color: inherit;
-  }
 
   .button.download {
     color: #fff;
@@ -71,6 +75,13 @@ section.footer-cta {
     }
 
   }
+}
+
+section.footer-info {
+  text-align: center;
+  background-color: $dark-grey;
+
+  @include section-paddings();
 }
 
 // Larger than tablet

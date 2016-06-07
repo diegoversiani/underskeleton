@@ -7,7 +7,7 @@
   <meta property="og:image:width" content="560" />
   <meta property="og:image:height" content="292" />
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }} | {{ site.subtitle }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">

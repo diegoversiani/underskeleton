@@ -9,6 +9,7 @@ exclude: ['bower_components','node_modules','bower.json','package.json','gulpfil
 
 # Site settings
 title: Underskeleton
+subtitle: WordPress Starter Theme for your next awesome website
 description: > # this means to ignore newlines until "baseurl:"
   Underscores ( _s ) + Skeleton Boilerplate = Fast to load with a minimalist
   css grid for your next WordPress Theme.
