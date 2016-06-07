@@ -1,5 +1,12 @@
 // == SITE STYLES
 
+// == Mixins
+@mixin section-paddings() {
+  padding-top: 9rem;
+  padding-bottom: 7rem;
+}
+// !== Mixins
+
 img {
   max-width: 100%;
 }
@@ -20,8 +27,7 @@ img {
 }
 
 section.value-props {
-  margin-top: 9rem;
-  margin-bottom: 7rem;
+  @include section-paddings();
 
   .value-prop {
     i {
@@ -34,19 +40,20 @@ section.value-props {
 
 section.about {
   background-color: $light-grey;
-  padding: 2.5rem 0;
+  
+  @include section-paddings();
 }
 
-section.screenshot {
-  text-align: center;
+section.dev-features {
+  @include section-paddings();
 }
 
 section.footer-cta {
   color: #fff;
   text-align: center;
   background-color: $primary-color;
-  padding-top: 9rem;
-  padding-bottom: 7rem;
+  
+  @include section-paddings();
 
   a {
     color: inherit;
