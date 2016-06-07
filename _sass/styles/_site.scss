@@ -25,7 +25,7 @@ img {
   text-align: center;
 }
 
-.button.download {
+.button.cta {
   font-size: 1.5rem;
   padding: 1rem 3rem;
   height: auto;
@@ -49,6 +49,13 @@ section.value-props {
 
 section.about {
   background-color: $light-grey;
+
+  @include section-paddings();
+}
+
+section.demo-cta {
+  text-align: center;
+  background-color: $secondary-color;
 
   @include section-paddings();
 }
