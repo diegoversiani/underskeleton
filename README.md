@@ -109,7 +109,9 @@ var browserSyncOptions = {
 
 ## License
 
-TODO: Check licence compatibility between components
+Underskeleton is distributed under the terms of Open Source MIT License (http://opensource.org/licenses/mit-license.php).
+
+Any third party softwares included in this project are licensed by their own creators.
 
 ## Acknowledgement
 
