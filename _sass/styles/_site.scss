@@ -1,24 +1,55 @@
 // == SITE STYLES
 
 // == Mixins
-@mixin section-paddings() {
-  padding-top: 9rem;
-  padding-bottom: 7rem;
-}
-// !== Mixins
+@mixin section-paddings( $place: '' ) {
+  $top: true;
+  $bottom: true;
 
-img {
-  max-width: 100%;
+  @if $place == 'top' {
+    $bottom: false;
+  } @elseif $place == 'bottom' {
+    $top: false;
+  }
+
+  @if $top {
+    padding-top: 7rem;
+  }
+
+  @if $bottom {
+    padding-bottom: 5rem;
+  }
+
 }
 
 // == Text light color on dark backgrounds
-.light-text {
+@mixin light-text() {
   color: #fff;
   a {
     color: inherit;
   }
 }
 // !== Text light color on dark backgrounds
+// !== Mixins
+
+// == Section Paddings
+section.value-props,
+section.about,
+section.demo-cta,
+section.dev-features,
+section.footer-cta,
+section.footer-info {
+  @include section-paddings();
+}
+section.features {
+  @include section-paddings('bottom');
+}
+// == Section Paddings
+
+// == RESET
+img {
+  max-width: 100%;
+}
+// !== RESET
 
 .site-header {
   margin-top: 6rem;
@@ -49,26 +80,36 @@ section.value-props {
 
 section.about {
   background-color: $light-grey;
-
-  @include section-paddings();
 }
 
 section.demo-cta {
   text-align: center;
   background-color: $secondary-color;
-
-  @include section-paddings();
+  @include light-text();
 }
 
-section.dev-features {
-  @include section-paddings();
+section.features {
+  .feature {
+    &.more h5 {
+      color: $primary-color;
+    }
+  }
+
+  .soon {
+    position: absolute;
+    font-size: 80%;
+    font-style: italic;
+    display: inline-block;
+    margin-top: -2rem;
+    line-height: 0;
+    color: $primary-color;
+  }
 }
 
 section.footer-cta {
   text-align: center;
   background-color: $primary-color;
-  
-  @include section-paddings();
+  @include light-text();
 
   .button.download {
     color: #fff;
@@ -80,15 +121,13 @@ section.footer-cta {
       color: $light-grey;
       border-color: $light-grey;
     }
-
   }
 }
 
 section.footer-info {
   text-align: center;
   background-color: $dark-grey;
-
-  @include section-paddings();
+  @include light-text();
 }
 
 // Larger than tablet
