@@ -7,9 +7,9 @@ variables or add your own
 // Add Skeleton variables here to override its values
 // Uncomment the lines below to change default colors
 
-// $primary-color:         #155d4f; // Evergreen
-// $secondary-color:       #d72d5c; // Raspberry
-// $link-color:            $secondary-color;
+$primary-color:         #d72d5c; // Raspberry
+$secondary-color:       #155d4f; // Evergreen
+$link-color:            $secondary-color;
 
 // !== Override Skeleton Variables
 
@@ -18,7 +18,7 @@ variables or add your own
 // Uncomment the lines below to create new variables for
 // $tertiary-color and $headings-color. 
 
-// $tertiary-color:        #264a5c;
-// $headings-color:        $primary-color;
+$tertiary-color:        #264a5c;
+$headings-color:        $primary-color;
 
 // == Add your own variables
