@@ -26,6 +26,14 @@
   color: #fff;
   a {
     color: inherit;
+
+    &.button:hover,
+    &.button:active,
+    &.button:focus {
+      color: inherit;
+      border-color: inherit;
+      background-color: transparentize(#fff, .8)
+    }
   }
 }
 // !== Text light color on dark backgrounds
