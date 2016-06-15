@@ -1,21 +1,21 @@
 {
-  "name": "underskeleton",
+  "name": "underskeleton-website",
   "version": "0.0.1",
-  "description": "Website for the Underskeleton WordPress Starter Theme: https://github.com/dvlopes/underskeleton",
+  "description": "Website for the Underskeleton WordPress Starter Theme.",
   "main": "_sass/main.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dvlopes/underskeleton.git#gh-pages"
+    "url": "https://github.com/diegoversiani/underskeleton.git#gh-pages"
   },
   "author": "Diego Versiani",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/dvlopes/underskeleton/issues"
+    "url": "https://github.com/diegoversiani/underskeleton/issues"
   },
-  "homepage": "https://github.com/dvlopes/underskeleton",
+  "homepage": "https://getunderskeleton.com",
   "dependencies": {
     "bower": "^1.7.9",
     "gulp": "^3.9.0",

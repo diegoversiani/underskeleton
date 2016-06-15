@@ -2,7 +2,7 @@
 
 ## Jekyll Command
 
-Run the command from inside the root directory: `dvlopes.github.io`
+Run the command from inside the root directory: `underskeleton-gh-pages`
 `jekyll build --watch`
 
 ## Browser Sync command
