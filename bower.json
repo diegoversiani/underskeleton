@@ -1,6 +1,6 @@
 {
   "name": "underskeleton",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "http://dvlopes.github.io/underskeleton",
   "authors": [
     "Diego Versiani <diegoversiani@gmail.com>"
@@ -17,7 +17,7 @@
       "_s",
       "sass"
     ],
-  "license": "GPL-2.0",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "test",
@@ -27,8 +27,6 @@
     "skeleton-scss": "https://github.com/dvlopes/Skeleton-Sass.git"
   },
   "_source": "https://github.com/dvlopes/underskeleton.git",
-  "_target": "~0.1.1",
+  "_target": "~0.1.2",
   "_originalSource": "underskeleton"
 }
-
-

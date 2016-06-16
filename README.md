@@ -4,6 +4,11 @@ Underscores ( _s ) + Skeleton Boilerplate = Fast to load with a minimalist css g
 
 ## Changelog
 
+        == v0.1.2 June 16th 2016 ==
+               - Add Custom Logo theme support for WordPress 4.5+
+               - Add pt-BR Translation.
+               - Minor fixes and tweaks.
+
         == v0.1.1 May 2nd 2016 ==
                - First stable version, with minor fixes from previous.
 
