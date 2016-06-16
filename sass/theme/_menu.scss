@@ -1,0 +1,189 @@
+/* == MENU STYLES == */
+
+// == Main Menu
+.main-navigation {
+
+  // == Mobile menu button
+  .menu-toggle {
+    float: right;
+    padding: 0 1rem;
+    margin: 1rem 0;
+
+    &:active .bars {
+      background: lighten($dark-grey, 33.3%);
+    }
+
+    .bars {
+      display: block;
+      background: $secondary-color;
+      width: 1.6rem;
+      height: .2rem;
+      margin-bottom: .3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  // !== Mobile menu button
+
+  // == Menu
+  ul.menu {
+    float: right;
+    clear: both;
+    width: 100%;
+  }
+
+  // Level 1
+  ul {
+    display: none;
+    margin: 0;
+    list-style: none;
+    background-color: $menu-bg-color;
+
+    // Level 2
+    ul {
+      a {
+        font-size: 90%;
+        padding-left: $menu-subitem-indent;
+      }
+
+      // Level 3
+      ul a {
+        padding-left: $menu-subitem-indent * 2;
+      }
+    }
+
+    // Menu item
+    li {
+      border-top: $menu-border;
+      margin-bottom: 0;
+
+      a {
+        display: block;
+        width: 100%;
+        padding: ($menu-item-padding * 2) $menu-item-padding; // 1rem .5rem;
+        color: $menu-color;
+        font-weight: $menu-font-weight;
+        font-size: $menu-font-size;
+        letter-spacing: $menu-letter-spacing;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+  // !== Menu
+
+  // Menu toggled
+  &.toggled ul.menu {
+    display: block;
+  }
+}
+// !== Main Menu
+
+// == Navigation styles for columns layout
+@media (#{$column-starts-at-breakpoint}) {
+  // == Main Menu
+  .main-navigation {
+
+    // == Mobile menu button hidden
+    .menu-toggle {
+      display: none;
+    }
+
+    // == Menu
+    ul.menu {
+      display: block;
+      width: auto;
+      clear: none;
+      margin: 1.6rem 0 1rem;
+
+      // Submenu
+      ul {
+        display: none;
+
+        li {
+          display: block;
+          float: none;
+          margin-left: 0;
+        }
+
+        // Reset depth padding
+        a,
+        ul a {
+          padding-left: 0;
+        }
+      }
+
+      > li {
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child a {
+          padding-right: 0;
+        }
+      }
+
+      // == Menu item
+      li {
+        border-top: 0;
+        float: left;
+        margin-left: 1rem;
+
+        a {
+          &:hover,
+          &:focus,
+          &:active {
+            color: $primary-color;
+          }
+        }
+
+        // == Dropdown menu on hover
+        &:hover,
+        &:focus,
+        &:active {
+          position: relative;
+
+          > ul {
+            display: block;
+          }
+        }
+
+        ul {
+          z-index: 99999;
+          display: none;
+          position: absolute;
+          top: $menu-submenu-top;
+          box-shadow: $menu-dropdown-shadow;
+
+          li {
+            a {
+              width: $menu-subitem-width;
+              padding-left: $menu-item-padding;
+            }
+
+            ul {
+              left: 100%;
+              top: 0;
+            }
+          }
+        }
+        // !== Dropdown Menu on Hover
+      }
+
+      // First level with submenu hover effect
+      > li[aria-haspopup=true] {
+        &:hover,
+        &:focus,
+        &:active {
+          box-shadow: 0 -0.5px 2px rgba(0,0,0,.2);
+        }
+      }
+      // !== Menu Item
+    }
+    // == Menu
+  }
+  // !== Main Menu
+}
+// !== Navigation styles for columns layout

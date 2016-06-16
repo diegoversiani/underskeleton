@@ -1,0 +1,33 @@
+/* == HEADER STYLES == */
+
+// == Site header
+.site-header {
+  border-bottom: solid 1px $border-color;
+  margin: 1.5rem auto 5rem;
+}
+// !== Site header
+
+// == Site branding
+.site-branding {
+  float: left;
+
+  .custom-logo-link {
+    float: left;
+    margin-right: 2rem;
+  }
+
+  .site-title {
+    display: inline-block;
+    font-size: 3rem;
+    margin: 1rem 0 0 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .site-description {
+    margin: 0 0 1rem 0;
+  }
+}
+// !== Site branding

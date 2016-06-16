@@ -862,7 +862,7 @@ h1, h2, h3, h4, h5, h6 {
  |     └── _lists.scss
  |     └── ...
 */
-/* == NAVIGATION STYLES == */
+/* == HEADER STYLES == */
 .site-header {
   border-bottom: solid 1px #bbb;
   margin: 1.5rem auto 5rem; }
@@ -881,6 +881,7 @@ h1, h2, h3, h4, h5, h6 {
   .site-branding .site-description {
     margin: 0 0 1rem 0; }
 
+/* == MENU STYLES == */
 .main-navigation .menu-toggle {
   float: right;
   padding: 0 1rem;
@@ -974,6 +975,7 @@ h1, h2, h3, h4, h5, h6 {
     .main-navigation ul.menu > li[aria-haspopup=true]:hover, .main-navigation ul.menu > li[aria-haspopup=true]:focus, .main-navigation ul.menu > li[aria-haspopup=true]:active {
       box-shadow: 0 -0.5px 2px rgba(0, 0, 0, 0.2); } }
 
+/* == NAVIGATION STYLES == */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
