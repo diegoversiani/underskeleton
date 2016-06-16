@@ -12,7 +12,13 @@
 .site-branding {
   float: left;
 
+  .custom-logo-link {
+    float: left;
+    margin-right: 2rem;
+  }
+
   .site-title {
+    display: inline-block;
     font-size: 3rem;
     margin: 1rem 0 0 0;
 

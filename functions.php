@@ -76,6 +76,15 @@ function underskeleton_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	// Set up the WordPress custom logo feature.
+	add_theme_support( 'custom-logo', array(
+		'height'      => 80,
+		'width'       => 200,
+		'flex-height' => true,
+		'flex-width'  => true,
+		'header-text' => array( 'site-title', 'site-description' ),
+	) );
 }
 endif;
 add_action( 'after_setup_theme', 'underskeleton_setup' );
