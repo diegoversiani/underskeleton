@@ -85,7 +85,13 @@ underskeleton/
 Underskeleton is developed with NPM, Bower, Gulp, SASS and Browser Sync. You can develop without these tools, but its just a lot faster with them ;)
 
 ### Installing Dependencies
-- Make sure you have installed `Node.js`, `Bower`, and `Browser-Sync` on your computer globally
+- Make sure you have installed `Node.js`, `Bower`, and `Browser-Sync` on your computer globally. To install Bower and Browser-Sync, run*:
+```
+# May require root/administrator permissions
+
+$ npm install -g bower
+$ npm install -g browser-sync
+```
 - Open your terminal and browse to the location of your Underskeleton copy
 - Run these comands:
 ```
@@ -124,6 +130,6 @@ Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web
 
 Skeleton-Sass was created by [Seth Coelen](http://sethcoelen.com) for a better Skeleton.
 
-Underskeleton was created by [Diego Versiani](http://dvlopes.github.io) for a better WordPress.
+Underskeleton was created by [Diego Versiani](http://diegoversiani.github.io) for a better WordPress.
 
 <a href='https://ko-fi.com/A0212ZQ' target='_blank'><img height='32' style='border:0px;height:32px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=a' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
