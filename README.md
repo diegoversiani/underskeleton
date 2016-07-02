@@ -45,7 +45,7 @@ Things we plan to include in later versions.
 - WooCommerce support.
 - A website to download the project with your new theme identification, just as [underscores.me](http://underscores.me) does.
 
-Have you got a feature request? Please [open an issue](https://github.com/dvlopes/underskeleton/issues) on Github!
+Have you got a feature request? Please [open an issue](https://github.com/diegoversiani/underskeleton/issues) on Github!
 
 ## Installation
 
@@ -130,6 +130,6 @@ Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web
 
 Skeleton-Sass was created by [Seth Coelen](http://sethcoelen.com) for a better Skeleton.
 
-Underskeleton was created by [Diego Versiani](http://diegoversiani.github.io) for a better WordPress.
+Underskeleton was created by [Diego Versiani](http://diegoversiani.me) for a better WordPress.
 
 <a href='https://ko-fi.com/A0212ZQ' target='_blank'><img height='32' style='border:0px;height:32px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=a' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>

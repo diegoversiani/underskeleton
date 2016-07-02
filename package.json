@@ -1,21 +1,21 @@
 {
   "name": "underskeleton",
   "version": "0.1.2",
-  "description": "A starter theme for WordPress built with _s starter theme and skeleton css boilerplate. http://dvlopes.github.io/underskeleton",
+  "description": "A starter theme for WordPress built with _s starter theme and skeleton css boilerplate. http://getunderskeleton.com",
   "main": "style.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dvlopes/underskeleton.git"
+    "url": "https://github.com/diegoversiani/underskeleton.git"
   },
   "author": "Diego Versiani",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dvlopes/underskeleton/issues"
+    "url": "https://github.com/diegoversiani/underskeleton/issues"
   },
-  "homepage": "http://dvlopes.github.io/underskeleton",
+  "homepage": "http://getunderskeleton.com",
   "dependencies": {
     "bower": "^1.7.9",
     "gulp": "^3.9.0",

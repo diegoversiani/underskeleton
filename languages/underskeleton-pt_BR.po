@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Underskeleton 0.1.1\n"
-"Report-Msgid-Bugs-To: http://github.com/dvlopes/underskeleton\n"
+"Report-Msgid-Bugs-To: http://github.com/diegoversiani/underskeleton\n"
 "POT-Creation-Date: 2016-02-14 21:43:07+00:00\n"
 "PO-Revision-Date: Wed Jun 08 2016 16:39:39 GMT-0300 (E. South America "
 "Standard Time)\n"
@@ -52,10 +52,10 @@ msgstr "Underskeleton"
 
 #: ../footer.php:23
 msgid ""
-"<a href=\"http://dvlopes.github.io/underskeleton\" rel=\"designer\">Diego "
+"<a href=\"http://getunderskeleton.com\" rel=\"designer\">Diego "
 "Versiani</a>"
 msgstr ""
-"<a href=\"http://dvlopes.github.io/underskeleton\" rel=\"designer\">Diego "
+"<a href=\"http://getunderskeleton.com\" rel=\"designer\">Diego "
 "Versiani</a>"
 
 #: ../404.php:18
@@ -189,21 +189,21 @@ msgid ""
 msgstr "Parece que não podemos encontrar o que você procura. Talvez a pesquisa ajude."
 
 #. Theme URI of the theme
-msgid "http://dvlopes.github.io/underskeleton"
-msgstr "http://dvlopes.github.io/underskeleton"
+msgid "http://getunderskeleton.com"
+msgstr "http://getunderskeleton.com"
 
 #. Description of the theme
 msgid ""
 "Underscores ( _s ) + Skeleton Boilerplate = Fast, easy to change WordPress "
-"Starter Theme. https://github.com/dvlopes/underskeleton"
+"Starter Theme. https://github.com/diegoversiani/underskeleton"
 msgstr ""
 "Underscores ( _s ) + Skeleton Boilerplate = Fast, easy to change WordPress "
-"Starter Theme. https://github.com/dvlopes/underskeleton"
+"Starter Theme. https://github.com/diegoversiani/underskeleton"
 
 #. Author of the theme
 msgid "Diego Versiani"
 msgstr "Diego Versiani"
 
 #. Author URI of the theme
-msgid "http://dvlopes.github.io"
-msgstr "http://dvlopes.github.io"
+msgid "http://diegoversiani.me"
+msgstr "http://diegoversiani.me"
