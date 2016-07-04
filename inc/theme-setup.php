@@ -98,3 +98,17 @@ function underskeleton_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'underskeleton_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'underskeleton_content_width', 0 );
+
+/**
+ * Registers an editor stylesheet for the current theme.
+ *
+ * @global WP_Post $post Global post object.
+ */
+function underskeleton_add_editor_styles() {
+    add_editor_style( get_stylesheet_directory_uri() . '/css/editor-style.css' );
+    
+    // TODO: Move font settings to a better place
+    add_editor_style( 'https://fonts.googleapis.com/css?family=Raleway:300,400,600' );
+}
+add_action( 'init',          'underskeleton_add_editor_styles' );
+add_action( 'pre_get_posts', 'underskeleton_add_editor_styles' );

@@ -1,0 +1,11 @@
+/* == EDITOR STYLES ==
+* Import main editor styles files.
+*/
+/* == EDITOR STYLES VARIABLES ==
+Use this file to override default Skeleton and Underskeleton
+variables for Editor Styles or add your own
+*/
+/* == EDITOR STYLES == */
+@import url(theme.min.css);
+#tinymce {
+  margin: 2rem; }
