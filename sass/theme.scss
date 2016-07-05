@@ -9,18 +9,18 @@
 // before skeleton in order to override its values
 @import
   "theme/variables",
-  "underskeleton/variables";
+  "base/variables";
 // !== Import Variables
 
 // == Import Skeleton and Underskeleton
 @import 
   "../src/skeleton-scss/skeleton",
-  "underskeleton/mixins",
-  "underskeleton/reset",
-  "underskeleton/accessibility",
-  "underskeleton/alignment",
-  "underskeleton/galleries",
-  "underskeleton/underskeleton";
+  "base/mixins",
+  "base/reset",
+  "base/accessibility",
+  "base/alignment",
+  "base/galleries",
+  "base/styles";
 // !== Import Skeleton and Underskeleton
 
 // == Import Theme Styles
