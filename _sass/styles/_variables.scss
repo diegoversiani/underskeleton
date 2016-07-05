@@ -4,3 +4,19 @@ $light-grey:        #f3f3f3;
 $primary-color:     #d72d5c;
 $secondary-color:   #155d4f;
 $link-color:        $secondary-color;
+
+$border-color:          #bbb !default; // needed for $menu-border variable
+$font-color:            #222 !default; // needed for $menu-color variable
+
+// Menu
+$menu-font-size:        1.1rem !default;
+$menu-font-weight:      600 !default;
+$menu-letter-spacing:   .2rem !default;
+$menu-color:            $font-color !default;
+$menu-bg-color:         #fff !default;
+$menu-border:           $border-color solid 1px !default;
+$menu-dropdown-shadow:  0 3px 3px rgba(0, 0, 0, 0.2) !default;
+$menu-item-padding:     .5rem !default;
+$menu-subitem-width:    20rem !default;
+$menu-subitem-indent:   2rem !default;
+$menu-submenu-top:      ($menu-item-padding * 2) + 2.4rem !default;

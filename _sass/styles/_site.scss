@@ -44,10 +44,13 @@ section.value-props,
 section.about,
 section.demo-cta,
 section.dev-features,
+section.thanks,
 section.footer-cta,
 section.footer-info {
   @include section-paddings();
 }
+
+section.thanks-info,
 section.features {
   @include section-paddings('bottom');
 }
@@ -75,8 +78,6 @@ img {
 }
 
 section.value-props {
-  @include section-paddings();
-
   .value-prop {
     i {
       display: block;
@@ -111,6 +112,26 @@ section.features {
     margin-top: -2rem;
     line-height: 0;
     color: $primary-color;
+  }
+}
+
+section.thanks {
+  h1 {
+    color: $primary-color;
+  }
+}
+
+section.thanks-info {
+  .info-item {
+    i.info-item-icon {
+      display: block;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .buy-coffee {
+    text-align: center;
   }
 }
 

@@ -7,6 +7,10 @@
   <meta property="og:image:width" content="560" />
   <meta property="og:image:height" content="292" />
 
+  {% if page.download_redirect %}
+  <META http-equiv="refresh" content="2;URL=https://github.com/diegoversiani/underskeleton/archive/{{ site.source_version }}.zip">
+  {% endif %}
+
   <title>{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }} | {{ site.subtitle }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
