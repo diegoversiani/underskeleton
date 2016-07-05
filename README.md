@@ -60,10 +60,8 @@ Have you got a feature request? Please [open an issue](https://github.com/diegov
 To change Underskeleton theme identification to your own you need to replace any 'underskeleton' text with your theme id and, optionally, replace the theme name as well.
 
 - Open the project in the editor of your choice (i.e [Sublime Text](https://www.sublimetext.com/))
-- Replace all 'underskeleton' matches with 'your_theme_id' (**case sensitive**)
-<img src='http://getunderskeleton.com/images/replace_all_id.png'>
-- Optionally, replace all 'Underskeleton' matches with 'Your Theme Name' (**case sensitive**)
-<img src='http://getunderskeleton.com/images/replace_all_id.png'>
+- Replace all 'underskeleton' matches with 'your_theme_id' (**case sensitive**) ([screenshot](http://getunderskeleton.com/images/replace_all_id.png))
+- Optionally, replace all 'Underskeleton' matches with 'Your Theme Name' (**case sensitive**) ([screenshot](http://getunderskeleton.com/images/replace_all_name.png))
 - That is it.
 
 ## Folder structure
