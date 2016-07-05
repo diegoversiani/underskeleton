@@ -41,7 +41,6 @@ Watch or Star the repository to keep up to date. Fork the project, make the chan
 
 Things we plan to include in later versions.
 
-- Custom logo support (Wordpress 4.5+).
 - WooCommerce support.
 - A website to download the project with your new theme identification, just as [underscores.me](http://underscores.me) does.
 
@@ -56,7 +55,16 @@ Have you got a feature request? Please [open an issue](https://github.com/diegov
 - Go to Appearance → Themes
 - Activate the Underskeleton theme
 
-TODO: Add instructions on how to change `underskeleton` refereces to your theme identification
+#### Changing theme identification
+
+To change Underskeleton theme identification to your own you need to replace any 'underskeleton' text with your theme id and, optionally, replace the theme name as well.
+
+- Open the project in the editor of your choice (i.e [Sublime Text](https://www.sublimetext.com/))
+- Replace all 'underskeleton' matches with 'your_theme_id' (**case sensitive**)
+<img src='http://getunderskeleton.com/images/replace_all_id.png'>
+- Optionally, replace all 'Underskeleton' matches with 'Your Theme Name' (**case sensitive**)
+<img src='http://getunderskeleton.com/images/replace_all_id.png'>
+- That is it.
 
 ## Folder structure
 
