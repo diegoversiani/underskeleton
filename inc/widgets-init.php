@@ -22,3 +22,40 @@ function underskeleton_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'underskeleton_widgets_init' );
+
+
+
+
+/*------------------------------------*\
+  #HOMEPAGE WIDGET AREAS
+\*------------------------------------*/
+
+function underskeleton_homepage_widgets_init () {
+
+  /* #HOMEPAGE BEFORE CONTENT */
+    
+  register_sidebar( array(
+    'name'          => __( 'Homepage Before Content', 'underskeleton' ),
+    'id'            => 'underskeleton_homepage_before',
+    'description'   => 'Insert widgets before the content of the page set as the homepage.',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '',
+    'after_title'   => '',
+  ) );
+
+
+  /* #HOMEPAGE AFTER CONTENT */
+
+  register_sidebar( array(
+    'name'          => __( 'Homepage After Content', 'underskeleton' ),
+    'id'            => 'underskeleton_homepage_after',
+    'description'   => 'Insert widgets after the content of the page set as the homepage.',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '',
+    'after_title'   => '',
+  ) );
+
+}
+add_action( 'widgets_init', 'underskeleton_homepage_widgets_init', 0);
