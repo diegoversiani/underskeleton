@@ -12,8 +12,6 @@ function underskeleton_scripts() {
 
 	// Styles
 	wp_enqueue_style( 'underskeleton-style', get_stylesheet_directory_uri() . '/css/theme.min.css' );
-
-	wp_enqueue_style( 'underskeleton-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:300,400,600' );
 	// !== Styles
 
 	// == Scripts

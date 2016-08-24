@@ -1,5 +1,15 @@
 /* == TYPOGRAPHY STYLES == */
 
+// HEADING STYLES
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+}
+
 .post {
   margin-bottom: 2.5rem;
 }

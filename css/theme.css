@@ -219,7 +219,7 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   color: #222; }
 
 a {
@@ -996,6 +996,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 50%; }
 
 /* == TYPOGRAPHY STYLES == */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif; }
+
 .post {
   margin-bottom: 2.5rem; }
 
