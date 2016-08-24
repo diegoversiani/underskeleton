@@ -5,6 +5,10 @@
  * @package UnderSkeleton
  */
 
+
+
+
+
 if ( ! function_exists( 'underskeleton_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -91,6 +95,10 @@ function underskeleton_setup() {
 endif;
 add_action( 'after_setup_theme', 'underskeleton_setup' );
 
+
+
+
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -102,6 +110,10 @@ function underskeleton_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'underskeleton_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'underskeleton_content_width', 0 );
+
+
+
+
 
 /**
  * Registers an editor stylesheet for the current theme.
@@ -116,3 +128,26 @@ function underskeleton_add_editor_styles() {
 }
 add_action( 'init',          'underskeleton_add_editor_styles' );
 add_action( 'pre_get_posts', 'underskeleton_add_editor_styles' );
+
+
+
+
+
+function underskeleton_custom_logo_login_page() {
+
+	if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) {
+		$custom_logo_id = get_theme_mod( 'custom_logo' );
+		$image_attributes = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+
+		echo "<style type=\"text/css\">
+		body.login div#login h1 a {
+			background-image: url(". $image_attributes .");
+			-webkit-background-size: auto;
+			background-size: auto 100%;
+			margin: 0 0 25px;
+			width: 320px;
+		}
+		</style>";
+	}
+}
+add_action( 'login_enqueue_scripts', 'underskeleton_custom_logo_login_page' );
