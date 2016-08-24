@@ -83,6 +83,10 @@ function underskeleton_setup() {
 		'flex-width'  => true,
 		'header-text' => array( 'site-title', 'site-description' ),
 	) );
+
+	// Add customizer selective refresh
+	add_theme_support( 'customize-selective-refresh-widgets' );
+	
 }
 endif;
 add_action( 'after_setup_theme', 'underskeleton_setup' );
