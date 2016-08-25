@@ -137,13 +137,14 @@ function underskeleton_custom_logo_login_page() {
 
 	if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) {
 		$custom_logo_id = get_theme_mod( 'custom_logo' );
-		$image_attributes = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+		$image_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
 
 		echo "<style type=\"text/css\">
 		body.login div#login h1 a {
-			background-image: url(". $image_attributes .");
+			background-image: url(". $image_url .");
 			-webkit-background-size: auto;
-			background-size: auto 100%;
+			background-size: auto;
+			background-position: center;
 			margin: 0 0 25px;
 			width: 320px;
 		}
