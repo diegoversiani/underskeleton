@@ -3,9 +3,9 @@ This file contains elements WordPress Alignment classes definition
 */
 
 // == WordPress Core
-.alignnone,
-a img.alignnone,
-.wp-caption.alignnone { }
+// .alignnone,
+// a img.alignnone,
+// .wp-caption.alignnone { }
 
 // Align Left
 .alignleft,
@@ -31,6 +31,11 @@ a img.aligncenter,
 .wp-caption.aligncenter {
   margin-left: auto;
   margin-right: auto;
+}
+
+a img.aligncenter,
+img.aligncenter {
+  display: block;
 }
 
 // Caption margins
