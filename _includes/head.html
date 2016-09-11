@@ -6,13 +6,14 @@
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="560" />
   <meta property="og:image:height" content="292" />
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="google-site-verification" content="ebqmWYSpsC5Lk7Q4MrJcOsxJ0VWQ7YfeuIu49dD55uY" />
 
   {% if page.download_redirect %}
-  <META http-equiv="refresh" content="2;URL=https://github.com/diegoversiani/underskeleton/archive/{{ site.source_version }}.zip">
+  <meta http-equiv="refresh" content="2;URL=https://github.com/diegoversiani/underskeleton/archive/{{ site.source_version }}.zip">
   {% endif %}
 
   <title>{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }} | {{ site.subtitle }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
