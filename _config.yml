@@ -7,6 +7,9 @@
 
 exclude: ['bower_components','node_modules','bower.json','package.json','gulpfile.js','README.md']
 
+gems:
+  - jekyll-sitemap
+
 # Site settings
 title: Underskeleton
 subtitle: WordPress Starter Theme for your next awesome website
