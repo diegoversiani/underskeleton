@@ -37,7 +37,10 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_navigation( array( 
+				'prev_text' => __('&laquo; Older posts', 'underskeleton'),
+				'next_text' => __('Newer posts &raquo;', 'underskeleton'),
+				) );
 
 		else :
 

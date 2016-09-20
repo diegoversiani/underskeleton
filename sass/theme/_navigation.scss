@@ -1,6 +1,19 @@
-/* == NAVIGATION STYLES == */
+/*------------------------------------*\
+  #NAVIGATION STYLES
+\*------------------------------------*/
 
-// == Posts and Comments navigation
+.read-more,
+.more-link {
+  padding: .2rem .5rem;
+
+  border-radius: $global-radius;
+  background-color: $light-grey;
+
+  font-size: 80%;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
@@ -9,16 +22,29 @@
     margin: 0 0 1.5rem;
     overflow: hidden;
   }
-
-  .nav-previous {
-    float: left;
-    width: 50%;
-  }
-
-  .nav-next {
-    float: right;
-    text-align: right;
-    width: 50%;
-  }
 }
-// !== Posts and Comments navigation
+
+.nav-links {
+  @include section-paddings();
+}
+
+.nav-links div:first-child a{
+  margin-left: 0; // remove spacing from first-child
+}
+
+.nav-previous a,
+.nav-next a {
+  float: left;
+  width: auto;
+  max-width: grid-column-width(6); // six columns
+  margin-left: $column-margin; // column spacing
+  padding: 1rem;
+
+  border-radius: $global-radius;
+  background-color: $light-grey;
+}
+
+.nav-next a {
+  float: right;
+  text-align: right;
+}
