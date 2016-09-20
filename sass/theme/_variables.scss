@@ -20,9 +20,21 @@ $font-color:            #222;
 $link-color:            $secondary-color;
 $heading-color:         $primary-color;
 
-// TYPOGRAPHY
+// TYPOGRAPHY (more in _typography.scss)
 $font-family:           sans-serif;
 $heading-font-family:   sans-serif;
+$h1-font-size:          3rem;
+$h2-font-size:          2.8rem;
+$h3-font-size:          2.5rem;
+$h4-font-size:          2.25rem;
+$h5-font-size:          2rem;
+$h6-font-size:          1.8rem;
+$h1-font-size-large-screen: $h1-font-size;
+$h2-font-size-large-screen: $h2-font-size;
+$h3-font-size-large-screen: $h3-font-size;
+$h4-font-size-large-screen: $h4-font-size;
+$h5-font-size-large-screen: $h5-font-size;
+$h6-font-size-large-screen: $h6-font-size;
 
 // BREAKPOINTS
 $bp-larger-than-mobile    : "min-width: 400px";
@@ -43,7 +55,7 @@ $column-starts-at-breakpoint: $bp-larger-than-phablet;
 // MISC
 $global-radius: 4px;
 
-// MENU
+// MENU (more in _menu.scss)
 $menu-font-size:        1.1rem;
 $menu-font-weight:      600;
 $menu-letter-spacing:   .2rem;

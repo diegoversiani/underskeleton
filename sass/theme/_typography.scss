@@ -1,18 +1,30 @@
 /* == TYPOGRAPHY STYLES == */
 
-// HEADING STYLES
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
   color: $heading-color;
+  font-weight: 300;
 
   a {
     color: inherit;
   }
+}
+
+h1 { font-size: $h1-font-size; line-height: 1.2;  letter-spacing: -.1rem; }
+h2 { font-size: $h2-font-size; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: $h3-font-size; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: $h4-font-size; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: $h5-font-size; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: $h6-font-size; line-height: 1.6;  letter-spacing: 0; }
+
+// Larger than phablet
+@media (#{$bp-larger-than-phablet}) {
+  h1 { font-size: $h1-font-size-large-screen; }
+  h2 { font-size: $h2-font-size-large-screen; }
+  h3 { font-size: $h3-font-size-large-screen; }
+  h4 { font-size: $h4-font-size-large-screen; }
+  h5 { font-size: $h5-font-size-large-screen; }
+  h6 { font-size: $h6-font-size-large-screen; }
 }
 
 a {
@@ -23,14 +35,19 @@ ul {
   list-style: disc inside;
 }
 
+
+
+// TODO: move to _posts.scss
 .post {
   margin-bottom: 2.5rem;
 }
 
+// TODO: move to _posts.scss
 .entry-header {
   margin-bottom: 2.5rem;
 }
 
+// TODO: move to _posts.scss
 .entry-title {
   margin-bottom: 0;
 }
