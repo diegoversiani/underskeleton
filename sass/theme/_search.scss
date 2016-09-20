@@ -1,0 +1,48 @@
+/*------------------------------------*\
+  #SEARCH FIELDS
+\*------------------------------------*/
+
+input[type=search].search-field {
+  width: 60%;
+  margin-bottom: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+input[type=submit].search-submit {
+  width: 40%;
+  padding: 0 1rem;
+  margin-bottom: 0;
+
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  line-height: 39px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SEARCH-BOX
+\*------------------------------------*/
+
+.search-box {
+  float: right;
+  margin-top: 1.2rem;
+  padding: 0 1rem;
+}
+
+.search-box__button {
+  padding: 0 1rem;
+  border: none;
+
+  font-size: 1.6rem;
+
+  // COLUMNS LAYOUT
+  @media (#{$menu-breakpoint}) {
+    margin-top: .7rem;
+  }
+}
