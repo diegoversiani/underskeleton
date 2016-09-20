@@ -1190,13 +1190,14 @@ input[type=submit].search-submit {
 .main-navigation ul {
   display: none;
   margin: 0;
-  list-style: none;
-  background-color: #fff; }
-  .main-navigation ul ul a {
-    font-size: 90%;
-    padding-left: 2rem; }
-  .main-navigation ul ul ul a {
-    padding-left: 4rem; }
+  list-style: none; }
+  .main-navigation ul ul {
+    background-color: #fff; }
+    .main-navigation ul ul a {
+      font-size: 90%;
+      padding-left: 2rem; }
+    .main-navigation ul ul ul a {
+      padding-left: 4rem; }
   .main-navigation ul li {
     border-top: #bbb solid 1px;
     margin-bottom: 0; }
@@ -1257,6 +1258,7 @@ input[type=submit].search-submit {
           left: 100%;
           top: 0; }
     .main-navigation ul.menu > li[aria-haspopup=true]:hover, .main-navigation ul.menu > li[aria-haspopup=true]:focus, .main-navigation ul.menu > li[aria-haspopup=true]:active {
+      background-color: #fff;
       box-shadow: 0 -0.5px 2px rgba(0, 0, 0, 0.2); } }
 
 /*------------------------------------*  #NAVIGATION STYLES

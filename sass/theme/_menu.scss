@@ -39,10 +39,11 @@
     display: none;
     margin: 0;
     list-style: none;
-    background-color: $menu-bg-color;
 
     // Level 2
     ul {
+      background-color: $menu-bg-color;
+
       a {
         font-size: 90%;
         padding-left: $menu-subitem-indent;
@@ -176,6 +177,7 @@
         &:hover,
         &:focus,
         &:active {
+          background-color: $menu-bg-color;
           box-shadow: 0 -0.5px 2px rgba(0,0,0,.2);
         }
       }
