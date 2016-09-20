@@ -31,30 +31,38 @@ var uglify = require('gulp-uglify');
 var ignore = require('gulp-ignore');
 var rimraf = require('gulp-rimraf');
 var browserSync = require('browser-sync').create();
+var runSequence = require('run-sequence');
+var autoprefixer = require('gulp-autoprefixer');
 
 // Run: 
 // gulp sass
 // Compiles SCSS files in CSS
 gulp.task('sass', function () {
-    gulp.src('./sass/*.scss')
-        .pipe(plumber())
-        .pipe(sass())
-        .pipe(gulp.dest('./css'));
+  return gulp.src('./sass/*.scss')
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(gulp.dest('./css'));
 });
 
 // Run: 
 // gulp watch
-// Starts watcher. Watcher runs gulp sass task on changes
+// Starts watcher. Watcher runs appropriate tasks on file changes
 gulp.task('watch', function () {
-    gulp.watch('./sass/**/*.scss', ['sass']);
-    gulp.watch('./css/theme.css', ['cssnano']);
-    gulp.watch(['./js/*.js', '!./js/*.min.js'], ['scripts']);
+  gulp.watch('./sass/**/*.scss', ['build-css']);
+  gulp.watch(['./js/*.js', '!./js/*.min.js'], ['build-scripts']);
+});
+
+// Run: 
+// gulp build-css
+// Builds css from scss and apply other changes.
+gulp.task('build-css', function(callback){
+  runSequence('cleancss', 'sass', 'autoprefixer', 'cssnano', callback);
 });
 
 // Run: 
 // gulp nanocss
 // Minifies CSS files
-gulp.task('cssnano', ['cleancss'], function(){
+gulp.task('cssnano', function(){
   return gulp.src('./css/*.css')
     .pipe(plumber())
     .pipe(rename({suffix: '.min'}))
@@ -64,46 +72,40 @@ gulp.task('cssnano', ['cleancss'], function(){
 }); 
 
 gulp.task('cleancss', function() {
-  return gulp.src('./css/*.min.css', { read: false }) // much faster 
-    .pipe(ignore('theme.css'))
+  return gulp.src('./css/*.css', { read: false }) // much faster 
     .pipe(rimraf());
+});
+
+gulp.task('autoprefixer', function(){
+  return gulp.src(['./css/*.css', '!./css/*min.css'])
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('./css/'));
 });
 
 // Run: 
 // gulp browser-sync
 // Starts browser-sync task for starting the server.
 gulp.task('browser-sync', function() {
-    browserSync.init(browserSyncWatchFiles, browserSyncOptions);
+  browserSync.init(browserSyncWatchFiles, browserSyncOptions);
 });
 
 // Run: 
 // gulp watch-bs
 // Starts watcher with browser-sync. Browser-sync reloads page automatically on your browser
-gulp.task('watch-bs', ['browser-sync', 'watch', 'cssnano'], function () { });
+gulp.task('watch-bs', ['browser-sync', 'watch'], function () { });
 
 // Run: 
-// gulp scripts. 
+// gulp build-scripts. 
 // Uglifies and concat all JS files into one
-gulp.task('scripts', function() {
+gulp.task('build-scripts', function() {
   gulp.src([
     basePaths.js + 'assets/_s/navigation.js',
-    basePaths.js + 'assets/_s/skip-link-focus-fix.js',
-    basePaths.dev + 'js/theme.js'
+    basePaths.js + 'assets/_s/skip-link-focus-fix.js'
     ])
     .pipe(concat('theme.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./js/'));
-});
-
-// Run: 
-// gulp copy-assets. 
-// Copy all needed dependency assets files from bower_component assets
-// to `basePaths.dev` folder.
-// Run this task after bower install or bower update
-gulp.task('copy-assets', function() {
-
-  // skeleton-scss
-  gulp.src(basePaths.bower + 'skeleton-scss/scss/**/*.scss')
-    .pipe(gulp.dest(basePaths.dev + '/skeleton-scss'));
-
 });

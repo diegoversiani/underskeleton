@@ -739,6 +739,10 @@ a img.aligncenter,
   margin-left: auto;
   margin-right: auto; }
 
+a img.aligncenter,
+img.aligncenter {
+  display: block; }
+
 .wp-caption.alignleft, .wp-caption.alignright, .wp-caption.aligncenter {
   margin-bottom: 2.5rem; }
 
