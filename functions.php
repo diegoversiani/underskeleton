@@ -20,7 +20,7 @@ require get_template_directory() . '/inc/enqueue.php';
 /**
  * Widget Areas Initialization.
  */
-require get_template_directory() . '/inc/widgets-init.php';
+require get_template_directory() . '/inc/widgets-areas.php';
 
 /**
  * Implement the Custom Header feature.
