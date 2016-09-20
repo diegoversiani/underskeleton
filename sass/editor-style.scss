@@ -2,8 +2,10 @@
 * Import main editor styles files.
 */
 
+// Imports theme css into editor styles
+@import "theme.min.css";
+
 // == Imports
 @import
-  "editor-style/variables",
   "editor-style/styles";
 // !== Imports

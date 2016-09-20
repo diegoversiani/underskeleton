@@ -15,10 +15,6 @@ variables or add your own
 \*------------------------------------*/
 /*------------------------------------*  #CUSTOM VARIABLES
 \*------------------------------------*/
-/* == UNDERSKELETON VARIABLES ==
-This file overrides default Skeleton variables
-and adds Underskeleton custom variables
-*/
 /*------------------------------------*  #IMPORT SKELETON AND UNDERSKELETON
 \*------------------------------------*/
 /*
@@ -1017,7 +1013,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  color: #d72d5c; }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    color: inherit; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: disc inside; }
 
 .post {
   margin-bottom: 2.5rem; }
@@ -1027,8 +1037,6 @@ h6 {
 
 .entry-title {
   margin-bottom: 0; }
-  .entry-title a {
-    text-decoration: none; }
 
 /* == HEADER STYLES == */
 .site-header {

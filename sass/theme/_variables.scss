@@ -8,19 +8,53 @@ variables or add your own
   #VARIABLES
 \*------------------------------------*/
 
+// COLORS
+$light-grey:            #e1e1e1;
+$dark-grey:             #333;
 $primary-color:         #d72d5c; // Raspberry
 $secondary-color:       #155d4f; // Evergreen
 $tertiary-color:        #264a5c;
-$link-color:            $secondary-color;
-$headings-color:        $primary-color;
 
-// Typography
+$border-color:          #bbb;
+$font-color:            #222;
+$link-color:            $secondary-color;
+$heading-color:         $primary-color;
+
+// TYPOGRAPHY
 $font-family:           sans-serif;
 $heading-font-family:   sans-serif;
 
+// BREAKPOINTS
+$bp-larger-than-mobile    : "min-width: 400px";
+$bp-larger-than-phablet   : "min-width: 550px";
+$bp-larger-than-tablet    : "min-width: 750px";
+$bp-larger-than-desktop   : "min-width: 1000px";
+$bp-larger-than-desktophd : "min-width: 1200px";
 
+// GRID
+$container-width: 960px;
+$container-width-larger-than-mobile: 85%;
+$container-width-larger-than-phablet: 80%;
+$total-columns: 12;
+$column-width: 100 / $total-columns; // calculates individual column width based off of # of columns
+$column-margin: 4%; // space between columns
+$column-starts-at-breakpoint: $bp-larger-than-phablet;
 
+// MISC
+$global-radius: 4px;
 
+// MENU
+$menu-font-size:        1.1rem;
+$menu-font-weight:      600;
+$menu-letter-spacing:   .2rem;
+$menu-color:            $font-color;
+$menu-bg-color:         #fff;
+$menu-border:           $border-color solid 1px;
+$menu-dropdown-shadow:  0 3px 3px rgba(0, 0, 0, 0.2);
+$menu-item-padding:     .5rem;
+$menu-subitem-width:    20rem;
+$menu-subitem-indent:   2rem;
+$menu-submenu-top:      ($menu-item-padding * 2) + 2.4rem;
 
 
 /*------------------------------------*\
