@@ -42,3 +42,8 @@
   }
 
 }
+
+@mixin lateral-paddings( $padding: $global-padding ) {
+  padding-left: $padding;
+  padding-right: $padding;
+}

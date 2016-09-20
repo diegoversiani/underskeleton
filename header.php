@@ -24,7 +24,8 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'underskeleton' ); ?></a>
 
-	<header id="masthead" class="site-header container" role="banner">
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-header__content <?php echo get_theme_mod( 'underskeleton_header_container_class', true ) ? 'container' : '' ?>">
 		
 		<div class="row">
 			<div class="site-branding">
@@ -59,7 +60,8 @@
 			</nav><!-- #site-navigation -->
 
 		</div><!-- .row -->
+		</div>
 
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content container">
+	<div id="content" class="site-content  <?php echo get_theme_mod( 'underskeleton_content_container_class', true ) ? 'container' : '' ?>">

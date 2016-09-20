@@ -1006,6 +1006,50 @@ h1, h2, h3, h4, h5, h6 {
   .main-navigation ul.menu li ul {
     z-index: 11000; } }
 
+/* == HEADER STYLES == */
+.site-header {
+  margin: 1.5rem auto 5rem; }
+
+.site-header__content {
+  border-bottom: solid 1px #bbb; }
+  .site-header__content:not(.container) {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    @media (min-width: 550px) {
+      .site-header__content:not(.container) {
+        padding-left: 3rem;
+        padding-right: 3rem; } }
+
+.site-branding {
+  float: left;
+  max-width: 85%; }
+  @media (min-width: 550px) {
+    .site-branding {
+      max-width: 100%; } }
+  .site-branding .custom-logo-link {
+    float: left;
+    margin-right: 2rem; }
+  .site-branding .site-title {
+    display: inline-block;
+    font-size: 3rem;
+    margin: 1rem 0 0 0;
+    color: #d72d5c; }
+    .site-branding .site-title a {
+      text-decoration: none;
+      color: inherit; }
+  .site-branding .site-description {
+    margin: 0 0 1rem 0; }
+
+/*------------------------------------*  #CONTENT AREA
+\*------------------------------------*/
+.site-content:not(.container) {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media (min-width: 550px) {
+    .site-content:not(.container) {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
+
 /*------------------------------------*  #FORMS
 \*------------------------------------*/
 input[type="date"] {
@@ -1112,27 +1156,6 @@ h6 {
 
 ul {
   list-style: disc inside; }
-
-/* == HEADER STYLES == */
-.site-header {
-  border-bottom: solid 1px #bbb;
-  margin: 1.5rem auto 5rem; }
-
-.site-branding {
-  float: left; }
-  .site-branding .custom-logo-link {
-    float: left;
-    margin-right: 2rem; }
-  .site-branding .site-title {
-    display: inline-block;
-    font-size: 3rem;
-    margin: 1rem 0 0 0;
-    color: #d72d5c; }
-    .site-branding .site-title a {
-      text-decoration: none;
-      color: inherit; }
-  .site-branding .site-description {
-    margin: 0 0 1rem 0; }
 
 /*------------------------------------*  #SEARCH FIELDS
 \*------------------------------------*/
@@ -1352,10 +1375,17 @@ input[type=submit].search-submit {
   border-radius: 4px; }
 
 /* == FOOTER STYLES == */
-.site-footer {
+.site-footer__content {
   border-top: solid 1px #bbb;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
+  .site-footer__content:not(.container) {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    @media (min-width: 550px) {
+      .site-footer__content:not(.container) {
+        padding-left: 3rem;
+        padding-right: 3rem; } }
 
 /*------------------------------------*  #TRANSITIONS
 \*------------------------------------*/

@@ -1,7 +1,15 @@
 /* == FOOTER STYLES == */
 
-.site-footer {
+.site-footer__content {
   border-top: solid 1px $border-color;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+
+  &:not(.container) {
+    @include lateral-paddings();
+
+    @media (#{$column-starts-at-breakpoint}) {
+      @include lateral-paddings(3rem);
+    }
+  }
 }

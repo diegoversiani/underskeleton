@@ -2,14 +2,30 @@
 
 // == Site header
 .site-header {
-  border-bottom: solid 1px $border-color;
   margin: 1.5rem auto 5rem;
+}
+
+.site-header__content {
+  border-bottom: solid 1px $border-color;
+
+  &:not(.container) {
+    @include lateral-paddings();
+
+    @media (#{$column-starts-at-breakpoint}) {
+      @include lateral-paddings(3rem);
+    }
+  }
 }
 // !== Site header
 
 // == Site branding
 .site-branding {
   float: left;
+  max-width: 85%;
+
+  @media (#{$column-starts-at-breakpoint}) {
+    max-width: 100%;
+  }
 
   .custom-logo-link {
     float: left;

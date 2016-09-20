@@ -13,8 +13,8 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer container" role="contentinfo">
-
+	<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-footer__content <?php echo get_theme_mod( 'underskeleton_footer_container_class', true ) ? 'container' : '' ?>">
     <div class="row">
 
   		<div class="site-info">
@@ -24,6 +24,7 @@
   		</div><!-- .site-info -->
 
     </div><!-- .row -->
+    </div>
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
