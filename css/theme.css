@@ -1028,6 +1028,19 @@ textarea[rows] {
   height: auto;
   min-height: auto; }
 
+/*------------------------------------*  #LINKS
+\*------------------------------------*/
+a {
+  text-decoration: none; }
+
+.read-more {
+  padding: .2rem .5rem;
+  border-radius: 4px;
+  background-color: #e1e1e1;
+  font-size: 80%;
+  text-transform: uppercase;
+  white-space: nowrap; }
+
 /* == TYPOGRAPHY STYLES == */
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
@@ -1079,9 +1092,6 @@ h6 {
     font-size: 2rem; }
   h6 {
     font-size: 1.8rem; } }
-
-a {
-  text-decoration: none; }
 
 ul {
   list-style: disc inside; }
