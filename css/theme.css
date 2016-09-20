@@ -1006,6 +1006,28 @@ h1, h2, h3, h4, h5, h6 {
   .main-navigation ul.menu li ul {
     z-index: 11000; } }
 
+/*------------------------------------*  #FORMS
+\*------------------------------------*/
+input[type="date"] {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+input[type="date"]:focus {
+  border: 1px solid #d72d5c;
+  outline: 0; }
+
+textarea[rows] {
+  height: auto;
+  min-height: auto; }
+
 /* == TYPOGRAPHY STYLES == */
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
