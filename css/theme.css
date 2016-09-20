@@ -980,18 +980,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------------------------*  #BUTTON MODIFIERS
 \*------------------------------------*/
-.button.small {
+.small-button {
   max-width: 10rem; }
 
-.button.medium {
+.medium-button {
   min-width: 10rem;
   max-width: 30rem; }
 
-.button.large {
+.large-button {
   min-width: 30rem;
   max-width: 100%; }
 
-.button.full-size {
+.full-size-button {
   width: 100%; }
 
 /*------------------------------------*  #MANAGES Z-INDEX
@@ -1027,6 +1027,31 @@ input[type="date"]:focus {
 textarea[rows] {
   height: auto;
   min-height: auto; }
+
+/*------------------------------------*  #BUTTONS
+\*------------------------------------*/
+.button.button-light,
+button.button-light,
+input[type="submit"].button-light,
+input[type="reset"].button-light,
+input[type="button"].button-light {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333; }
+  .button.button-light:hover, .button.button-light:focus, .button.button-light:active,
+  button.button-light:hover,
+  button.button-light:focus,
+  button.button-light:active,
+  input[type="submit"].button-light:hover,
+  input[type="submit"].button-light:focus,
+  input[type="submit"].button-light:active,
+  input[type="reset"].button-light:hover,
+  input[type="reset"].button-light:focus,
+  input[type="reset"].button-light:active,
+  input[type="button"].button-light:hover,
+  input[type="button"].button-light:focus,
+  input[type="button"].button-light:active {
+    background-color: rgba(255, 255, 255, 0.5); }
 
 /*------------------------------------*  #LINKS
 \*------------------------------------*/

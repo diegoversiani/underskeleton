@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+.button.button-light,
+button.button-light,
+input[type="submit"].button-light,
+input[type="reset"].button-light,
+input[type="button"].button-light {
+  border: none;
+  background-color: transparentize(#fff, .2);
+  color: $dark-grey;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparentize(#fff, .5);
+  }
+}

@@ -142,20 +142,20 @@
   #BUTTON MODIFIERS
 \*------------------------------------*/
 
-.button.small {
+.small-button {
   max-width: 10rem;
 }
 
-.button.medium {
+.medium-button {
   min-width: 10rem;
   max-width: 30rem;
 }
 
-.button.large {
+.large-button {
   min-width: 30rem;
   max-width: 100%;
 }
 
-.button.full-size {
+.full-size-button {
   width: 100%;
 }
