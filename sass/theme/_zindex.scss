@@ -1,0 +1,16 @@
+/*------------------------------------*\
+  #MANAGES Z-INDEX
+  Higher values first
+\*------------------------------------*/
+
+/* MENU */
+.main-navigation ul.menu {
+  z-index: 10000;
+}
+
+/* SUB MENUS ON COLUMNS VIEW */
+@media (#{$column-starts-at-breakpoint}) {
+  .main-navigation ul.menu li ul {
+    z-index: 11000;
+  }
+}

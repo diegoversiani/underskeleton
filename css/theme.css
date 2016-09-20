@@ -876,6 +876,38 @@ h1, h2, h3, h4, h5, h6 {
  |     └── _lists.scss
  |     └── ...
 */
+/*------------------------------------*  #MANAGES Z-INDEX
+  Higher values first
+\*------------------------------------*/
+/* MENU */
+.main-navigation ul.menu {
+  z-index: 10000; }
+
+/* SUB MENUS ON COLUMNS VIEW */
+@media (min-width: 550px) {
+  .main-navigation ul.menu li ul {
+    z-index: 11000; } }
+
+/* == TYPOGRAPHY STYLES == */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif; }
+
+.post {
+  margin-bottom: 2.5rem; }
+
+.entry-header {
+  margin-bottom: 2.5rem; }
+
+.entry-title {
+  margin-bottom: 0; }
+  .entry-title a {
+    text-decoration: none; }
+
 /* == HEADER STYLES == */
 .site-header {
   border-bottom: solid 1px #bbb;
@@ -975,7 +1007,6 @@ h1, h2, h3, h4, h5, h6 {
         .main-navigation ul.menu li:hover > ul, .main-navigation ul.menu li:focus > ul, .main-navigation ul.menu li:active > ul {
           display: block; }
       .main-navigation ul.menu li ul {
-        z-index: 99999;
         display: none;
         position: absolute;
         top: 3.4rem;
@@ -1008,26 +1039,6 @@ h1, h2, h3, h4, h5, h6 {
   float: right;
   text-align: right;
   width: 50%; }
-
-/* == TYPOGRAPHY STYLES == */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: sans-serif; }
-
-.post {
-  margin-bottom: 2.5rem; }
-
-.entry-header {
-  margin-bottom: 2.5rem; }
-
-.entry-title {
-  margin-bottom: 0; }
-  .entry-title a {
-    text-decoration: none; }
 
 /* == POSTS STYLES == */
 .sticky {
