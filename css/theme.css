@@ -5,14 +5,22 @@
 * ADDING YOUR OWN STYLES: You can add your  
 * styles in `/sass/themes/_theme_styles.scss`
 */
+/*------------------------------------*  #IMPORT VARIABLES
+\*------------------------------------*/
 /* == VARIABLES ==
 Use this file to override default Skeleton and Underskeleton
 variables or add your own
 */
+/*------------------------------------*  #VARIABLES
+\*------------------------------------*/
+/*------------------------------------*  #CUSTOM VARIABLES
+\*------------------------------------*/
 /* == UNDERSKELETON VARIABLES ==
 This file overrides default Skeleton variables
 and adds Underskeleton custom variables
 */
+/*------------------------------------*  #IMPORT SKELETON AND UNDERSKELETON
+\*------------------------------------*/
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -850,6 +858,8 @@ h1, h2, h3, h4, h5, h6 {
 .entry-footer > span {
   margin-right: 1rem; }
 
+/*------------------------------------*  #IMPORT THEME
+\*------------------------------------*/
 /* == THEME STYLES ==
 *
 * Your awesome design goes here.

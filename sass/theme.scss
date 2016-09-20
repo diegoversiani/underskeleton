@@ -5,24 +5,33 @@
 * styles in `/sass/themes/_theme_styles.scss`
 */
 
-// == Import Variables
-// before skeleton in order to override its values
+
+/*------------------------------------*\
+  #IMPORT VARIABLES
+\*------------------------------------*/
+// Import theme and base variables before 
+// Skeleton in order to override its values
 @import
   "theme/variables",
   "base/variables";
-// !== Import Variables
 
-// == Import Skeleton and Underskeleton
+
+
+/*------------------------------------*\
+  #IMPORT SKELETON AND UNDERSKELETON
+\*------------------------------------*/
 @import 
-  "../src/skeleton-scss/skeleton",
+  "../bower_components/skeleton-scss/scss/skeleton",
   "base/mixins",
   "base/reset",
   "base/accessibility",
   "base/alignment",
   "base/galleries",
   "base/styles";
-// !== Import Skeleton and Underskeleton
 
-// == Import Theme Styles
+
+
+/*------------------------------------*\
+  #IMPORT THEME
+\*------------------------------------*/
 @import "theme/theme-styles";
-// == Import Theme Styles
