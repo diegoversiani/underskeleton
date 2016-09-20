@@ -1,0 +1,161 @@
+/*------------------------------------*\
+  #SECTION MODIFIERS
+\*------------------------------------*/
+.header-overlay {
+  margin-top: -8rem;
+  padding-top: 8rem;
+}
+
+.block-center {
+  @include center-block();
+}
+
+.block-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.section-spacing {
+  @include section-paddings();
+}
+
+.section-spacing-top {
+  @include section-paddings('top');
+}
+
+.section-spacing-bottom {
+  @include section-paddings('bottom');
+}
+
+.section-margin {
+  @include section-margins();
+}
+
+.section-margin-top {
+  @include section-margins('top');
+}
+
+.section-margin-bottom {
+  @include section-margins('bottom');
+}
+
+.full-screen {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.half-screen {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100vw;
+  height: 50vh;
+}
+
+.clearboth {
+  clear: both;
+}
+
+
+
+
+/*------------------------------------*\
+  #BACKGROUND
+\*------------------------------------*/
+
+.full-background-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.primary-background {
+  background-color: $primary-color;
+}
+
+.secondary-background {
+  background-color: $secondary-color;
+}
+
+.light-grey-background {
+  background-color: $light-grey;
+}
+
+.dark-grey-background {
+  background-color: $dark-grey;
+}
+
+
+
+
+/*------------------------------------*\
+  #TEXT MODIFIERS
+\*------------------------------------*/
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+
+
+.text-shadow {
+  text-shadow: transparentize(#000, .25) 0 1px 0;
+}
+
+
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+
+
+.light-text,
+.light-text * {
+  color: #fff;
+}
+
+.dark-text {
+  color: $dark-grey;
+}
+
+
+
+
+/*------------------------------------*\
+  #BUTTON MODIFIERS
+\*------------------------------------*/
+
+.button.small {
+  max-width: 10rem;
+}
+
+.button.medium {
+  min-width: 10rem;
+  max-width: 30rem;
+}
+
+.button.large {
+  min-width: 30rem;
+  max-width: 100%;
+}
+
+.button.full-size {
+  width: 100%;
+}

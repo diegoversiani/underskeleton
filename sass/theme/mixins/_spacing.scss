@@ -1,0 +1,44 @@
+/*------------------------------------*\
+  #SPACING MIXINS
+\*------------------------------------*/
+@mixin section-paddings( $place: '', $padding: 5rem ) {
+  $top: true;
+  $bottom: true;
+
+  @if $place == 'top' {
+    $bottom: false;
+  } @elseif $place == 'bottom' {
+    $top: false;
+  }
+
+  @if $top {
+    padding-top: $padding;
+  }
+
+  @if $bottom {
+    padding-bottom: $padding;
+  }
+
+}
+
+
+
+@mixin section-margins( $place: '', $margin: 5rem ) {
+  $top: true;
+  $bottom: true;
+
+  @if $place == 'top' {
+    $bottom: false;
+  } @elseif $place == 'bottom' {
+    $top: false;
+  }
+
+  @if $top {
+    margin-top: $margin;
+  }
+
+  @if $bottom {
+    margin-bottom: $margin;
+  }
+
+}

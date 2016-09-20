@@ -876,6 +876,128 @@ h1, h2, h3, h4, h5, h6 {
  |     └── _lists.scss
  |     └── ...
 */
+/*------------------------------------*  #MIXINS IMPORT FILE
+\*------------------------------------*/
+/*------------------------------------*  #SPACING MIXINS
+\*------------------------------------*/
+/*------------------------------------*  #TEXT MIXINS
+\*------------------------------------*/
+/*------------------------------------*  #SECTION MODIFIERS
+\*------------------------------------*/
+.header-overlay {
+  margin-top: -8rem;
+  padding-top: 8rem; }
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.block-vertical-center {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.section-spacing {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.section-spacing-top {
+  padding-top: 5rem; }
+
+.section-spacing-bottom {
+  padding-bottom: 5rem; }
+
+.section-margin {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+.section-margin-top {
+  margin-top: 5rem; }
+
+.section-margin-bottom {
+  margin-bottom: 5rem; }
+
+.full-screen {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100vw;
+  height: 100vh; }
+
+.half-screen {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100vw;
+  height: 50vh; }
+
+.clearboth {
+  clear: both; }
+
+/*------------------------------------*  #BACKGROUND
+\*------------------------------------*/
+.full-background-image {
+  background-size: cover;
+  background-position: center; }
+
+.primary-background {
+  background-color: #d72d5c; }
+
+.secondary-background {
+  background-color: #155d4f; }
+
+.light-grey-background {
+  background-color: #e1e1e1; }
+
+.dark-grey-background {
+  background-color: #333; }
+
+/*------------------------------------*  #TEXT MODIFIERS
+\*------------------------------------*/
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-justify {
+  text-align: justify; }
+
+.text-shadow {
+  text-shadow: rgba(0, 0, 0, 0.75) 0 1px 0; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: lowercase; }
+
+.light-text,
+.light-text * {
+  color: #fff; }
+
+.dark-text {
+  color: #333; }
+
+/*------------------------------------*  #BUTTON MODIFIERS
+\*------------------------------------*/
+.button.small {
+  max-width: 10rem; }
+
+.button.medium {
+  min-width: 10rem;
+  max-width: 30rem; }
+
+.button.large {
+  min-width: 30rem;
+  max-width: 100%; }
+
+.button.full-size {
+  width: 100%; }
+
 /*------------------------------------*  #MANAGES Z-INDEX
   Higher values first
 \*------------------------------------*/
