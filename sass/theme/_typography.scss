@@ -30,20 +30,3 @@ h6 { font-size: $h6-font-size; line-height: 1.6;  letter-spacing: 0; }
 ul {
   list-style: disc inside;
 }
-
-
-
-// TODO: move to _posts.scss
-.post {
-  margin-bottom: 2.5rem;
-}
-
-// TODO: move to _posts.scss
-.entry-header {
-  margin-bottom: 2.5rem;
-}
-
-// TODO: move to _posts.scss
-.entry-title {
-  margin-bottom: 0;
-}

@@ -1121,15 +1121,6 @@ h6 {
 ul {
   list-style: disc inside; }
 
-.post {
-  margin-bottom: 2.5rem; }
-
-.entry-header {
-  margin-bottom: 2.5rem; }
-
-.entry-title {
-  margin-bottom: 0; }
-
 /* == HEADER STYLES == */
 .site-header {
   border-bottom: solid 1px #bbb;
@@ -1143,9 +1134,11 @@ ul {
   .site-branding .site-title {
     display: inline-block;
     font-size: 3rem;
-    margin: 1rem 0 0 0; }
+    margin: 1rem 0 0 0;
+    color: #d72d5c; }
     .site-branding .site-title a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: inherit; }
   .site-branding .site-description {
     margin: 0 0 1rem 0; }
 
@@ -1294,7 +1287,8 @@ input[type=submit].search-submit {
   text-align: right;
   width: 50%; }
 
-/* == POSTS STYLES == */
+/*------------------------------------*  #POSTS STYLES
+\*------------------------------------*/
 .sticky {
   border-bottom: #bbb solid 1px;
   padding-bottom: 2.5rem; }
@@ -1306,6 +1300,17 @@ input[type=submit].search-submit {
 .single .byline,
 .group-blog .byline {
   display: inline; }
+
+/*------------------------------------*  #POSTS SPACING
+\*------------------------------------*/
+.hentry {
+  margin-bottom: 2.5rem; }
+
+.entry-header {
+  margin-bottom: 2.5rem; }
+
+.entry-title {
+  margin-bottom: 0; }
 
 .comment-list {
   list-style: none; }

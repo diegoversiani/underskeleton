@@ -1,4 +1,7 @@
-/* == POSTS STYLES == */
+/*------------------------------------*\
+  #POSTS STYLES
+\*------------------------------------*/
+
 
 .sticky {
   border-bottom: $border-color solid 1px;
@@ -13,4 +16,21 @@
 .single .byline,
 .group-blog .byline {
   display: inline;
+}
+
+
+/*------------------------------------*\
+  #POSTS SPACING
+\*------------------------------------*/
+
+.hentry {
+  margin-bottom: 2.5rem;
+}
+
+.entry-header {
+  margin-bottom: 2.5rem;
+}
+
+.entry-title {
+  margin-bottom: 0;
 }
