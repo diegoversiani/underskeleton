@@ -1,8 +1,8 @@
 <?php
 /**
- * UnderSkeleton Theme Setup.
+ * Underskeleton Theme Setup.
  *
- * @package UnderSkeleton
+ * @package underskeleton
  */
 
 
@@ -21,7 +21,7 @@ function underskeleton_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on UnderSkeleton, use a find and replace
+	 * If you're building a theme based on Underskeleton, use a find and replace
 	 * to change 'underskeleton' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'underskeleton', get_template_directory() . '/languages' );

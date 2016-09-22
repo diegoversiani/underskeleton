@@ -1,8 +1,34 @@
 # Underskeleton
 
-Underscores ( _s ) + Skeleton Boilerplate = Fast to load with a minimalist css grid for your next WordPress Theme.
+Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress Starter Theme for your next awesome WordPress Theme.
+
+Underskeleton is a starter theme with minimalist, dead simple css grid system and just enough styling to get starter with your next awesome WordPress Theme.
+
+Why Underskeleton?
+
+- 11% of internet users use only mobile
+- only 10% on internet users use only desktop
+- people search more on mobile devices than desktop
+- you only have 8 seconds to make an impression
 
 ## Changelog
+
+        == v1.0.0 September 22nd 2016 ==
+               - Lauched theme downloader in the website http://getunderskeleton.com/download
+               - Prepared theme for theme downloader
+               - Change licence to GPL, matching WordPress and making licensing easier to understand
+               - Add footer widget areas
+               - Add default styling to navigation links
+               - Add settings to allow change of container on header, content and footer
+               - Add scss files for various elements
+               - Add custom logo to login page, being same user's selected custom logo
+               - Add Customizer Selective Refresh support for Widgets
+               - Add homepage template with widget areas
+               - Add editor styles to match theme's styles
+               - Fixed date field styles to match other input types
+               - Fixed textarea height to match number of rows when specified
+               - Fixed image alignment inside page or post content
+               - Remove 'Raleway' as default font-family, changed to sans-serif
 
         == v0.1.2 June 16th 2016 ==
                - Add Custom Logo theme support for WordPress 4.5+
@@ -15,47 +41,45 @@ Underscores ( _s ) + Skeleton Boilerplate = Fast to load with a minimalist css g
         == v0.1.0 May 1st 2016 ==
                - First version.
 
-## About
-
-Underskeleton is a starter theme with minimalist, dead simple css grid system and just enough styling to get starter with your next awesome WordPress theme.
-
-It got most of the _s PHP and JS files + Skeleton styles and grid system.
-
-#### Want to contribute?
-
-Underskeleton is in it's early stages and a lot has to be done yet.
-
-Watch or Star the repository to keep up to date. Fork the project, make the change you want to see. Or send me an e-mail on [diegoversiani@gmail.com](mailto:diegoversiani@gmail.com).
-
 ## Features
 
+- Widgets Selective Refresh, Custom Logo and Editor Style support
+- Translation ready, comes with en-US and pt-BR.
 - Combines Underscore’s PHP/JS files and Skeleton Boilerplate HTML/CSS.
-- Comes with [Skeleton-Sass 2.0.4](https://github.com/WhatsNewSaes/Skeleton-Sass) (by [Seth Coelen](http://sethcoelen.com/)) that features a stable version of Skeleton 2.0.4 by [Dave Gamache](http://www.davegamache.com).
-- Uses a single and minified CSS file for all the basic styling.
-- Uses a single and minified JS file for all the basic theme's scripts.
+- Single minified CSS and JS file for all the basic stuff.
 - Simple RTL file.
 - Jetpack ready.
-- Translation ready.
+- Ready for development with npm, bower, gulp, browser-sync and css autoprefixer
 
 #### Features to come
 
 Things we plan to include in later versions.
 
+- Skin and Bones, pieces of layout and functionality you can add to your theme with ease.
 - WooCommerce support.
-- A website to download the project with your new theme identification, just as [underscores.me](http://underscores.me) does.
 
-Have you got a feature request? Please [open an issue](https://github.com/diegoversiani/underskeleton/issues) on Github!
+Have a feature request? Please [open an issue](https://github.com/diegoversiani/underskeleton/issues) at Github!
 
 ## Installation
 
-- Download Underskeleton zip file
-- Extract files and change the folder `underskeleton-master` to `underskeleton` (or one of your choice)
+Create your copy of Underskeleton and name it to your taste at [getunderskeleton.com/download](http://getunderskeleton.com/download), copy from branch master. Then:
+
+- Login to your WordPress backend
+- Go to Appearance → Themes → Add New → Upload Theme
+- Select your theme file → Install Now
+- Activate the theme
+
+
+#### Manual Installation
+
+- Download Underskeleton zip file from GitHub
+- Extract files and change the folder name from `underskeleton-master` to `underskeleton` (or one of your choice)
 - Upload it into your WordPress themes subfolder: `/wp-content/themes/`
 - Login to your WordPress backend
 - Go to Appearance → Themes
 - Activate the Underskeleton theme
 
-#### Changing theme identification
+##### Changing theme identification
 
 To change Underskeleton theme identification to your own you need to replace any 'underskeleton' text with your theme id and, optionally, replace the theme name as well.
 
@@ -77,20 +101,19 @@ underskeleton/
     └── theme.min.css     // Minified version of theme styles, this is the file served to the browser. 
   └── js
     └── assets            // Folder for assets from other projects, ie _s.
-    └── underskeleton.js  // Uncompiled underskeleton custom scripts
+    └── *.js              // Uncompiled underskeleton scripts
   └── sass
     └── theme             // Uncompiled Sass files for your theme
     └── theme.scss        // Uncompiled theme scss files that basically @imports all other scss files
-  └── src                 // Dependencies files
   └── style.css           // WordPress theme identification file
   ...
 ```
 
 ## Developer Tools
 
-Underskeleton is developed with NPM, Bower, Gulp, SASS and Browser Sync. You can develop without these tools, but its just a lot faster with them ;)
+Underskeleton is developed with NPM, Bower, Gulp, SASS, Browser Sync and Css Autoprefixer. You can develop without these tools, but its just a lot faster with them ;)
 
-### Installing Dependencies
+#### Installing Dependencies
 - Make sure you have installed `Node.js`, `Bower`, and `Browser-Sync` on your computer globally. To install Bower and Browser-Sync, run*:
 ```
 # May require root/administrator permissions
@@ -105,13 +128,12 @@ $ npm install -g browser-sync
 
 $ npm install
 $ bower install
-$ gulp copy-assets
 ```
 
-### Running
-To work and compile your Sass files on the fly start:
+#### Running
+To work and compile your SASS and JS files on the fly, run:
 
-- `$ gulp watch`
+`$ gulp watch`
 
 Or, to run with Browser-Sync:
 
@@ -124,11 +146,23 @@ var browserSyncOptions = {
 ```
 - then run: `$ gulp watch-bs`
 
+If you just want to build once:
+
+`$ gulp build-css` or
+`$ gulp build-scripts`
+
+#### Want to contribute?
+
+Underskeleton is in it's early stages and a lot has to be done yet.
+
+Watch or Star the repository and join [our newsletter](http://eepurl.com/cgTUhv). Fork the project, make the change you want to see. Or email me at [diegoversiani@gmail.com](mailto:diegoversiani@gmail.com).
+
 ## License
 
-Underskeleton is distributed under the terms of Open Source MIT License (http://opensource.org/licenses/mit-license.php).
+UNDERSKELETON, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 
-Any third party softwares included in this project are licensed by their own creators.
+Any THIRD PART softwares included in this project are licensed by their own creators.
 
 ## Acknowledgement
 

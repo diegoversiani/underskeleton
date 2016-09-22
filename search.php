@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package UnderSkeleton
+ * @package underskeleton
  */
 
 get_header(); ?>

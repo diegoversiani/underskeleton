@@ -1,8 +1,8 @@
 <?php
 /**
- * UnderSkeleton Theme Customizer.
+ * Underskeleton Theme Customizer.
  *
- * @package UnderSkeleton
+ * @package underskeleton
  */
 
 /**

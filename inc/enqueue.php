@@ -1,8 +1,8 @@
 <?php
 /**
- * UnderSkeleton Theme Enqueue scripts and styles.
+ * Underskeleton Theme Enqueue scripts and styles.
  *
- * @package UnderSkeleton
+ * @package underskeleton
  */
 
 /**

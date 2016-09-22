@@ -4,7 +4,7 @@
  *
  * Template for displaying the homepage.
  *
- * @package UnderSkeleton
+ * @package underskeleton
  */
 
 get_header(); ?>
