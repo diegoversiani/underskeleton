@@ -116,7 +116,7 @@ section.features {
 }
 
 section.thanks {
-  h1 {
+  h2 {
     color: $primary-color;
   }
 }
@@ -166,4 +166,19 @@ section.footer-info {
     margin-top: 18rem;
   }
 
+}
+
+section.download-form {
+  @include section-paddings();
+  text-align: center;
+
+  h1 { color: $primary-color; }
+
+  .download-form__form {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: $light-grey;
+    border-radius: $global-radius;
+  }
 }
