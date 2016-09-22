@@ -2,12 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Underskeleton 0.1.1\n"
 "Report-Msgid-Bugs-To: http://github.com/diegoversiani/underskeleton\n"
-"POT-Creation-Date: 2016-02-14 21:43:07+00:00\n"
-"PO-Revision-Date: Wed Jun 08 2016 16:39:39 GMT-0300 (E. South America "
-"Standard Time)\n"
-"Last-Translator: cafetemp-ca <ccplogin@cloudaccess.net>\n"
-"Language-Team: \n"
-"Language: Portuguese (Brazil)\n"
+"POT-Creation-Date: 2016-09-22 23:18+0000\n"
+"PO-Revision-Date: 2016-09-22 23:27+0000\n"
+"Last-Translator: Diego Versiani <diegoversiani@gmail.com>\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt-BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,46 +22,141 @@ msgstr ""
 "X-Generator: Loco - https://localise.biz/\n"
 "X-Loco-Target-Locale: pt_BR"
 
-#: ../comments.php:40 ../comments.php:61
+#: comments.php:43
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Comentários anteriores"
+
+#: comments.php:44
+msgid "Newer Comments &raquo;"
+msgstr "Comentários mais recentes &raquo;"
+
+#: search.php:38 archive.php:41 index.php:46
+msgid "&laquo; Older posts"
+msgstr "&laquo; Posts anteriores"
+
+#: search.php:39 archive.php:42 index.php:47
+msgid "Newer posts &raquo;"
+msgstr "Posts mais recentes &raquo;"
+
+#: footer.php:23
+msgid ""
+"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
+"com</a>"
+msgstr ""
+"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
+"com</a>"
+
+#: inc/widgets-areas.php:39
+msgid "Homepage Before Content"
+msgstr "Página Inicial - Antes do conteúdo"
+
+#: inc/widgets-areas.php:52
+msgid "Homepage After Content"
+msgstr "Página Inicial - Depois do conteúdo"
+
+#: inc/widgets-areas.php:75
+msgid "Posts Lists"
+msgstr "Lista de posts"
+
+#: inc/widgets-areas.php:100
+msgid "Footer Single"
+msgstr "Rodapé - Coluna única"
+
+#: inc/widgets-areas.php:113
+msgid "Footer Left"
+msgstr "Rodapé - Coluna Esquerda"
+
+#: inc/widgets-areas.php:123
+msgid "Footer Center"
+msgstr "Rodapé - Coluna Central"
+
+#: inc/widgets-areas.php:133
+msgid "Footer Right"
+msgstr "Rodapé - Coluna Direita"
+
+#: inc/customizer.php:49
+msgid "Show Homepage Content"
+msgstr "Exibir conteúdo da página inicial"
+
+#: inc/customizer.php:50
+msgid ""
+"Show the content of the page selected as <code>Static Homepage</code>. The "
+"homepage supports adding widgets in the content area. We recommend using the "
+"plugin \"Customizer Building Blocks\" to create your homepage."
+msgstr ""
+"Exibir conteúdo da página selecionada como <code>Página Inicial "
+"Estática</code>. A página inicial aceita inclusão de widgets na área de "
+"conteúdo. Recomendamos usar o plugin \"Customizer Building Blocks\" para "
+"criar sua página inicial.\n"
+
+#: inc/customizer.php:70
+msgid "Page settings"
+msgstr "Configurações de páginas"
+
+#: inc/customizer.php:71
+msgid "Configure how pages are displayed."
+msgstr "Configure como as páginas são exibidas."
+
+#: inc/customizer.php:80
+msgid "Limit header content to container"
+msgstr "Limitar o cabeçalho ao container"
+
+#: inc/customizer.php:92
+msgid "Limit content to container"
+msgstr "Limitar o conteúdo ao container"
+
+#: inc/customizer.php:104
+msgid "Limit footer content to container"
+msgstr "Limitar o rodapé ao container"
+
+#. Name of the template
+msgid "Homepage"
+msgstr "Página Inicial"
+
+#. Description of the theme
+msgid ""
+"Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
+"Starter Theme for your next awesome WordPress Theme."
+msgstr ""
+"Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
+"Starter Theme for your next awesome WordPress Theme."
+
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Um comentário em &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentários em &ldquo;%2$s&rdquo;"
+
+#: comments.php:40 comments.php:61
 msgid "Comment navigation"
 msgstr "Navegação em comentários"
 
-#: ../search.php:21
-#, php-format
+#: comments.php:64
+msgid "Older Comments"
+msgstr "Comentários Anteriores"
+
+#: comments.php:65
+msgid "Newer Comments"
+msgstr "Comentários Recentes"
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr "Comentários estão fechados."
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Ir para o conteúdo"
+
+#: search.php:21
 msgid "Search Results for: %s"
 msgstr "Resultados da pesquisa por: %s"
 
-#: ../footer.php:21
-msgid "https://wordpress.org/"
-msgstr "https://wordpress.org/\n"
-
-#: ../footer.php:21
-#, php-format
-msgid "Proudly powered by %s"
-msgstr "Orgulhosamente desenvolvido com %s"
-
-#: ../footer.php:23
-#, php-format
-msgid "Theme: %1$s by %2$s."
-msgstr "Tema %1$s por %2$s."
-
-#: ../footer.php:23
-msgid "Underskeleton"
-msgstr "Underskeleton"
-
-#: ../footer.php:23
-msgid ""
-"<a href=\"http://getunderskeleton.com\" rel=\"designer\">Diego "
-"Versiani</a>"
-msgstr ""
-"<a href=\"http://getunderskeleton.com\" rel=\"designer\">Diego "
-"Versiani</a>"
-
-#: ../404.php:18
+#: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Ops! A página não pôde ser encontrada."
 
-#: ../404.php:22
+#: 404.php:22
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
@@ -70,111 +164,99 @@ msgstr ""
 "Não encontramos o nada aqui. Talvez os links abaixo ou a pesquisa podem "
 "ajudar."
 
-#: ../404.php:34
+#: 404.php:34
 msgid "Most Used Categories"
 msgstr "Categorias Mais Usadas"
 
 #. translators: %1$s: smiley
-#: ../404.php:52
-#, php-format
+#: 404.php:52
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Procure nos arquivos mensais. %1$s"
 
-#: ../functions.php:47
-msgid "Primary"
-msgstr "Primário"
+#: footer.php:21
+msgid "https://wordpress.org/"
+msgstr ""
+"https://wordpress.org/\n"
 
-#: ../functions.php:102
+#: footer.php:21
+msgid "Proudly powered by %s"
+msgstr "Orgulhosamente desenvolvido com %s"
+
+#: footer.php:23
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema %1$s por %2$s."
+
+#: footer.php:23
+msgid "Underskeleton"
+msgstr "Underskeleton"
+
+#: inc/widgets-areas.php:15
 msgid "Sidebar"
 msgstr "Barra Lateral"
 
-#: ../functions.php:104
+#: inc/widgets-areas.php:17
 msgid "Add widgets here."
 msgstr "Adicione widgets aqui."
 
-#: ../comments.php:31
-#, php-format
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Um comentário em &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s comentários em &ldquo;%2$s&rdquo;"
+#: inc/theme-setup.php:49
+msgid "Primary"
+msgstr "Primário"
 
-#: ../comments.php:43 ../comments.php:64
-msgid "Older Comments"
-msgstr "Comentários Anteriores"
-
-#: ../comments.php:44 ../comments.php:65
-msgid "Newer Comments"
-msgstr "Comentários Recentes"
-
-#: ../comments.php:78
-msgid "Comments are closed."
-msgstr "Comentários estão fechados."
-
-#: ../header.php:26
-msgid "Skip to content"
-msgstr "Ir para o conteúdo"
-
-#: ../inc/template-tags.php:28
-#, php-format
+#: inc/template-tags.php:28
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr "Postado em %s"
 
-#: ../inc/template-tags.php:33
-#, php-format
+#: inc/template-tags.php:33
 msgctxt "post author"
 msgid "by %s"
 msgstr "por %s"
 
 #. translators: used between list items, there is a space after the comma
-#: ../inc/template-tags.php:50 ../inc/template-tags.php:56
+#: inc/template-tags.php:50 inc/template-tags.php:56
 msgid ", "
 msgstr ", "
 
-#: ../inc/template-tags.php:52
-#, php-format
+#: inc/template-tags.php:52
 msgid "Posted in %1$s"
 msgstr "Postado em %1$s"
 
-#: ../inc/template-tags.php:58
-#, php-format
+#: inc/template-tags.php:58
 msgid "Tagged %1$s"
 msgstr "Marcado %1$s"
 
 #. translators: %s: post title
-#: ../inc/template-tags.php:65
-#, php-format
+#: inc/template-tags.php:65
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Deixe um comentário<span class=\"screen-reader-text\"> em %s</span>"
 
 #. translators: %s: Name of current post
-#: ../inc/template-tags.php:72 ../template-parts/content-page.php:37
-#, php-format
+#: inc/template-tags.php:72 template-parts/content-page.php:37 
+#: template-parts/content-homepage.php:29
 msgid "Edit %s"
 msgstr "Editar %s"
 
-#. translators: %s: Name of current post.
-#: ../template-parts/content.php:43
-#, php-format
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Continue lendo %s <span class=\"meta-nav\">&rarr;</span>"
-
-#: ../template-parts/content.php:48 ../template-parts/content-page.php:26
+#: template-parts/content-page.php:26 template-parts/content.php:48 
+#: template-parts/content-homepage.php:18
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: ../template-parts/content-none.php:14
+#. translators: %s: Name of current post.
+#: template-parts/content.php:43
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue lendo %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr "Nada Encontrado"
 
-#: ../template-parts/content-none.php:21
-#, php-format
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Pronto para publicar seu primeiro post? <a href=\"%1$s\">Comece aqui</a>."
+#: template-parts/content-none.php:21
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto para publicar seu primeiro post? <a href=\"%1$s\">Comece aqui</a>."
 
-#: ../template-parts/content-none.php:25
+#: template-parts/content-none.php:25
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -182,23 +264,16 @@ msgstr ""
 "Desculpe, não encontramos nada para sua pesquisa. Por favor, tente novamente "
 "com outras palavras."
 
-#: ../template-parts/content-none.php:31
+#: template-parts/content-none.php:31
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr "Parece que não podemos encontrar o que você procura. Talvez a pesquisa ajude."
+msgstr ""
+"Parece que não podemos encontrar o que você procura. Talvez a pesquisa ajude."
 
 #. Theme URI of the theme
 msgid "http://getunderskeleton.com"
 msgstr "http://getunderskeleton.com"
-
-#. Description of the theme
-msgid ""
-"Underscores ( _s ) + Skeleton Boilerplate = Fast, easy to change WordPress "
-"Starter Theme. https://github.com/diegoversiani/underskeleton"
-msgstr ""
-"Underscores ( _s ) + Skeleton Boilerplate = Fast, easy to change WordPress "
-"Starter Theme. https://github.com/diegoversiani/underskeleton"
 
 #. Author of the theme
 msgid "Diego Versiani"
