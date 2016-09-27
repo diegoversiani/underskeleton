@@ -12,6 +12,10 @@ Use this file to override default Skeleton and Underskeleton
 variables or add your own
 */
 /*------------------------------------*  #VARIABLES
+  Some variables are kept for Skeleton
+  to work and are set at the WordPress
+  Customizer settings files, look at
+  each section for the filename.
 \*------------------------------------*/
 /*------------------------------------*  #CUSTOM VARIABLES
 \*------------------------------------*/
@@ -227,9 +231,9 @@ body {
   color: #222; }
 
 a {
-  color: #155d4f; }
+  color: #e1e1e1; }
   a:hover {
-    color: #10483d; }
+    color: #d4d4d4; }
 
 hr {
   margin-top: 3rem;
@@ -430,7 +434,7 @@ button {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #155d4f;
+  color: #e1e1e1;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -449,7 +453,7 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #155d4f;
+  color: #e1e1e1;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -489,35 +493,35 @@ input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focu
 .button.button-primary,
 button.button-primary {
   color: #fff;
-  background-color: #d72d5c;
-  border-color: #d72d5c; }
+  background-color: #333;
+  border-color: #333; }
 
 input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
   color: #fff;
-  background-color: #d72d5c;
-  border-color: #d72d5c; }
+  background-color: #333;
+  border-color: #333; }
 
 .button.button-primary:hover,
 button.button-primary:hover {
   color: #fff;
-  background-color: #155d4f;
-  border-color: #155d4f; }
+  background-color: #e1e1e1;
+  border-color: #e1e1e1; }
 
 input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
   color: #fff;
-  background-color: #155d4f;
-  border-color: #155d4f; }
+  background-color: #e1e1e1;
+  border-color: #e1e1e1; }
 
 .button.button-primary:focus,
 button.button-primary:focus {
   color: #fff;
-  background-color: #155d4f;
-  border-color: #155d4f; }
+  background-color: #e1e1e1;
+  border-color: #e1e1e1; }
 
 input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
   color: #fff;
-  background-color: #155d4f;
-  border-color: #155d4f; }
+  background-color: #e1e1e1;
+  border-color: #e1e1e1; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   height: 38px;
@@ -552,12 +556,12 @@ textarea {
   padding-bottom: 6px; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #d72d5c;
+  border: 1px solid #333;
   outline: 0; }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #d72d5c;
+  border: 1px solid #333;
   outline: 0; }
 
 label,
@@ -937,10 +941,10 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center; }
 
 .primary-background {
-  background-color: #d72d5c; }
+  background-color: #333; }
 
 .secondary-background {
-  background-color: #155d4f; }
+  background-color: #e1e1e1; }
 
 .light-grey-background {
   background-color: #e1e1e1; }
@@ -1033,7 +1037,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     font-size: 3rem;
     margin: 1rem 0 0 0;
-    color: #d72d5c; }
+    color: #333; }
     .site-branding .site-title a {
       text-decoration: none;
       color: inherit; }
@@ -1065,7 +1069,7 @@ input[type="date"] {
   appearance: none; }
 
 input[type="date"]:focus {
-  border: 1px solid #d72d5c;
+  border: 1px solid #333;
   outline: 0; }
 
 textarea[rows] {
@@ -1105,7 +1109,7 @@ a {
 /* == TYPOGRAPHY STYLES == */
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
-  color: #d72d5c;
+  color: #333;
   font-weight: 300; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit; }
@@ -1198,7 +1202,7 @@ input[type=submit].search-submit {
     background: #888888; }
   .main-navigation .menu-toggle .bars {
     display: block;
-    background: #155d4f;
+    background: #e1e1e1;
     width: 1.6rem;
     height: .2rem;
     margin-bottom: .3rem; }
@@ -1264,7 +1268,7 @@ input[type=submit].search-submit {
       float: left;
       margin-left: 1rem; }
       .main-navigation ul.menu li a:hover, .main-navigation ul.menu li a:focus, .main-navigation ul.menu li a:active {
-        color: #d72d5c; }
+        color: #333; }
       .main-navigation ul.menu li:hover, .main-navigation ul.menu li:focus, .main-navigation ul.menu li:active {
         position: relative; }
         .main-navigation ul.menu li:hover > ul, .main-navigation ul.menu li:focus > ul, .main-navigation ul.menu li:active > ul {
@@ -1371,7 +1375,7 @@ input[type=submit].search-submit {
     margin-bottom: 0.5rem; }
 
 .bypostauthor {
-  background-color: #f8d8e1;
+  background-color: #999999;
   border-radius: 4px; }
 
 /* == FOOTER STYLES == */

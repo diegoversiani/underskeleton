@@ -6,14 +6,17 @@ variables or add your own
 
 /*------------------------------------*\
   #VARIABLES
+  Some variables are kept for Skeleton
+  to work and are set at the WordPress
+  Customizer settings files, look at
+  each section for the filename.
 \*------------------------------------*/
 
-// COLORS
+// COLORS (more in /inc/customizer-colors.php)
 $light-grey:            #e1e1e1;
 $dark-grey:             #333;
-$primary-color:         #d72d5c; // Raspberry
-$secondary-color:       #155d4f; // Evergreen
-$tertiary-color:        #264a5c;
+$primary-color:         $dark-grey;
+$secondary-color:       $light-grey;
 
 $border-color:          #bbb;
 $font-color:            #222;

@@ -87,7 +87,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
 
     /* SETTING: BUTTON TEXT COLOR */
     $wp_customize->add_setting( 'underskeleton_button_text_color', array(
-        'default'   => '#10483d',
+        'default'   => '#fff',
         'type'      => 'theme_mod',
         'capability' => 'edit_theme_options',
         'transport' => 'refresh'
@@ -105,7 +105,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
 
     /* SETTING: BUTTON HOVER TEXT COLOR */
     $wp_customize->add_setting( 'underskeleton_button_hover_text_color', array(
-        'default'   => '#10483d',
+        'default'   => '#fff',
         'type'      => 'theme_mod',
         'capability' => 'edit_theme_options',
         'transport' => 'refresh'
@@ -117,6 +117,42 @@ function underskeleton_colors_customizer( $wp_customize ) {
             'label' => __( 'Button Hover Text Color', 'underskeleton' ),
             'section' => 'colors',
             'settings' => 'underskeleton_button_hover_text_color',
+            'priority' => 10,
+        )
+        ));
+
+    /* SETTING: BUTTON BACKGROUND COLOR */
+    $wp_customize->add_setting( 'underskeleton_button_background_color', array(
+        'default'   => '#155d4f',
+        'type'      => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'refresh'
+        ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+        $wp_customize,
+        'underskeleton_button_background_color',
+        array(
+            'label' => __( 'Button Background Color', 'underskeleton' ),
+            'section' => 'colors',
+            'settings' => 'underskeleton_button_background_color',
+            'priority' => 10,
+        )
+        ));
+
+    /* SETTING: BUTTON HOVER BACKGROUND COLOR */
+    $wp_customize->add_setting( 'underskeleton_button_hover_background_color', array(
+        'default'   => '#10483d',
+        'type'      => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'refresh'
+        ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+        $wp_customize,
+        'underskeleton_button_hover_background_color',
+        array(
+            'label' => __( 'Button Hover Background Color', 'underskeleton' ),
+            'section' => 'colors',
+            'settings' => 'underskeleton_button_hover_background_color',
             'priority' => 10,
         )
         ));
@@ -139,10 +175,12 @@ function underskeleton_colors_customizer_output() {
         a:hover, a:focus, a:active { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_link_hover_color', '#10483d' ) ); ?>; }
         /* Buttons */
         .button, button, input[type=submit], input[type=reset], input[type=button] {
-            color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_text_color', '#155d4f' ) ); ?>;
+            color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_text_color', '#fff' ) ); ?>;
+            background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_background_color', '#155d4f' ) ); ?>;
         }
         .button:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover {
-            color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_hover_text_color', '#10483d' ) ); ?>;
+            color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_hover_text_color', '#fff' ) ); ?>;
+            background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_hover_background_color', '#10483d' ) ); ?>;
         }
 
     </style> 
