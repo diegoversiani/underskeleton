@@ -1,7 +1,7 @@
 // Defining base pathes
 var basePaths = {
     bower: './bower_components/',
-    js: './js/'
+    js: './js-src/'
 };
 
 // browser-sync watched files
@@ -101,10 +101,17 @@ gulp.task('watch-bs', ['browser-sync', 'watch'], function () { });
 // Uglifies and concat all JS files into one
 gulp.task('build-scripts', function() {
   gulp.src([
-    basePaths.js + 'assets/_s/navigation.js',
-    basePaths.js + 'assets/_s/skip-link-focus-fix.js'
+      basePaths.js + 'assets/_s/navigation.js',
+      basePaths.js + 'assets/_s/skip-link-focus-fix.js'
     ])
     .pipe(concat('theme.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./js/'));
+
+  gulp.src([
+      basePaths.js + 'customizer*.js'
+    ])
+    .pipe(concat('customizer.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./js/'));
 });

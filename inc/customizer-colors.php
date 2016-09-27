@@ -18,13 +18,13 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'default'   => '#222',
         'type'      => 'theme_mod',
         'capability' => 'edit_theme_options',
-        'transport' => 'refresh'
+        'transport' => 'postMessage'
         ));
     $wp_customize->add_control( new WP_Customize_Color_Control( 
         $wp_customize,
         'underskeleton_text_color',
         array(
-            'label' => __( 'Default Text Color', 'underskeleton' ),
+            'label' => __( 'Text Color', 'underskeleton' ),
             'section' => 'colors',
             'settings' => 'underskeleton_text_color',
             'priority' => 10,
