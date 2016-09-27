@@ -12,7 +12,7 @@
   handleHoverStyles = function(style_id, selector, property, value ){
     var style, el;
 
-    style = '<style class="' + style_id + '">' + selector + ' { ' + property + ': ' + value + '; }</style>'; // build the style element
+    style = '<style class="' + style_id + '">' + selector + ' { ' + property + ': ' + value + ' !important; }</style>'; // build the style element
     el =  $( '.' + style_id ); // look for a matching style element that might already be there
 
     if ( el.length ) {

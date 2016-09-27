@@ -64,7 +64,6 @@
         display: block;
         width: 100%;
         padding: ($menu-item-padding * 2) $menu-item-padding; // 1rem .5rem;
-        color: $menu-color;
         font-weight: $menu-font-weight;
         font-size: $menu-font-size;
         letter-spacing: $menu-letter-spacing;
@@ -131,14 +130,6 @@
         border-top: 0;
         float: left;
         margin-left: 1rem;
-
-        a {
-          &:hover,
-          &:focus,
-          &:active {
-            color: $primary-color;
-          }
-        }
 
         // == Dropdown menu on hover
         &:hover,

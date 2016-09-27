@@ -172,15 +172,15 @@ function underskeleton_colors_customizer_output() {
         h1, h2, h3, h4, h5, h6 { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_heading_color', '#d72d5c' ) ); ?>; }
         /* Links */
         a { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_link_color', '#155d4f' ) ); ?>; }
-        a:hover, a:focus, a:active { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_link_hover_color', '#10483d' ) ); ?>; }
+        a:hover, a:focus, a:active { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_link_hover_color', '#10483d' ) . (is_customize_preview() ? ' !important' : '') ); ?>; }
         /* Buttons */
         .button, button, input[type=submit], input[type=reset], input[type=button] {
             color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_text_color', '#fff' ) ); ?>;
             background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_background_color', '#155d4f' ) ); ?>;
         }
         .button:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover {
-            color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_hover_text_color', '#fff' ) ); ?>;
-            background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_hover_background_color', '#10483d' ) ); ?>;
+            color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_hover_text_color', '#fff' ) ) . (is_customize_preview() ? ' !important' : '') ; ?>;
+            background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_hover_background_color', '#10483d' ) . (is_customize_preview() ? ' !important' : '') ); ?>;
         }
 
     </style> 

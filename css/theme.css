@@ -1112,7 +1112,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
   font-weight: 300; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: inherit; }
+    color: inherit !important; }
 
 h1 {
   font-size: 3rem;
@@ -1232,7 +1232,6 @@ input[type=submit].search-submit {
       display: block;
       width: 100%;
       padding: 1rem 0.5rem;
-      color: #222;
       font-weight: 600;
       font-size: 1.1rem;
       letter-spacing: 0.2rem;
@@ -1267,8 +1266,6 @@ input[type=submit].search-submit {
       border-top: 0;
       float: left;
       margin-left: 1rem; }
-      .main-navigation ul.menu li a:hover, .main-navigation ul.menu li a:focus, .main-navigation ul.menu li a:active {
-        color: #333; }
       .main-navigation ul.menu li:hover, .main-navigation ul.menu li:focus, .main-navigation ul.menu li:active {
         position: relative; }
         .main-navigation ul.menu li:hover > ul, .main-navigation ul.menu li:focus > ul, .main-navigation ul.menu li:active > ul {
