@@ -85,6 +85,42 @@ function underskeleton_colors_customizer( $wp_customize ) {
         )
         ));
 
+    /* SETTING: BUTTON TEXT COLOR */
+    $wp_customize->add_setting( 'underskeleton_button_text_color', array(
+        'default'   => '#10483d',
+        'type'      => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'refresh'
+        ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+        $wp_customize,
+        'underskeleton_button_text_color',
+        array(
+            'label' => __( 'Button Text Color', 'underskeleton' ),
+            'section' => 'colors',
+            'settings' => 'underskeleton_button_text_color',
+            'priority' => 10,
+        )
+        ));
+
+    /* SETTING: BUTTON HOVER TEXT COLOR */
+    $wp_customize->add_setting( 'underskeleton_button_hover_text_color', array(
+        'default'   => '#10483d',
+        'type'      => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'refresh'
+        ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+        $wp_customize,
+        'underskeleton_button_hover_text_color',
+        array(
+            'label' => __( 'Button Hover Text Color', 'underskeleton' ),
+            'section' => 'colors',
+            'settings' => 'underskeleton_button_hover_text_color',
+            'priority' => 10,
+        )
+        ));
+
 }
 add_action('customize_register', 'underskeleton_colors_customizer');
 
@@ -101,6 +137,13 @@ function underskeleton_colors_customizer_output() {
         /* Links */
         a { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_link_color', '#155d4f' ) ); ?>; }
         a:hover, a:focus, a:active { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_link_hover_color', '#10483d' ) ); ?>; }
+        /* Buttons */
+        .button, button, input[type=submit], input[type=reset], input[type=button] {
+            color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_text_color', '#155d4f' ) ); ?>;
+        }
+        .button:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover {
+            color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_hover_text_color', '#10483d' ) ); ?>;
+        }
 
     </style> 
     <!--/Customizer Colors-->

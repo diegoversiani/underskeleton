@@ -26,6 +26,7 @@ input[type=button] {
   color: lime;
   background: #333;
   border-color: lime; }
+  
   .button:hover,
   button:hover,
   input[type=submit]:hover,
