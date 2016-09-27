@@ -1,0 +1,38 @@
+/*------------------------------------*  #VARIABLES
+\*------------------------------------*/
+/* == VARIABLES ==
+Use this file to override default Skeleton and Underskeleton
+variables or add your own
+*/
+/*------------------------------------*  #VARIABLES
+\*------------------------------------*/
+/*------------------------------------*  #CUSTOM VARIABLES
+\*------------------------------------*/
+/*------------------------------------*  #COLORS
+\*------------------------------------*/
+/* Default text color */
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #d72d5c; }
+
+/* Links */
+a {
+  color: red; }
+  a:hover {
+    color: violet; }
+
+/* Buttons */
+.button,
+button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  color: lime;
+  background: #333;
+  border-color: lime; }
+  .button:hover,
+  button:hover,
+  input[type=submit]:hover,
+  input[type=reset]:hover,
+  input[type=button]:hover {
+    color: fuchsia; }

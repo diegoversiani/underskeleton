@@ -34,12 +34,6 @@ add_action( 'customize_preview_init', 'underskeleton_customize_preview_js' );
 \*------------------------------------*/
 function underskeleton_static_front_page_customizer( $wp_customize ) {
 
-    // /* SECTION: PAGE SETTINGS */
-    // $wp_customize->add_section( 'underskeleton_page_settings_section' , array(
-    //     'title'       => __( 'Page settings', 'underskeleton' ),
-    //     'description' => __( 'Configure how pages are displayed.', 'underskeleton' ),
-    //     ));
-
     /* SETTING: SHOW HOMEPAGE CONTENT */
     $wp_customize->add_setting( 'underskeleton_show_homepage_content', array(
         'default'   => true,
