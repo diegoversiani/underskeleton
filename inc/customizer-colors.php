@@ -48,6 +48,43 @@ function underskeleton_colors_customizer( $wp_customize ) {
             'priority' => 10,
         )
         ));
+
+    /* SETTING: LINK COLOR */
+    $wp_customize->add_setting( 'underskeleton_link_color', array(
+        'default'   => '#155d4f',
+        'type'      => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'refresh'
+        ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+        $wp_customize,
+        'underskeleton_link_color',
+        array(
+            'label' => __( 'Link Color', 'underskeleton' ),
+            'section' => 'colors',
+            'settings' => 'underskeleton_link_color',
+            'priority' => 10,
+        )
+        ));
+
+    /* SETTING: LINK HOVER COLOR */
+    $wp_customize->add_setting( 'underskeleton_link_hover_color', array(
+        'default'   => '#10483d',
+        'type'      => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'refresh'
+        ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+        $wp_customize,
+        'underskeleton_link_hover_color',
+        array(
+            'label' => __( 'Link Hover Color', 'underskeleton' ),
+            'section' => 'colors',
+            'settings' => 'underskeleton_link_hover_color',
+            'priority' => 10,
+        )
+        ));
+
 }
 add_action('customize_register', 'underskeleton_colors_customizer');
 
@@ -61,6 +98,9 @@ function underskeleton_colors_customizer_output() {
         body { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_text_color', '#222' ) ); ?>; }
         /* Headings */
         h1, h2, h3, h4, h5, h6 { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_heading_color', '#d72d5c' ) ); ?>; }
+        /* Links */
+        a { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_link_color', '#155d4f' ) ); ?>; }
+        a:hover, a:focus, a:active { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_link_hover_color', '#10483d' ) ); ?>; }
 
     </style> 
     <!--/Customizer Colors-->
