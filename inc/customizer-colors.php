@@ -36,7 +36,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'default'   => '#d72d5c',
         'type'      => 'theme_mod',
         'capability' => 'edit_theme_options',
-        'transport' => 'refresh'
+        'transport' => 'postMessage'
         ));
     $wp_customize->add_control( new WP_Customize_Color_Control( 
         $wp_customize,
@@ -54,7 +54,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'default'   => '#155d4f',
         'type'      => 'theme_mod',
         'capability' => 'edit_theme_options',
-        'transport' => 'refresh'
+        'transport' => 'postMessage'
         ));
     $wp_customize->add_control( new WP_Customize_Color_Control( 
         $wp_customize,
@@ -72,7 +72,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'default'   => '#10483d',
         'type'      => 'theme_mod',
         'capability' => 'edit_theme_options',
-        'transport' => 'refresh'
+        'transport' => 'postMessage'
         ));
     $wp_customize->add_control( new WP_Customize_Color_Control( 
         $wp_customize,
@@ -90,7 +90,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'default'   => '#fff',
         'type'      => 'theme_mod',
         'capability' => 'edit_theme_options',
-        'transport' => 'refresh'
+        'transport' => 'postMessage'
         ));
     $wp_customize->add_control( new WP_Customize_Color_Control( 
         $wp_customize,
@@ -108,7 +108,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'default'   => '#fff',
         'type'      => 'theme_mod',
         'capability' => 'edit_theme_options',
-        'transport' => 'refresh'
+        'transport' => 'postMessage'
         ));
     $wp_customize->add_control( new WP_Customize_Color_Control( 
         $wp_customize,
@@ -126,7 +126,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'default'   => '#155d4f',
         'type'      => 'theme_mod',
         'capability' => 'edit_theme_options',
-        'transport' => 'refresh'
+        'transport' => 'postMessage'
         ));
     $wp_customize->add_control( new WP_Customize_Color_Control( 
         $wp_customize,
@@ -144,7 +144,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'default'   => '#10483d',
         'type'      => 'theme_mod',
         'capability' => 'edit_theme_options',
-        'transport' => 'refresh'
+        'transport' => 'postMessage'
         ));
     $wp_customize->add_control( new WP_Customize_Color_Control( 
         $wp_customize,
