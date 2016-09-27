@@ -11,10 +11,6 @@ variables or add your own
 /*------------------------------------*  #COLORS
 \*------------------------------------*/
 /* Default text color */
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #d72d5c; }
-
 /* Links */
 a {
   color: red; }
