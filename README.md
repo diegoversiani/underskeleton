@@ -11,7 +11,16 @@ Why Underskeleton?
 - people search more on mobile devices than desktop
 - you only have 8 seconds to make an impression
 
+## Stable version
+
+The `master` branch is used for ongoing changes and integration of feature branches.
+
+The stable version is aways the latest release, [see releases](https://github.com/diegoversiani/underskeleton/releases).
+
 ## Changelog
+
+        == master branch ==
+               - Add color settings to customizer.
 
         == v1.0.0 September 22nd 2016 ==
                - Lauched theme downloader in the website http://getunderskeleton.com/download
@@ -38,9 +47,6 @@ Why Underskeleton?
         == v0.1.1 May 2nd 2016 ==
                - First stable version, with minor fixes from previous.
 
-        == v0.1.0 May 1st 2016 ==
-               - First version.
-
 ## Features
 
 - Widgets Selective Refresh, Custom Logo and Editor Style support
@@ -62,7 +68,7 @@ Have a feature request? Please [open an issue](https://github.com/diegoversiani/
 
 ## Installation
 
-Create your copy of Underskeleton and name it to your taste at [getunderskeleton.com/download](http://getunderskeleton.com/download), copy from branch master. Then:
+Create your copy of Underskeleton and name it to your taste at [getunderskeleton.com/download](http://getunderskeleton.com/download), copy from [latest release](https://github.com/diegoversiani/underskeleton/releases). Then:
 
 - Login to your WordPress backend
 - Go to Appearance → Themes → Add New → Upload Theme
