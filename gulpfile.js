@@ -48,7 +48,7 @@ gulp.task('sass', function () {
 // Starts watcher. Watcher runs appropriate tasks on file changes
 gulp.task('watch', function () {
   gulp.watch('./sass/**/*.scss', ['build-css']);
-  gulp.watch(['./js/*.js', '!./js/*.min.js'], ['build-scripts']);
+  gulp.watch('./js-src/**/*.js', ['build-scripts']);
 });
 
 // Run: 
