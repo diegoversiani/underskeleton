@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Underskeleton 0.1.1\n"
 "Report-Msgid-Bugs-To: http://github.com/diegoversiani/underskeleton\n"
-"POT-Creation-Date: 2016-09-22 23:18+0000\n"
-"PO-Revision-Date: 2016-09-22 23:27+0000\n"
-"Last-Translator: Diego Versiani <diegoversiani@gmail.com>\n"
+"POT-Creation-Date: 2016-09-28 18:06+0000\n"
+"PO-Revision-Date: 2016-09-28 18:08+0000\n"
+"Last-Translator: diegoversiani@gmail.com <diegoversiani@gmail.com>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt-BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
@@ -22,104 +22,49 @@ msgstr ""
 "X-Generator: Loco - https://localise.biz/\n"
 "X-Loco-Target-Locale: pt_BR"
 
-#: comments.php:43
-msgid "&laquo; Older Comments"
-msgstr "&laquo; Comentários anteriores"
+#: inc/customizer-colors.php:26
+msgid "Brand Colors"
+msgstr "Cores da marca"
 
-#: comments.php:44
-msgid "Newer Comments &raquo;"
-msgstr "Comentários mais recentes &raquo;"
+#: inc/customizer-colors.php:44
+msgid "Primary Color"
+msgstr "Cor Primária"
 
-#: search.php:38 archive.php:41 index.php:46
-msgid "&laquo; Older posts"
-msgstr "&laquo; Posts anteriores"
+#: inc/customizer-colors.php:62
+msgid "Secondary Color"
+msgstr "Cor Secundária"
 
-#: search.php:39 archive.php:42 index.php:47
-msgid "Newer posts &raquo;"
-msgstr "Posts mais recentes &raquo;"
+#: inc/customizer-colors.php:80
+msgid "Tertiary Color"
+msgstr "Cor Terciária"
 
-#: footer.php:23
-msgid ""
-"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
-"com</a>"
-msgstr ""
-"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
-"com</a>"
+#: inc/customizer-colors.php:98
+msgid "Text Colors"
+msgstr "Cores de Texto"
 
-#: inc/widgets-areas.php:39
-msgid "Homepage Before Content"
-msgstr "Página Inicial - Antes do conteúdo"
+#: inc/customizer-colors.php:116
+msgid "Text Color"
+msgstr "Cor do texto"
 
-#: inc/widgets-areas.php:52
-msgid "Homepage After Content"
-msgstr "Página Inicial - Depois do conteúdo"
+#: inc/customizer-colors.php:134
+msgid "Heading Color"
+msgstr "Cor dos cabeçalhos"
 
-#: inc/widgets-areas.php:75
-msgid "Posts Lists"
-msgstr "Lista de posts"
+#: inc/customizer-colors.php:152
+msgid "Link Color"
+msgstr "Cor do links"
 
-#: inc/widgets-areas.php:100
-msgid "Footer Single"
-msgstr "Rodapé - Coluna única"
+#: inc/customizer-colors.php:171
+msgid "Button Colors"
+msgstr "Cores de Botões"
 
-#: inc/widgets-areas.php:113
-msgid "Footer Left"
-msgstr "Rodapé - Coluna Esquerda"
+#: inc/customizer-colors.php:189
+msgid "Button Text Color"
+msgstr "Cor de texto do botão"
 
-#: inc/widgets-areas.php:123
-msgid "Footer Center"
-msgstr "Rodapé - Coluna Central"
-
-#: inc/widgets-areas.php:133
-msgid "Footer Right"
-msgstr "Rodapé - Coluna Direita"
-
-#: inc/customizer.php:49
-msgid "Show Homepage Content"
-msgstr "Exibir conteúdo da página inicial"
-
-#: inc/customizer.php:50
-msgid ""
-"Show the content of the page selected as <code>Static Homepage</code>. The "
-"homepage supports adding widgets in the content area. We recommend using the "
-"plugin \"Customizer Building Blocks\" to create your homepage."
-msgstr ""
-"Exibir conteúdo da página selecionada como <code>Página Inicial "
-"Estática</code>. A página inicial aceita inclusão de widgets na área de "
-"conteúdo. Recomendamos usar o plugin \"Customizer Building Blocks\" para "
-"criar sua página inicial.\n"
-
-#: inc/customizer.php:70
-msgid "Page settings"
-msgstr "Configurações de páginas"
-
-#: inc/customizer.php:71
-msgid "Configure how pages are displayed."
-msgstr "Configure como as páginas são exibidas."
-
-#: inc/customizer.php:80
-msgid "Limit header content to container"
-msgstr "Limitar o cabeçalho ao container"
-
-#: inc/customizer.php:92
-msgid "Limit content to container"
-msgstr "Limitar o conteúdo ao container"
-
-#: inc/customizer.php:104
-msgid "Limit footer content to container"
-msgstr "Limitar o rodapé ao container"
-
-#. Name of the template
-msgid "Homepage"
-msgstr "Página Inicial"
-
-#. Description of the theme
-msgid ""
-"Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
-"Starter Theme for your next awesome WordPress Theme."
-msgstr ""
-"Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
-"Starter Theme for your next awesome WordPress Theme."
+#: inc/customizer-colors.php:207
+msgid "Button Background Color"
+msgstr "Cor de fundo do botão"
 
 #: comments.php:31
 msgctxt "comments title"
@@ -131,6 +76,14 @@ msgstr[1] "%1$s comentários em &ldquo;%2$s&rdquo;"
 #: comments.php:40 comments.php:61
 msgid "Comment navigation"
 msgstr "Navegação em comentários"
+
+#: comments.php:43
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Comentários anteriores"
+
+#: comments.php:44
+msgid "Newer Comments &raquo;"
+msgstr "Comentários mais recentes &raquo;"
 
 #: comments.php:64
 msgid "Older Comments"
@@ -151,6 +104,14 @@ msgstr "Ir para o conteúdo"
 #: search.php:21
 msgid "Search Results for: %s"
 msgstr "Resultados da pesquisa por: %s"
+
+#: search.php:38 archive.php:41 index.php:46
+msgid "&laquo; Older posts"
+msgstr "&laquo; Posts anteriores"
+
+#: search.php:39 archive.php:42 index.php:47
+msgid "Newer posts &raquo;"
+msgstr "Posts mais recentes &raquo;"
 
 #: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
@@ -190,6 +151,14 @@ msgstr "Tema %1$s por %2$s."
 msgid "Underskeleton"
 msgstr "Underskeleton"
 
+#: footer.php:23
+msgid ""
+"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
+"com</a>"
+msgstr ""
+"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
+"com</a>"
+
 #: inc/widgets-areas.php:15
 msgid "Sidebar"
 msgstr "Barra Lateral"
@@ -198,9 +167,72 @@ msgstr "Barra Lateral"
 msgid "Add widgets here."
 msgstr "Adicione widgets aqui."
 
+#: inc/widgets-areas.php:39
+msgid "Homepage Before Content"
+msgstr "Página Inicial - Antes do conteúdo"
+
+#: inc/widgets-areas.php:52
+msgid "Homepage After Content"
+msgstr "Página Inicial - Depois do conteúdo"
+
+#: inc/widgets-areas.php:75
+msgid "Posts Lists"
+msgstr "Lista de posts"
+
+#: inc/widgets-areas.php:100
+msgid "Footer Single"
+msgstr "Rodapé - Coluna única"
+
+#: inc/widgets-areas.php:113
+msgid "Footer Left"
+msgstr "Rodapé - Coluna Esquerda"
+
+#: inc/widgets-areas.php:123
+msgid "Footer Center"
+msgstr "Rodapé - Coluna Central"
+
+#: inc/widgets-areas.php:133
+msgid "Footer Right"
+msgstr "Rodapé - Coluna Direita"
+
 #: inc/theme-setup.php:49
 msgid "Primary"
 msgstr "Primário"
+
+#: inc/customizer.php:35
+msgid "Show Homepage Content"
+msgstr "Exibir conteúdo da página inicial"
+
+#: inc/customizer.php:36
+msgid ""
+"Show the content of the page selected as <code>Static Homepage</code>. The "
+"homepage supports adding widgets in the content area. We recommend using the "
+"plugin \"Customizer Building Blocks\" to create your homepage."
+msgstr ""
+"Exibir conteúdo da página selecionada como <code>Página Inicial "
+"Estática</code>. A página inicial aceita inclusão de widgets na área de "
+"conteúdo. Recomendamos usar o plugin \"Customizer Building Blocks\" para "
+"criar sua página inicial.\n"
+
+#: inc/customizer.php:56
+msgid "Page settings"
+msgstr "Configurações de páginas"
+
+#: inc/customizer.php:57
+msgid "Configure how pages are displayed."
+msgstr "Configure como as páginas são exibidas."
+
+#: inc/customizer.php:66
+msgid "Limit header content to container"
+msgstr "Limitar o cabeçalho ao container"
+
+#: inc/customizer.php:78
+msgid "Limit content to container"
+msgstr "Limitar o conteúdo ao container"
+
+#: inc/customizer.php:90
+msgid "Limit footer content to container"
+msgstr "Limitar o rodapé ao container"
 
 #: inc/template-tags.php:28
 msgctxt "post date"
@@ -236,6 +268,10 @@ msgstr "Deixe um comentário<span class=\"screen-reader-text\"> em %s</span>"
 msgid "Edit %s"
 msgstr "Editar %s"
 
+#. Name of the template
+msgid "Homepage"
+msgstr "Página Inicial"
+
 #: template-parts/content-page.php:26 template-parts/content.php:48 
 #: template-parts/content-homepage.php:18
 msgid "Pages:"
@@ -270,6 +306,14 @@ msgid ""
 "searching can help."
 msgstr ""
 "Parece que não podemos encontrar o que você procura. Talvez a pesquisa ajude."
+
+#. Description of the theme
+msgid ""
+"Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
+"Starter Theme for your next awesome WordPress Theme."
+msgstr ""
+"Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
+"Starter Theme for your next awesome WordPress Theme."
 
 #. Theme URI of the theme
 msgid "http://getunderskeleton.com"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Underskeleton 0.1.1\n"
 "Report-Msgid-Bugs-To: http://github.com/diegoversiani/underskeleton\n"
-"POT-Creation-Date: 2016-09-22 23:18+0000\n"
+"POT-Creation-Date: 2016-09-28 18:05+0000\n"
 "POT-Revision-Date: Wed Jun 08 2016 16:17:57 GMT-0300 (E. South America "
 "Standard Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -112,6 +112,50 @@ msgid ""
 "com</a>"
 msgstr ""
 
+#: inc/customizer-colors.php:26
+msgid "Brand Colors"
+msgstr ""
+
+#: inc/customizer-colors.php:44
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer-colors.php:62
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/customizer-colors.php:80
+msgid "Tertiary Color"
+msgstr ""
+
+#: inc/customizer-colors.php:98
+msgid "Text Colors"
+msgstr ""
+
+#: inc/customizer-colors.php:116
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer-colors.php:134
+msgid "Heading Color"
+msgstr ""
+
+#: inc/customizer-colors.php:152
+msgid "Link Color"
+msgstr ""
+
+#: inc/customizer-colors.php:171
+msgid "Button Colors"
+msgstr ""
+
+#: inc/customizer-colors.php:189
+msgid "Button Text Color"
+msgstr ""
+
+#: inc/customizer-colors.php:207
+msgid "Button Background Color"
+msgstr ""
+
 #: inc/widgets-areas.php:15
 msgid "Sidebar"
 msgstr ""
@@ -152,34 +196,34 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: inc/customizer.php:49
+#: inc/customizer.php:35
 msgid "Show Homepage Content"
 msgstr ""
 
-#: inc/customizer.php:50
+#: inc/customizer.php:36
 msgid ""
 "Show the content of the page selected as <code>Static Homepage</code>. The "
 "homepage supports adding widgets in the content area. We recommend using the "
 "plugin \"Customizer Building Blocks\" to create your homepage."
 msgstr ""
 
-#: inc/customizer.php:70
+#: inc/customizer.php:56
 msgid "Page settings"
 msgstr ""
 
-#: inc/customizer.php:71
+#: inc/customizer.php:57
 msgid "Configure how pages are displayed."
 msgstr ""
 
-#: inc/customizer.php:80
+#: inc/customizer.php:66
 msgid "Limit header content to container"
 msgstr ""
 
-#: inc/customizer.php:92
+#: inc/customizer.php:78
 msgid "Limit content to container"
 msgstr ""
 
-#: inc/customizer.php:104
+#: inc/customizer.php:90
 msgid "Limit footer content to container"
 msgstr ""
 
