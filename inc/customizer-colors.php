@@ -280,7 +280,7 @@ function underskeleton_colors_customizer_output() {
         .button:focus, button:focus, input[type=submit]:focus, input[type=reset]:focus, input[type=button]:focus,
         .button:active, button:active, input[type=submit]:active, input[type=reset]:active, input[type=button]:active {
             color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_text_color', '#155d4f' ) ); ?>;
-            background-color: <?php echo esc_attr( underskeleton_adjust_brightness( get_theme_mod( 'underskeleton_button_background_color', '#155d4f' ), -25) . (is_customize_preview() ? ' !important' : '') ); ?>;
+            background-color: <?php echo esc_attr( underskeleton_adjust_brightness( get_theme_mod( 'underskeleton_button_background_color', '#f3f3f3' ), -25) . (is_customize_preview() ? ' !important' : '') ); ?>;
         }
         /* Color Modifiers */
         .primary-background { background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_primary_color', '#d72d5c' ) ); ?>; }
