@@ -20,6 +20,7 @@ The stable version is aways the latest release, [see releases](https://github.co
 ## Changelog
 
         == master branch ==
+               - Add full-width page template
                - Add color settings to customizer.
 
         == v1.0.0 September 22nd 2016 ==
