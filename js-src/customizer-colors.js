@@ -13,7 +13,7 @@
     var style, el;
 
     style = '<style class="' + style_id + '">' + selector + ' { ' + property + ': ' + value + ' !important; }</style>'; // build the style element
-    el =  $( '.' + style_id ); // look for a matching style element that might already be there
+    el = $( '.' + style_id ); // look for a matching style element that might already be there
 
     if ( el.length ) {
       el.replaceWith( style ); // style element already exists, so replace it
@@ -23,6 +23,26 @@
   };
 
 
+  // Primary color
+  wp.customize( 'underskeleton_primary_color', function( value ) {
+    value.bind( function( to ) {
+      $( '.primary-background' ).css( { 'background-color': to } );
+    } );
+  } );
+
+  // Secondary color
+  wp.customize( 'underskeleton_secondary_color', function( value ) {
+    value.bind( function( to ) {
+      $( '.secondary-background' ).css( { 'background-color': to } );
+    } );
+  } );
+
+  // Tertiary color
+  wp.customize( 'underskeleton_tertiary_color', function( value ) {
+    value.bind( function( to ) {
+      $( '.tertiary-background' ).css( { 'background-color': to } );
+    } );
+  } );
 
 	// Text color
 	wp.customize( 'underskeleton_text_color', function( value ) {

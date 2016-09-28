@@ -882,6 +882,10 @@ h1, h2, h3, h4, h5, h6 {
 \*------------------------------------*/
 /*------------------------------------*  #TEXT MIXINS
 \*------------------------------------*/
+/*------------------------------------*  #MODIFIERS
+  Some modifiers are defined in the file
+  /inc/customizer-colors.php
+\*------------------------------------*/
 /*------------------------------------*  #SECTION MODIFIERS
 \*------------------------------------*/
 .header-overlay {
@@ -939,12 +943,6 @@ h1, h2, h3, h4, h5, h6 {
 .full-background-image {
   background-size: cover;
   background-position: center; }
-
-.primary-background {
-  background-color: #333; }
-
-.secondary-background {
-  background-color: #e1e1e1; }
 
 .light-grey-background {
   background-color: #e1e1e1; }

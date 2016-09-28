@@ -1,4 +1,12 @@
 /*------------------------------------*\
+  #MODIFIERS
+  Some modifiers are defined in the file
+  /inc/customizer-colors.php
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
   #SECTION MODIFIERS
 \*------------------------------------*/
 .header-overlay {
@@ -67,14 +75,6 @@
 .full-background-image {
   background-size: cover;
   background-position: center;
-}
-
-.primary-background {
-  background-color: $primary-color;
-}
-
-.secondary-background {
-  background-color: $secondary-color;
 }
 
 .light-grey-background {

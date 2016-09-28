@@ -13,6 +13,60 @@ function underskeleton_colors_customizer( $wp_customize ) {
     /* REMOVE: HEADER TEXT COLOR */
     $wp_customize->remove_control('header_textcolor');
 
+    /* SETTING: PRIMARY COLOR */
+    $wp_customize->add_setting( 'underskeleton_primary_color', array(
+        'default'   => '#d72d5c',
+        'type'      => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'postMessage'
+        ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+        $wp_customize,
+        'underskeleton_primary_color',
+        array(
+            'label' => __( 'Primary Color', 'underskeleton' ),
+            'section' => 'colors',
+            'settings' => 'underskeleton_primary_color',
+            'priority' => 0,
+        )
+        ));
+
+    /* SETTING: SECONDARY COLOR */
+    $wp_customize->add_setting( 'underskeleton_secondary_color', array(
+        'default'   => '#155d4f',
+        'type'      => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'postMessage'
+        ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+        $wp_customize,
+        'underskeleton_secondary_color',
+        array(
+            'label' => __( 'Secondary Color', 'underskeleton' ),
+            'section' => 'colors',
+            'settings' => 'underskeleton_secondary_color',
+            'priority' => 0,
+        )
+        ));
+
+    /* SETTING: TERTIARY COLOR */
+    $wp_customize->add_setting( 'underskeleton_tertiary_color', array(
+        'default'   => '#264a5c',
+        'type'      => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'transport' => 'postMessage'
+        ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+        $wp_customize,
+        'underskeleton_tertiary_color',
+        array(
+            'label' => __( 'Tertiary Color', 'underskeleton' ),
+            'section' => 'colors',
+            'settings' => 'underskeleton_tertiary_color',
+            'priority' => 0,
+        )
+        ));
+
     /* SETTING: TEXT COLOR */
     $wp_customize->add_setting( 'underskeleton_text_color', array(
         'default'   => '#222',
@@ -162,6 +216,11 @@ add_action('customize_register', 'underskeleton_colors_customizer');
 
 
 
+
+
+/*------------------------------------*\
+  #COLORS OUTPUT
+\*------------------------------------*/
 function underskeleton_colors_customizer_output() {
     ?>
     <!--Customizer Colors-->
@@ -173,7 +232,7 @@ function underskeleton_colors_customizer_output() {
         /* Links */
         a { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_link_color', '#155d4f' ) ); ?>; }
         a:hover, a:focus, a:active { color: <?php echo esc_attr( get_theme_mod( 'underskeleton_link_hover_color', '#10483d' ) . (is_customize_preview() ? ' !important' : '') ); ?>; }
-        /* Buttons */
+        /* Default Buttons */
         .button, button, input[type=submit], input[type=reset], input[type=button] {
             color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_text_color', '#fff' ) ); ?>;
             background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_background_color', '#155d4f' ) ); ?>;
@@ -182,7 +241,10 @@ function underskeleton_colors_customizer_output() {
             color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_hover_text_color', '#fff' ) ) . (is_customize_preview() ? ' !important' : '') ; ?>;
             background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_button_hover_background_color', '#10483d' ) . (is_customize_preview() ? ' !important' : '') ); ?>;
         }
-
+        /* Color Modifiers */
+        .primary-background { background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_primary_color', '#d72d5c' ) ); ?>; }
+        .secondary-background { background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_secondary_color', '#155d4f' ) ); ?>; }
+        .tertiary-background { background-color: <?php echo esc_attr( get_theme_mod( 'underskeleton_tertiary_color', '#264a5c' ) ); ?>; }
     </style> 
     <!--/Customizer Colors-->
     <?php
