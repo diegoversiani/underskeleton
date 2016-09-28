@@ -231,9 +231,9 @@ body {
   color: #222; }
 
 a {
-  color: #e1e1e1; }
+  color: #155d4f; }
   a:hover {
-    color: #d4d4d4; }
+    color: #10483d; }
 
 hr {
   margin-top: 3rem;
@@ -434,7 +434,7 @@ button {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #e1e1e1;
+  color: #155d4f;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -453,7 +453,7 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #e1e1e1;
+  color: #155d4f;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -493,35 +493,35 @@ input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focu
 .button.button-primary,
 button.button-primary {
   color: #fff;
-  background-color: #333;
-  border-color: #333; }
+  background-color: #d72d5c;
+  border-color: #d72d5c; }
 
 input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
   color: #fff;
-  background-color: #333;
-  border-color: #333; }
+  background-color: #d72d5c;
+  border-color: #d72d5c; }
 
 .button.button-primary:hover,
 button.button-primary:hover {
   color: #fff;
-  background-color: #e1e1e1;
-  border-color: #e1e1e1; }
+  background-color: #155d4f;
+  border-color: #155d4f; }
 
 input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
   color: #fff;
-  background-color: #e1e1e1;
-  border-color: #e1e1e1; }
+  background-color: #155d4f;
+  border-color: #155d4f; }
 
 .button.button-primary:focus,
 button.button-primary:focus {
   color: #fff;
-  background-color: #e1e1e1;
-  border-color: #e1e1e1; }
+  background-color: #155d4f;
+  border-color: #155d4f; }
 
 input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
   color: #fff;
-  background-color: #e1e1e1;
-  border-color: #e1e1e1; }
+  background-color: #155d4f;
+  border-color: #155d4f; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   height: 38px;
@@ -556,12 +556,12 @@ textarea {
   padding-bottom: 6px; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #333;
+  border: 1px solid #d72d5c;
   outline: 0; }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #333;
+  border: 1px solid #d72d5c;
   outline: 0; }
 
 label,
@@ -1035,7 +1035,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     font-size: 3rem;
     margin: 1rem 0 0 0;
-    color: #333; }
+    color: #d72d5c; }
     .site-branding .site-title a {
       text-decoration: none;
       color: inherit; }
@@ -1067,7 +1067,7 @@ input[type="date"] {
   appearance: none; }
 
 input[type="date"]:focus {
-  border: 1px solid #333;
+  border: 1px solid #d72d5c;
   outline: 0; }
 
 textarea[rows] {
@@ -1076,6 +1076,28 @@ textarea[rows] {
 
 /*------------------------------------*  #BUTTONS
 \*------------------------------------*/
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: #f3f3f3;
+  color: #155d4f; }
+  .button:hover, .button:focus, .button:active,
+  button:hover,
+  button:focus,
+  button:active,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  input[type="submit"]:active,
+  input[type="reset"]:hover,
+  input[type="reset"]:focus,
+  input[type="reset"]:active,
+  input[type="button"]:hover,
+  input[type="button"]:focus,
+  input[type="button"]:active {
+    background-color: #b3b3b3; }
+
 .button.button-light,
 button.button-light,
 input[type="submit"].button-light,
@@ -1107,7 +1129,7 @@ a {
 /* == TYPOGRAPHY STYLES == */
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
-  color: #333;
+  color: #d72d5c;
   font-weight: 300; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit !important; }
@@ -1200,7 +1222,7 @@ input[type=submit].search-submit {
     background: #888888; }
   .main-navigation .menu-toggle .bars {
     display: block;
-    background: #e1e1e1;
+    background: #155d4f;
     width: 1.6rem;
     height: .2rem;
     margin-bottom: .3rem; }
@@ -1370,7 +1392,7 @@ input[type=submit].search-submit {
     margin-bottom: 0.5rem; }
 
 .bypostauthor {
-  background-color: #999999;
+  background-color: #f8d8e1;
   border-radius: 4px; }
 
 /* == FOOTER STYLES == */

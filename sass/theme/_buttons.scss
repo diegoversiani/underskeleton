@@ -2,6 +2,21 @@
   #BUTTONS
 \*------------------------------------*/
 
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: #f3f3f3;
+  color: $secondary-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken(#f3f3f3, 25);
+  }
+}
+
 .button.button-light,
 button.button-light,
 input[type="submit"].button-light,
