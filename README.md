@@ -8,8 +8,8 @@ Why Underskeleton?
 
 - 11% of internet users use only mobile
 - only 10% on internet users use only desktop
-- people search more on mobile devices than desktop
-- you only have 8 seconds to make an impression
+- since 2015 people search more on mobile devices than desktop
+- you only have 8 seconds to make an impression, make your page load fast
 
 ## Stable version
 
@@ -164,12 +164,15 @@ Underskeleton is in it's early stages and a lot has to be done yet.
 
 Watch or Star the repository and join [our newsletter](http://eepurl.com/cgTUhv). Fork the project, make the change you want to see. Or email me at [diegoversiani@gmail.com](mailto:diegoversiani@gmail.com).
 
-## License
+## Credits and License
 
-UNDERSKELETON, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Underskeleton WordPress Theme, Copyright 2016 Diego Versiani
+Underskeleton is distributed under the terms of the GNU GPL
 
-Any THIRD PART softwares included in this project are licensed by their own creators.
+* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+* Skeleton-Sass http://github.com/WhatsNewSaes/Skeleton-Sass/, (C) 2016 Seth Coelen, [MIT](http://opensource.org/licenses/MIT)
+* Skeleton http://github.com/dhg/Skeleton/, (C) 2014 Dave Gamache, [MIT](http://opensource.org/licenses/MIT)
 
 ## Acknowledgement
 
