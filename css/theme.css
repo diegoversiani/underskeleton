@@ -725,7 +725,7 @@ This file contains styles for accessibility support
   outline: 0; }
 
 /* == WORDPRESS ALIGNMENT ==
-This file contains elements WordPress Alignment classes definition
+This file contains definitions for WordPress default alignment classes
 */
 .alignleft,
 a img.alignleft,
@@ -1293,7 +1293,7 @@ input[type=submit].search-submit {
       .main-navigation ul.menu li ul {
         display: none;
         position: absolute;
-        top: 3.4rem;
+        top: 2.9rem;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
         .main-navigation ul.menu li ul li a {
           width: 20rem;
