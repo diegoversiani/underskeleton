@@ -20,8 +20,8 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', get_post_format() );
 
 			the_post_navigation(array(
-        'prev_text'	=> __( '&laquo; %title' ),
-        'next_text' => __( '%title &raquo;' ),
+        'prev_text'	=> __( '&laquo; %title', 'underskeleton' ),
+        'next_text' => __( '%title &raquo;', 'underskeleton' ),
         ));
 
 			// If comments are open or we have at least one comment, load up the comment template.

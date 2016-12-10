@@ -5,6 +5,18 @@
  * @package underskeleton
  */
 
+/*------------------------------------*\
+  #CUSTOM SANITIZERS
+\*------------------------------------*/
+function underskeleton_sanitize_checkbox( $checked ) {
+    // Boolean check.
+    return ( ( isset( $checked ) && true == $checked ) ? true : false );
+}
+
+
+
+
+
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
@@ -29,7 +41,8 @@ function underskeleton_static_front_page_customizer( $wp_customize ) {
     /* SETTING: SHOW HOMEPAGE CONTENT */
     $wp_customize->add_setting( 'underskeleton_show_homepage_content', array(
         'default'   => true,
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => 'underskeleton_sanitize_checkbox',
         ));
     $wp_customize->add_control( 'underskeleton_show_homepage_content', array(
         'label'     => __( 'Show Homepage Content', 'underskeleton' ),
@@ -60,7 +73,8 @@ function underskeleton_page_settings_customizer( $wp_customize ) {
     /* SETTING: LIMIT HEADER TO CONTAINER */
     $wp_customize->add_setting( 'underskeleton_header_container_class', array(
         'default'   => true,
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => 'underskeleton_sanitize_checkbox',
         ));
     $wp_customize->add_control( 'underskeleton_header_container_class', array(
         'label'     => __( 'Limit header content to container', 'underskeleton' ),
@@ -72,7 +86,8 @@ function underskeleton_page_settings_customizer( $wp_customize ) {
     /* SETTING: LIMIT CONTENT TO CONTAINER */
     $wp_customize->add_setting( 'underskeleton_content_container_class', array(
         'default'   => true,
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => 'underskeleton_sanitize_checkbox',
         ));
     $wp_customize->add_control( 'underskeleton_content_container_class', array(
         'label'     => __( 'Limit content to container', 'underskeleton' ),
@@ -84,7 +99,8 @@ function underskeleton_page_settings_customizer( $wp_customize ) {
     /* SETTING: LIMIT FOOTER TO CONTAINER */
     $wp_customize->add_setting( 'underskeleton_footer_container_class', array(
         'default'   => true,
-        'transport' => 'refresh'
+        'transport' => 'refresh',
+        'sanitize_callback' => 'underskeleton_sanitize_checkbox',
         ));
     $wp_customize->add_control( 'underskeleton_footer_container_class', array(
         'label'     => __( 'Limit footer content to container', 'underskeleton' ),

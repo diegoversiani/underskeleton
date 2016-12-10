@@ -69,7 +69,7 @@ $menu-dropdown-shadow:  0 3px 3px rgba(0, 0, 0, 0.2);
 $menu-item-padding:     .5rem;
 $menu-subitem-width:    20rem;
 $menu-subitem-indent:   2rem;
-$menu-submenu-top:      ($menu-item-padding * 2) + 2.4rem;
+$menu-submenu-top:      $menu-item-padding + 2.4rem;
 
 
 /*------------------------------------*\
