@@ -260,7 +260,11 @@ function underskeleton_button_variant_css_render($variant_name, $args = array())
 /*------------------------------------*\
   #COLORS OUTPUT
 \*------------------------------------*/
-function underskeleton_colors_customizer_output() {
+function underskeleton_colors_customizer_get_output() {
+
+    // Start output buffering
+    ob_start();
+
     $text_color_esc = esc_attr( get_theme_mod( 'underskeleton_text_color', '#606060' ) );
     $link_color_esc = esc_attr( get_theme_mod( 'underskeleton_link_color', '#155d4f' ) );
     $heading_color_esc = esc_attr( get_theme_mod( 'underskeleton_heading_color', '#606060' ) );
@@ -271,11 +275,8 @@ function underskeleton_colors_customizer_output() {
     $primary_color_esc = esc_attr( get_theme_mod( 'underskeleton_primary_color', '#d72d5c' ) ); 
     $secondary_color_esc = esc_attr( get_theme_mod( 'underskeleton_secondary_color', '#155d4f' ) ); 
     $tertiary_color_esc = esc_attr( get_theme_mod( 'underskeleton_tertiary_color', '#264a5c' ) ); 
-
     
     ?>
-    <!--Customizer Colors-->
-    <style type="text/css">
         /* default text color */
         body { color: <?php echo $text_color_esc; ?>; }
         /* Headings */
@@ -335,8 +336,14 @@ function underskeleton_colors_customizer_output() {
                     'hover_border_color'        => '',
                 ));
         ?>
-    </style> 
-    <!--/Customizer Colors-->
     <?php
+
+    // Release output buffering
+    return ob_get_clean();
 }
-add_action('wp_head', 'underskeleton_colors_customizer_output', 20);
+
+/* Front-end custom styles */
+function underskeleton_colors_customizer_wp_head() {
+    echo '<style type="text/css">' . underskeleton_colors_customizer_get_output() . '</style>';
+}
+add_action('wp_head', 'underskeleton_colors_customizer_wp_head', 20);
