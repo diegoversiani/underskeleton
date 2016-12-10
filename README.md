@@ -19,9 +19,11 @@ The stable version is aways the latest release, [see releases](https://github.co
 
 ## Changelog
 
-        == master branch ==
-               - Add full-width page template
+        == v1.0.1 December 10th 2016 ==
+               - Change license information for WordPress Theme Directory.
+               - Add full-width page template.
                - Add color settings to customizer.
+               - Fixed enqueue editor styles.
 
         == v1.0.0 September 22nd 2016 ==
                - Lauched theme downloader in the website http://getunderskeleton.com/download
