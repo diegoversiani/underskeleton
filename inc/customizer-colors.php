@@ -10,10 +10,6 @@
 \*------------------------------------*/
 function underskeleton_colors_customizer( $wp_customize ) {
 
-    /* REMOVE: HEADER TEXT COLOR */
-    $wp_customize->remove_control('header_textcolor');
-
-
     /* SEPARATOR: Brand Colors */
     $wp_customize->add_setting( 'underskeleton_brand_colors_separator', array(
         'type'          => 'theme_mod',

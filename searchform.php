@@ -1,4 +1,4 @@
-<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
+<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
   <label class="screen-reader-text"><?php echo _x( 'Search for:', 'label', 'underskeleton' ) ?></label>
   <input type="hidden" value="1" name="sentence" />
   <input type="search" class="search-field"

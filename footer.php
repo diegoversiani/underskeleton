@@ -13,8 +13,10 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="site-footer__content <?php echo get_theme_mod( 'underskeleton_footer_container_class', true ) ? 'container' : '' ?>">
+
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    <?php $container_class = get_theme_mod( 'underskeleton_footer_container_class', true ) ? 'container' : '' ?>
+    <div class="site-footer__content <?php echo esc_attr( $container_class ); ?>">
     <div class="row">
 
   		<div class="site-info">

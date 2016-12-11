@@ -40,9 +40,7 @@ add_action( 'customize_preview_init', 'underskeleton_customize_preview_js' );
  * @global WP_Post $post Global post object.
  */
 function underskeleton_add_editor_styles() {
-  add_editor_style( get_template_directory_uri() . '/css/editor-style.min.css' );
-
-  // Load same styles for front-end as most of it is necessary for editor as well.
-	add_editor_style( get_template_directory_uri() . '/css/theme.min.css' );
+  // Load 'theme.min.css' as most of it is necessary for editor as well.
+  add_editor_style( array( 'css/editor-style.min.css', 'css/theme.min.css' ) );
 }
-add_action( 'admin_init',          'underskeleton_add_editor_styles' );
+add_action( 'admin_init', 'underskeleton_add_editor_styles' );

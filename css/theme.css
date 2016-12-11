@@ -1022,6 +1022,11 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 3rem;
         padding-right: 3rem; } }
 
+.custom-header-image {
+  display: block;
+  text-align: center;
+  width: 100%; }
+
 .site-branding {
   float: left;
   max-width: 85%; }

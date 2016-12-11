@@ -25,7 +25,21 @@
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'underskeleton' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-header__content <?php echo get_theme_mod( 'underskeleton_header_container_class', true ) ? 'container' : '' ?>">
+    <?php $container_class_header = get_theme_mod( 'underskeleton_header_container_class', true ) ? 'container' : '' ?>
+		<div class="site-header__content <?php echo esc_attr( $container_class_header ); ?>">
+
+			<?php
+
+			if ( get_header_image() ) :
+			?>
+				<div class="row">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="custom-header-image" rel="home">
+						<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+					</a>
+				</div>
+			<?php
+			endif;
+			?>
 		
 		<div class="row">
 			<div class="site-branding">
@@ -38,7 +52,7 @@
 				if ( is_front_page() && is_home() ) : ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<h2 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
 				<?php endif;
 
 				$description = get_bloginfo( 'description', 'display' );
@@ -64,4 +78,5 @@
 
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content  <?php echo get_theme_mod( 'underskeleton_content_container_class', true ) ? 'container' : '' ?>">
+	<?php $container_class_content = get_theme_mod( 'underskeleton_content_container_class', true ) ? 'container' : '' ?>
+	<div id="content" class="site-content  <?php echo esc_attr( $container_class_content ); ?>">

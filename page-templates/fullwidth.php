@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<?php if ( get_theme_mod( 'underskeleton_show_homepage_content', true ) ) : ?>
+<?php if ( !is_front_page() || get_theme_mod( 'underskeleton_show_homepage_content', true ) ) : ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 

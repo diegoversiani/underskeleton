@@ -54,23 +54,10 @@ function underskeleton_setup() {
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
-		'search-form',
 		'comment-form',
 		'comment-list',
 		'gallery',
 		'caption',
-	) );
-
-	/*
-	 * Enable support for Post Formats.
-	 * See https://developer.wordpress.org/themes/functionality/post-formats/
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
 	) );
 
 	// Set up the WordPress core custom background feature.
@@ -110,27 +97,3 @@ function underskeleton_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'underskeleton_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'underskeleton_content_width', 0 );
-
-
-
-
-
-function underskeleton_custom_logo_login_page() {
-
-	if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) {
-		$custom_logo_id = get_theme_mod( 'custom_logo' );
-		$image_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-
-		echo "<style type=\"text/css\">
-		body.login div#login h1 a {
-			background-image: url(". $image_url .");
-			-webkit-background-size: auto;
-			background-size: auto;
-			background-position: center;
-			margin: 0 0 25px;
-			width: 320px;
-		}
-		</style>";
-	}
-}
-add_action( 'login_enqueue_scripts', 'underskeleton_custom_logo_login_page' );

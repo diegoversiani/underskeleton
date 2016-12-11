@@ -12,9 +12,9 @@
  */
 function underskeleton_widgets_init() {
   register_sidebar( array(
-    'name'          => esc_html__( 'Sidebar', 'underskeleton' ),
+    'name'          => __( 'Sidebar', 'underskeleton' ),
     'id'            => 'sidebar-1',
-    'description'   => esc_html__( 'Add widgets here.', 'underskeleton' ),
+    'description'   => __( 'Add widgets here.', 'underskeleton' ),
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
     'before_title'  => '<h2 class="widget-title">',
@@ -38,7 +38,7 @@ function underskeleton_homepage_widgets_init() {
   register_sidebar( array(
     'name'          => __( 'Homepage Before Content', 'underskeleton' ),
     'id'            => 'underskeleton_homepage_before',
-    'description'   => 'Insert widgets before the content of the page set as the homepage.',
+    'description'   => __( 'Insert widgets before the content of the page set as the homepage.', 'underskeleton' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h2>',
@@ -51,7 +51,7 @@ function underskeleton_homepage_widgets_init() {
   register_sidebar( array(
     'name'          => __( 'Homepage After Content', 'underskeleton' ),
     'id'            => 'underskeleton_homepage_after',
-    'description'   => 'Insert widgets after the content of the page set as the homepage.',
+    'description'   => __( 'Insert widgets after the content of the page set as the homepage.', 'underskeleton' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h2>',
@@ -74,7 +74,7 @@ function underskeleton_posts_lists_widgets_init() {
   register_sidebar( array(
     'name'          => __( 'Posts Lists', 'underskeleton' ),
     'id'            => 'underskeleton_posts_lists',
-    'description'   => 'Widgets here will appear after posts lists such as the front-page posts list and archives.',
+    'description'   => __( 'Widgets here will appear after posts lists such as the front-page posts list and archives.', 'underskeleton' ),
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
     'before_title'  => '<h5>',
@@ -99,7 +99,7 @@ function underskeleton_footer_widgets_init() {
   register_sidebar( array(
     'name'          => __( 'Footer Single', 'underskeleton' ),
     'id'            => 'underskeleton_footer_single',
-    'description'   => '',
+    'description'   => __( 'Widgets for one column footer.', 'underskeleton' ),
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
     'before_title'  => '<h4>',
@@ -112,7 +112,7 @@ function underskeleton_footer_widgets_init() {
   register_sidebar( array(
     'name'          => __( 'Footer Left', 'underskeleton' ),
     'id'            => 'underskeleton_footer_left',
-    'description'   => '',
+    'description'   => __( 'Widgets for left column on three columns footer.', 'underskeleton' ),
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
     'before_title'  => '<h4>',
@@ -122,7 +122,7 @@ function underskeleton_footer_widgets_init() {
   register_sidebar( array(
     'name'          => __( 'Footer Center', 'underskeleton' ),
     'id'            => 'underskeleton_footer_center',
-    'description'   => '',
+    'description'   => __( 'Widgets for center column on three columns footer.', 'underskeleton' ),
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
     'before_title'  => '<h4>',
@@ -132,7 +132,7 @@ function underskeleton_footer_widgets_init() {
   register_sidebar( array(
     'name'          => __( 'Footer Right', 'underskeleton' ),
     'id'            => 'underskeleton_footer_right',
-    'description'   => '',
+    'description'   => __( 'Widgets for right column on three columns footer.', 'underskeleton' ),
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
     'before_title'  => '<h4>',

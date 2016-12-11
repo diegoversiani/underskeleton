@@ -19,6 +19,16 @@ The stable version is aways the latest release, [see releases](https://github.co
 
 ## Changelog
 
+        == master branch ==
+               - Add back `header text color` core functionality.
+               - Remove `post-formats` support.
+               - Remove `search-form` from html5 theme support as theme includes custom search form.
+               - Remove custom logo for login page - plugin territory.
+               - Fixed custom header image feature.
+               - Fixed editor-style enqueue.
+               - Fixed escaping issues.
+               - Fixed translation issues.
+
         == v1.0.1 December 10th 2016 ==
                - Change license information for WordPress Theme Directory.
                - Add full-width page template.
