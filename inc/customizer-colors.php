@@ -16,7 +16,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'capability'    => 'edit_theme_options',
         'sanitize_callback'    => 'sanitize_text_field',
         ));
-    $wp_customize->add_control( new WP_Separator_Customize_Control( 
+    $wp_customize->add_control( new Underskeleton_Customize_Separator_Control( 
         $wp_customize,
         'underskeleton_brand_colors_separator',
         array(
@@ -89,7 +89,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'capability'    => 'edit_theme_options',
         'sanitize_callback'    => 'sanitize_text_field',
         ));
-    $wp_customize->add_control( new WP_Separator_Customize_Control( 
+    $wp_customize->add_control( new Underskeleton_Customize_Separator_Control( 
         $wp_customize,
         'underskeleton_text_colors_separator',
         array(
@@ -163,7 +163,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
         'capability'    => 'edit_theme_options',
         'sanitize_callback'    => 'sanitize_text_field',
         ));
-    $wp_customize->add_control( new WP_Separator_Customize_Control( 
+    $wp_customize->add_control( new Underskeleton_Customize_Separator_Control( 
         $wp_customize,
         'underskeleton_button_colors_separator',
         array(

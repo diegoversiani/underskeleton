@@ -28,6 +28,7 @@ The stable version is aways the latest release, [see releases](https://github.co
                - Fixed editor-style enqueue.
                - Fixed escaping issues.
                - Fixed translation issues.
+               - Fixed theme tags.
 
         == v1.0.1 December 10th 2016 ==
                - Change license information for WordPress Theme Directory.

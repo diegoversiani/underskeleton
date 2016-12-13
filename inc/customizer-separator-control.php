@@ -7,7 +7,7 @@
  */
 function underskeleton_separator_customize_register( $wp_customize ) {
 
-  class WP_Separator_Customize_Control extends WP_Customize_Control {
+  class Underskeleton_Customize_Separator_Control extends WP_Customize_Control {
     public $type = 'sepatator_control';
     /**
     * Render the control's content.
@@ -21,6 +21,3 @@ function underskeleton_separator_customize_register( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'underskeleton_separator_customize_register' );
-
-
-

@@ -34,8 +34,10 @@ function underskeleton_infinite_scroll_render() {
 		the_post();
 		if ( is_search() ) :
 		    get_template_part( 'template-parts/content', 'search' );
+		elseif ( is_page() ) :
+		    get_template_part( 'template-parts/content', 'page' );
 		else :
-		    get_template_part( 'template-parts/content', get_post_format() );
+		    get_template_part( 'template-parts/content' );
 		endif;
 	}
 }
