@@ -19,6 +19,9 @@ The stable version is aways the latest release, [see releases](https://github.co
 
 ## Changelog
 
+        == master branch ==
+               - Fixed npm dependencies for dev tools.
+
         == v1.0.3 December 13th 2016 ==
                - Add back `header text color` core functionality.
                - Remove `post-formats` support.
