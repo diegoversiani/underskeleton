@@ -36,9 +36,9 @@ function underskeleton_homepage_widgets_init() {
   /* #HOMEPAGE BEFORE CONTENT */
     
   register_sidebar( array(
-    'name'          => __( 'Homepage Before Content', 'underskeleton' ),
+    'name'          => __( 'Homepage Before Content (DEPRECATED)', 'underskeleton' ),
     'id'            => 'underskeleton_homepage_before',
-    'description'   => __( 'Insert widgets before the content of the page set as the homepage.', 'underskeleton' ),
+    'description'   => __( 'Insert widgets before the content in the homepage template.', 'underskeleton' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h2>',
@@ -49,9 +49,9 @@ function underskeleton_homepage_widgets_init() {
   /* #HOMEPAGE AFTER CONTENT */
 
   register_sidebar( array(
-    'name'          => __( 'Homepage After Content', 'underskeleton' ),
+    'name'          => __( 'Homepage After Content (DEPRECATED)', 'underskeleton' ),
     'id'            => 'underskeleton_homepage_after',
-    'description'   => __( 'Insert widgets after the content of the page set as the homepage.', 'underskeleton' ),
+    'description'   => __( 'Insert widgets after the content in the homepage template.', 'underskeleton' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h2>',
@@ -72,9 +72,9 @@ add_action( 'widgets_init', 'underskeleton_homepage_widgets_init', 0);
 function underskeleton_posts_lists_widgets_init() {
 
   register_sidebar( array(
-    'name'          => __( 'Posts Lists', 'underskeleton' ),
+    'name'          => __( 'Posts Lists (DEPRECATED)', 'underskeleton' ),
     'id'            => 'underskeleton_posts_lists',
-    'description'   => __( 'Widgets here will appear after posts lists such as the front-page posts list and archives.', 'underskeleton' ),
+    'description'   => __( 'Insert widgets after posts lists such as the blog page and archives.', 'underskeleton' ),
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
     'before_title'  => '<h5>',

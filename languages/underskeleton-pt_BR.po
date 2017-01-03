@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Underskeleton 0.1.1\n"
 "Report-Msgid-Bugs-To: http://github.com/diegoversiani/underskeleton\n"
-"POT-Creation-Date: 2016-09-28 18:06+0000\n"
-"PO-Revision-Date: 2016-09-28 18:08+0000\n"
+"POT-Creation-Date: 2017-01-03 16:19+0000\n"
+"PO-Revision-Date: 2017-01-03 16:24+0000\n"
 "Last-Translator: diegoversiani@gmail.com <diegoversiani@gmail.com>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt-BR\n"
@@ -22,49 +22,55 @@ msgstr ""
 "X-Generator: Loco - https://localise.biz/\n"
 "X-Loco-Target-Locale: pt_BR"
 
-#: inc/customizer-colors.php:26
-msgid "Brand Colors"
-msgstr "Cores da marca"
+#: inc/widgets-areas.php:39
+msgid "Homepage Before Content (DEPRECATED)"
+msgstr ""
+"P&aacute;gina Inicial - Antes do Conte&uacute;do (MARCADO P/ REMO&Ccedil;"
+"&Atilde;O)"
 
-#: inc/customizer-colors.php:44
-msgid "Primary Color"
-msgstr "Cor Primária"
+#: inc/widgets-areas.php:41
+msgid "Insert widgets before the content in the homepage template."
+msgstr ""
+"Adiciona widgets antes do conte&uacute;do no template de P&aacute;gina "
+"Inicial."
 
-#: inc/customizer-colors.php:62
-msgid "Secondary Color"
-msgstr "Cor Secundária"
+#: inc/widgets-areas.php:52
+msgid "Homepage After Content (DEPRECATED)"
+msgstr ""
+"P&aacute;gina Inicial - Depois do Conte&uacute;do (MARCADO P/ REMO&Ccedil;"
+"&Atilde;O)"
 
-#: inc/customizer-colors.php:80
-msgid "Tertiary Color"
-msgstr "Cor Terciária"
+#: inc/widgets-areas.php:54
+msgid "Insert widgets after the content in the homepage template."
+msgstr ""
+"Adiciona widgets depois do conte&uacute;do no template de P&aacute;gina "
+"Inicial."
 
-#: inc/customizer-colors.php:98
-msgid "Text Colors"
-msgstr "Cores de Texto"
+#: inc/widgets-areas.php:75
+msgid "Posts Lists (DEPRECATED)"
+msgstr "Lista de Posts (MARCADO P/ REMO&Ccedil;&Atilde;O)"
 
-#: inc/customizer-colors.php:116
-msgid "Text Color"
-msgstr "Cor do texto"
+#: inc/widgets-areas.php:77
+msgid "Insert widgets after posts lists such as the blog page and archives."
+msgstr ""
+"Adicionar widgets depois dos posts em uma lista como na p&aacute;gina do "
+"blog e arquivos."
 
-#: inc/customizer-colors.php:134
-msgid "Heading Color"
-msgstr "Cor dos cabeçalhos"
+#: inc/widgets-areas.php:102
+msgid "Widgets for one column footer."
+msgstr "Widgets para o rodap&eacute; de uma coluna."
 
-#: inc/customizer-colors.php:152
-msgid "Link Color"
-msgstr "Cor do links"
+#: inc/widgets-areas.php:115
+msgid "Widgets for left column on three columns footer."
+msgstr "Widgets para a coluna esquerda do rodap&eacute; de 3 colunas."
 
-#: inc/customizer-colors.php:171
-msgid "Button Colors"
-msgstr "Cores de Botões"
+#: inc/widgets-areas.php:125
+msgid "Widgets for center column on three columns footer."
+msgstr "Widgets para a coluna central do rodap&eacute; de 3 colunas."
 
-#: inc/customizer-colors.php:189
-msgid "Button Text Color"
-msgstr "Cor de texto do botão"
-
-#: inc/customizer-colors.php:207
-msgid "Button Background Color"
-msgstr "Cor de fundo do botão"
+#: inc/widgets-areas.php:135
+msgid "Widgets for right column on three columns footer."
+msgstr "Widgets para a coluna direita do rodap&eacute; de 3 colunas."
 
 #: comments.php:31
 msgctxt "comments title"
@@ -134,30 +140,97 @@ msgstr "Categorias Mais Usadas"
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Procure nos arquivos mensais. %1$s"
 
-#: footer.php:21
+#: single.php:23
+msgid "&laquo; %title"
+msgstr "&laquo; %title"
+
+#: single.php:24
+msgid "%title &raquo;"
+msgstr "%title &raquo;"
+
+#: footer.php:23
 msgid "https://wordpress.org/"
 msgstr ""
 "https://wordpress.org/\n"
 
-#: footer.php:21
+#: footer.php:23
 msgid "Proudly powered by %s"
 msgstr "Orgulhosamente desenvolvido com %s"
 
-#: footer.php:23
+#: footer.php:25
 msgid "Theme: %1$s by %2$s."
 msgstr "Tema %1$s por %2$s."
 
-#: footer.php:23
+#: footer.php:25
 msgid "Underskeleton"
 msgstr "Underskeleton"
 
-#: footer.php:23
+#: footer.php:25
 msgid ""
 "<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
 "com</a>"
 msgstr ""
 "<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
 "com</a>"
+
+#: searchform.php:2 searchform.php:6
+msgctxt "label"
+msgid "Search for:"
+msgstr "Pesquisar por:"
+
+#: searchform.php:4
+msgctxt "placeholder"
+msgid "Search ..."
+msgstr "Pesquisar ..."
+
+#: searchform.php:6
+msgctxt "submit button"
+msgid "Search"
+msgstr "Pesquisar"
+
+#: inc/customizer-colors.php:23
+msgid "Brand Colors"
+msgstr "Cores da marca"
+
+#: inc/customizer-colors.php:41
+msgid "Primary Color"
+msgstr "Cor Primária"
+
+#: inc/customizer-colors.php:59
+msgid "Secondary Color"
+msgstr "Cor Secundária"
+
+#: inc/customizer-colors.php:77
+msgid "Tertiary Color"
+msgstr "Cor Terciária"
+
+#: inc/customizer-colors.php:96
+msgid "Text Colors"
+msgstr "Cores de Texto"
+
+#: inc/customizer-colors.php:114
+msgid "Text Color"
+msgstr "Cor do texto"
+
+#: inc/customizer-colors.php:132
+msgid "Heading Color"
+msgstr "Cor dos cabeçalhos"
+
+#: inc/customizer-colors.php:150
+msgid "Link Color"
+msgstr "Cor do links"
+
+#: inc/customizer-colors.php:170
+msgid "Button Colors"
+msgstr "Cores de Botões"
+
+#: inc/customizer-colors.php:188
+msgid "Button Text Color"
+msgstr "Cor de texto do botão"
+
+#: inc/customizer-colors.php:206
+msgid "Button Background Color"
+msgstr "Cor de fundo do botão"
 
 #: inc/widgets-areas.php:15
 msgid "Sidebar"
@@ -166,18 +239,6 @@ msgstr "Barra Lateral"
 #: inc/widgets-areas.php:17
 msgid "Add widgets here."
 msgstr "Adicione widgets aqui."
-
-#: inc/widgets-areas.php:39
-msgid "Homepage Before Content"
-msgstr "Página Inicial - Antes do conteúdo"
-
-#: inc/widgets-areas.php:52
-msgid "Homepage After Content"
-msgstr "Página Inicial - Depois do conteúdo"
-
-#: inc/widgets-areas.php:75
-msgid "Posts Lists"
-msgstr "Lista de posts"
 
 #: inc/widgets-areas.php:100
 msgid "Footer Single"
@@ -199,11 +260,11 @@ msgstr "Rodapé - Coluna Direita"
 msgid "Primary"
 msgstr "Primário"
 
-#: inc/customizer.php:35
+#: inc/customizer.php:48
 msgid "Show Homepage Content"
 msgstr "Exibir conteúdo da página inicial"
 
-#: inc/customizer.php:36
+#: inc/customizer.php:49
 msgid ""
 "Show the content of the page selected as <code>Static Homepage</code>. The "
 "homepage supports adding widgets in the content area. We recommend using the "
@@ -214,23 +275,23 @@ msgstr ""
 "conteúdo. Recomendamos usar o plugin \"Customizer Building Blocks\" para "
 "criar sua página inicial.\n"
 
-#: inc/customizer.php:56
+#: inc/customizer.php:69
 msgid "Page settings"
 msgstr "Configurações de páginas"
 
-#: inc/customizer.php:57
+#: inc/customizer.php:70
 msgid "Configure how pages are displayed."
 msgstr "Configure como as páginas são exibidas."
 
-#: inc/customizer.php:66
+#: inc/customizer.php:80
 msgid "Limit header content to container"
 msgstr "Limitar o cabeçalho ao container"
 
-#: inc/customizer.php:78
+#: inc/customizer.php:93
 msgid "Limit content to container"
 msgstr "Limitar o conteúdo ao container"
 
-#: inc/customizer.php:90
+#: inc/customizer.php:106
 msgid "Limit footer content to container"
 msgstr "Limitar o rodapé ao container"
 
@@ -267,6 +328,10 @@ msgstr "Deixe um comentário<span class=\"screen-reader-text\"> em %s</span>"
 #: template-parts/content-homepage.php:29
 msgid "Edit %s"
 msgstr "Editar %s"
+
+#. Name of the template
+msgid "Full-width"
+msgstr "Largura Completa"
 
 #. Name of the template
 msgid "Homepage"

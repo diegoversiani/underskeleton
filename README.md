@@ -21,6 +21,8 @@ The stable version is aways the latest release, [see releases](https://github.co
 ## Changelog
 
         == master branch ==
+               - Mark widget areas as DEPRECATED for future removal: 'Homepage Before Content', 'Homepage After Content', 'Posts Lists'.
+               - Update pt-BR Translation.
                - Fixed npm dependencies for dev tools.
 
         == v1.0.3 December 13th 2016 ==

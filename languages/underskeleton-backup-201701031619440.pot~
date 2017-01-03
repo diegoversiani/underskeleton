@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Underskeleton 0.1.1\n"
 "Report-Msgid-Bugs-To: http://github.com/diegoversiani/underskeleton\n"
-"POT-Creation-Date: 2017-01-03 16:19+0000\n"
+"POT-Creation-Date: 2017-01-03 16:12+0000\n"
 "POT-Revision-Date: Wed Jun 08 2016 16:17:57 GMT-0300 (E. South America "
 "Standard Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -188,27 +188,29 @@ msgid "Add widgets here."
 msgstr ""
 
 #: inc/widgets-areas.php:39
-msgid "Homepage Before Content (DEPRECATED)"
+msgid "Homepage Before Content"
 msgstr ""
 
 #: inc/widgets-areas.php:41
-msgid "Insert widgets before the content in the homepage template."
+msgid "Insert widgets before the content of the page set as the homepage."
 msgstr ""
 
 #: inc/widgets-areas.php:52
-msgid "Homepage After Content (DEPRECATED)"
+msgid "Homepage After Content"
 msgstr ""
 
 #: inc/widgets-areas.php:54
-msgid "Insert widgets after the content in the homepage template."
+msgid "Insert widgets after the content of the page set as the homepage."
 msgstr ""
 
 #: inc/widgets-areas.php:75
-msgid "Posts Lists (DEPRECATED)"
+msgid "Posts Lists"
 msgstr ""
 
 #: inc/widgets-areas.php:77
-msgid "Insert widgets after posts lists such as the blog page and archives."
+msgid ""
+"Widgets here will appear after posts lists such as the front-page posts list "
+"and archives."
 msgstr ""
 
 #: inc/widgets-areas.php:100
