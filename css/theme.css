@@ -884,59 +884,29 @@ h1, h2, h3, h4, h5, h6 {
 \*------------------------------------*/
 /*------------------------------------*  #MODIFIERS
   Some modifiers are defined in the file
-  /inc/customizer-colors.php
+  /inc/customizer-colors.php if file exists.
 \*------------------------------------*/
 /*------------------------------------*  #SECTION MODIFIERS
 \*------------------------------------*/
-.header-overlay {
-  margin-top: -8rem;
-  padding-top: 8rem; }
+.vertical-paddings {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
-.block-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+.vertical-padding-top {
+  padding-top: 2rem; }
 
-.block-vertical-center {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center; }
+.vertical-padding-bottom {
+  padding-bottom: 2rem; }
 
-.section-spacing {
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
+.vertical-margin {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
-.section-spacing-top {
-  padding-top: 5rem; }
+.vertical-margin-top {
+  margin-top: 2rem; }
 
-.section-spacing-bottom {
-  padding-bottom: 5rem; }
-
-.section-margin {
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
-
-.section-margin-top {
-  margin-top: 5rem; }
-
-.section-margin-bottom {
-  margin-bottom: 5rem; }
-
-.full-screen {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100vw;
-  height: 100vh; }
-
-.half-screen {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100vw;
-  height: 50vh; }
-
-.clearboth {
-  clear: both; }
+.vertical-margin-bottom {
+  margin-bottom: 2rem; }
 
 /*------------------------------------*  #BACKGROUND
 \*------------------------------------*/
@@ -950,51 +920,59 @@ h1, h2, h3, h4, h5, h6 {
 .dark-grey-background {
   background-color: #333; }
 
+.primary-background {
+  background-color: #d72d5c; }
+
+.secondary-background {
+  background-color: #155d4f; }
+
+.tertiary-background {
+  background-color: #f4da7a; }
+
+.block-spacing {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
 /*------------------------------------*  #TEXT MODIFIERS
 \*------------------------------------*/
-.text-center {
-  text-align: center; }
+.text-two-columns,
+.text-three-columns,
+.text-four-columns {
+  -moz-column-gap: 2rem;
+  column-gap: 2rem; }
 
-.text-right {
-  text-align: right; }
+@media (min-width: 550px) {
+  .text-two-columns {
+    -moz-column-count: 2;
+    column-count: 2; } }
 
-.text-left {
-  text-align: left; }
+@media (min-width: 550px) {
+  .text-three-columns {
+    -moz-column-count: 3;
+    column-count: 3; } }
 
-.text-justify {
-  text-align: justify; }
-
-.text-shadow {
-  text-shadow: rgba(0, 0, 0, 0.75) 0 1px 0; }
-
-.uppercase {
-  text-transform: uppercase; }
-
-.lowercase {
-  text-transform: lowercase; }
-
-.light-text,
-.light-text * {
-  color: #fff; }
-
-.dark-text {
-  color: #333; }
+@media (min-width: 550px) {
+  .text-four-columns {
+    -moz-column-count: 4;
+    column-count: 4; } }
 
 /*------------------------------------*  #BUTTON MODIFIERS
 \*------------------------------------*/
-.small-button {
-  max-width: 10rem; }
+.button-medium {
+  max-width: 100%;
+  width: 25rem;
+  font-size: 110%;
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
-.medium-button {
-  min-width: 10rem;
-  max-width: 30rem; }
-
-.large-button {
-  min-width: 30rem;
-  max-width: 100%; }
-
-.full-size-button {
-  width: 100%; }
+.button-large {
+  max-width: 100%;
+  width: 35rem;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 130%; }
 
 /*------------------------------------*  #MANAGES Z-INDEX
   Higher values first
@@ -1015,12 +993,12 @@ h1, h2, h3, h4, h5, h6 {
 .site-header__content {
   border-bottom: solid 1px #bbb; }
   .site-header__content:not(.container) {
-    padding-left: 1rem;
-    padding-right: 1rem; }
+    padding-left: 2rem;
+    padding-right: 2rem; }
     @media (min-width: 550px) {
       .site-header__content:not(.container) {
-        padding-left: 3rem;
-        padding-right: 3rem; } }
+        padding-left: 2rem;
+        padding-right: 2rem; } }
 
 .custom-header-image {
   display: block;
@@ -1050,12 +1028,12 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*  #CONTENT AREA
 \*------------------------------------*/
 .site-content:not(.container) {
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-left: 2rem;
+  padding-right: 2rem; }
   @media (min-width: 550px) {
     .site-content:not(.container) {
-      padding-left: 3rem;
-      padding-right: 3rem; } }
+      padding-left: 2rem;
+      padding-right: 2rem; } }
 
 /*------------------------------------*  #FORMS
 \*------------------------------------*/
@@ -1328,8 +1306,8 @@ input[type=submit].search-submit {
   overflow: hidden; }
 
 .nav-links {
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .nav-links div:first-child a {
   margin-left: 0; }
@@ -1406,12 +1384,12 @@ input[type=submit].search-submit {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
   .site-footer__content:not(.container) {
-    padding-left: 1rem;
-    padding-right: 1rem; }
+    padding-left: 2rem;
+    padding-right: 2rem; }
     @media (min-width: 550px) {
       .site-footer__content:not(.container) {
-        padding-left: 3rem;
-        padding-right: 3rem; } }
+        padding-left: 2rem;
+        padding-right: 2rem; } }
 
 /*------------------------------------*  #TRANSITIONS
 \*------------------------------------*/

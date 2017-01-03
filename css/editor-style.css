@@ -4,3 +4,13 @@
 /* == EDITOR STYLES == */
 #tinymce {
   margin: 2rem; }
+
+.row {
+  border: dotted .1rem #0073aa; }
+
+.column,
+.columns {
+  border: dashed .2rem #ddd; }
+
+.container {
+  border: dotted .1rem #ff0000; }

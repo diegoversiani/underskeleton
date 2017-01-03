@@ -38,6 +38,11 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
+ * Set editor styles select.
+ */
+require get_template_directory() . '/inc/editor-formats.php';
+
+/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer-separator-control.php';

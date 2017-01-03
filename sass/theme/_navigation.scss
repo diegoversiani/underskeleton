@@ -25,7 +25,7 @@
 }
 
 .nav-links {
-  @include section-paddings();
+  @include vertical-paddings();
 }
 
 .nav-links div:first-child a{

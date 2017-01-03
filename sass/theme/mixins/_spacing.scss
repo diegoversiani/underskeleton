@@ -1,7 +1,7 @@
 /*------------------------------------*\
   #SPACING MIXINS
 \*------------------------------------*/
-@mixin section-paddings( $place: '', $padding: 5rem ) {
+@mixin vertical-paddings( $place: '', $padding: $global-padding ) {
   $top: true;
   $bottom: true;
 
@@ -23,7 +23,28 @@
 
 
 
-@mixin section-margins( $place: '', $margin: 5rem ) {
+@mixin lateral-paddings( $place: '', $padding: $global-padding ) {
+  $left: true;
+  $right: true;
+
+  @if $place == 'right' {
+    $left: false;
+  } @elseif $place == 'left' {
+    $right: false;
+  }
+
+  @if $left {
+    padding-left: $padding;
+  }
+
+  @if $right {
+    padding-right: $padding;
+  }
+}
+
+
+
+@mixin vertical-margins( $place: '', $margin: $global-padding ) {
   $top: true;
   $bottom: true;
 
@@ -43,7 +64,23 @@
 
 }
 
-@mixin lateral-paddings( $padding: $global-padding ) {
-  padding-left: $padding;
-  padding-right: $padding;
+
+
+@mixin lateral-margins( $place: '', $margin: $global-padding ) {
+  $left: true;
+  $right: true;
+
+  @if $place == 'right' {
+    $left: false;
+  } @elseif $place == 'left' {
+    $right: false;
+  }
+
+  @if $left {
+    margin-left: $margin;
+  }
+
+  @if $right {
+    margin-right: $margin;
+  }
 }

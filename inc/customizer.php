@@ -45,7 +45,7 @@ function underskeleton_static_front_page_customizer( $wp_customize ) {
         'sanitize_callback' => 'underskeleton_sanitize_checkbox',
         ));
     $wp_customize->add_control( 'underskeleton_show_homepage_content', array(
-        'label'     => __( 'Show Homepage Content', 'underskeleton' ),
+        'label'     => __( 'Show Homepage Content (DEPRECATED)', 'underskeleton' ),
         'description' => __( 'Show the content of the page selected as <code>Static Homepage</code>. The homepage supports adding widgets in the content area. We recommend using the plugin "Customizer Building Blocks" to create your homepage.', 'underskeleton' ),
         'section'   => 'static_front_page',
         'type'      => 'checkbox',

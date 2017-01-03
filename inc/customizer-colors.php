@@ -64,7 +64,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
 
     /* SETTING: TERTIARY COLOR */
     $wp_customize->add_setting( 'underskeleton_tertiary_color', array(
-        'default'       => '#264a5c',
+        'default'       => '#f4da7a',
         'type'          => 'theme_mod',
         'capability'    => 'edit_theme_options',
         'transport'     => 'postMessage',
@@ -101,7 +101,7 @@ function underskeleton_colors_customizer( $wp_customize ) {
 
     /* SETTING: TEXT COLOR */
     $wp_customize->add_setting( 'underskeleton_text_color', array(
-        'default'       => '#222',
+        'default'       => '#222222',
         'type'          => 'theme_mod',
         'capability'    => 'edit_theme_options',
         'transport'     => 'postMessage',
@@ -264,16 +264,16 @@ function underskeleton_colors_customizer_get_output() {
     // Start output buffering
     ob_start();
 
-    $text_color_esc = esc_attr( get_theme_mod( 'underskeleton_text_color', '#606060' ) );
+    $text_color_esc = esc_attr( get_theme_mod( 'underskeleton_text_color', '#222222' ) );
     $link_color_esc = esc_attr( get_theme_mod( 'underskeleton_link_color', '#155d4f' ) );
-    $heading_color_esc = esc_attr( get_theme_mod( 'underskeleton_heading_color', '#606060' ) );
+    $heading_color_esc = esc_attr( get_theme_mod( 'underskeleton_heading_color', '#d72d5c' ) );
     $header_background_color_esc = esc_attr( get_theme_mod( 'underskeleton_header_background_color', '#bbc2ca' ) );
     $button_text_color_esc = esc_attr( get_theme_mod( 'underskeleton_button_text_color', '#155d4f' ) ); 
     $button_background_color_esc = esc_attr( get_theme_mod( 'underskeleton_button_background_color', '#f3f3f3' ) ); 
     
     $primary_color_esc = esc_attr( get_theme_mod( 'underskeleton_primary_color', '#d72d5c' ) ); 
     $secondary_color_esc = esc_attr( get_theme_mod( 'underskeleton_secondary_color', '#155d4f' ) ); 
-    $tertiary_color_esc = esc_attr( get_theme_mod( 'underskeleton_tertiary_color', '#264a5c' ) ); 
+    $tertiary_color_esc = esc_attr( get_theme_mod( 'underskeleton_tertiary_color', '#f4da7a' ) ); 
     
     ?>
         /* default text color */
