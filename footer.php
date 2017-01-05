@@ -19,11 +19,7 @@
     <div class="site-footer__content <?php echo esc_attr( $container_class ); ?>">
     <div class="row">
 
-  		<div class="site-info">
-  			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'underskeleton' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'underskeleton' ), 'WordPress' ); ?></a>
-  			<span class="sep"> | </span>
-  			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'underskeleton' ), __( 'Underskeleton' , 'underskeleton'), __( '<a href="http://getunderskeleton.com" rel="designer">getunderskeleton.com</a>' , 'underskeleton') ); ?>
-  		</div><!-- .site-info -->
+    footer
 
     </div><!-- .row -->
     </div>

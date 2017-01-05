@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Underskeleton 0.1.1\n"
 "Report-Msgid-Bugs-To: http://github.com/diegoversiani/underskeleton\n"
-"POT-Creation-Date: 2017-01-03 16:19+0000\n"
-"PO-Revision-Date: 2017-01-03 16:24+0000\n"
+"POT-Creation-Date: 2017-01-05 20:41+0000\n"
+"PO-Revision-Date: 2017-01-05 20:51+0000\n"
 "Last-Translator: diegoversiani@gmail.com <diegoversiani@gmail.com>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt-BR\n"
@@ -22,55 +22,103 @@ msgstr ""
 "X-Generator: Loco - https://localise.biz/\n"
 "X-Loco-Target-Locale: pt_BR"
 
-#: inc/widgets-areas.php:39
-msgid "Homepage Before Content (DEPRECATED)"
+#: inc/editor-formats.php:37
+msgid "Layout"
+msgstr "Layout"
+
+#: inc/editor-formats.php:41
+msgid "Columns"
+msgstr "Colunas"
+
+#: inc/editor-formats.php:44
+msgid "Row"
+msgstr "Linha"
+
+#: inc/editor-formats.php:50
+msgid "Block of 1/2"
+msgstr "Bloco de 1/2"
+
+#: inc/editor-formats.php:56
+msgid "Block of 1/3"
+msgstr "Bloco de 1/3"
+
+#: inc/editor-formats.php:62
+msgid "Block of 2/3"
+msgstr "Bloco de 2/3"
+
+#: inc/editor-formats.php:68
+msgid "Content Container"
+msgstr "Container de Conteúdo"
+
+#: inc/editor-formats.php:77
+msgid "Text Columns"
+msgstr "Colunas de Texto"
+
+#: inc/editor-formats.php:80
+msgid "Text in 2 Columns"
+msgstr "Texto em 2 Colunas"
+
+#: inc/editor-formats.php:86
+msgid "Text in 3 Columns"
+msgstr "Texto em 3 Colunas"
+
+#: inc/editor-formats.php:92
+msgid "Text in 4 Columns"
+msgstr "Texto em 4 Colunas"
+
+#: inc/editor-formats.php:103
+msgid "Color Blocks"
+msgstr "Blocos em Cores"
+
+#: inc/editor-formats.php:106
+msgid "Light Grey Block"
+msgstr "Bloco Cinza Claro"
+
+#: inc/editor-formats.php:112
+msgid "Dark Grey Block"
+msgstr "Bloco Cinza Escuro"
+
+#: inc/editor-formats.php:139
+msgid "Buttons"
+msgstr "Botões"
+
+#: inc/editor-formats.php:142
+msgid "Default Color"
+msgstr "Cor Padrão"
+
+#: inc/editor-formats.php:162
+msgid "Medium Size"
+msgstr "Botão Médio"
+
+#: inc/editor-formats.php:167
+msgid "Large Size"
+msgstr "Botão Grande"
+
+#: inc/customizer.php:48
+msgid "Show Homepage Content (DEPRECATED)"
+msgstr "Exibir Conteúdo da Página Inicial"
+
+#. Name of the template
+msgid "Homepage (DEPRECATED)"
+msgstr "Página Inicial (MARCADO PARA REMOÇÃO)"
+
+#. Description of the theme
+msgid ""
+"Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
+"Starter Theme for your next WordPress Theme or Website. It has beautiful "
+"typography, custom colors options and a whole set of editing options in the "
+"content editor. Underskeleton is designed to be a starter theme and comes "
+"with many developer tools. IMPORTANT: If you plan to change Underskeleton "
+"please read the README.md file in the theme directory to learn more about "
+"developing with it."
 msgstr ""
-"P&aacute;gina Inicial - Antes do Conte&uacute;do (MARCADO P/ REMO&Ccedil;"
-"&Atilde;O)"
-
-#: inc/widgets-areas.php:41
-msgid "Insert widgets before the content in the homepage template."
-msgstr ""
-"Adiciona widgets antes do conte&uacute;do no template de P&aacute;gina "
-"Inicial."
-
-#: inc/widgets-areas.php:52
-msgid "Homepage After Content (DEPRECATED)"
-msgstr ""
-"P&aacute;gina Inicial - Depois do Conte&uacute;do (MARCADO P/ REMO&Ccedil;"
-"&Atilde;O)"
-
-#: inc/widgets-areas.php:54
-msgid "Insert widgets after the content in the homepage template."
-msgstr ""
-"Adiciona widgets depois do conte&uacute;do no template de P&aacute;gina "
-"Inicial."
-
-#: inc/widgets-areas.php:75
-msgid "Posts Lists (DEPRECATED)"
-msgstr "Lista de Posts (MARCADO P/ REMO&Ccedil;&Atilde;O)"
-
-#: inc/widgets-areas.php:77
-msgid "Insert widgets after posts lists such as the blog page and archives."
-msgstr ""
-"Adicionar widgets depois dos posts em uma lista como na p&aacute;gina do "
-"blog e arquivos."
-
-#: inc/widgets-areas.php:102
-msgid "Widgets for one column footer."
-msgstr "Widgets para o rodap&eacute; de uma coluna."
-
-#: inc/widgets-areas.php:115
-msgid "Widgets for left column on three columns footer."
-msgstr "Widgets para a coluna esquerda do rodap&eacute; de 3 colunas."
-
-#: inc/widgets-areas.php:125
-msgid "Widgets for center column on three columns footer."
-msgstr "Widgets para a coluna central do rodap&eacute; de 3 colunas."
-
-#: inc/widgets-areas.php:135
-msgid "Widgets for right column on three columns footer."
-msgstr "Widgets para a coluna direita do rodap&eacute; de 3 colunas."
+"Pronto para mobile, rápido e fácil de usar. Underskeleton é o Tema Base para "
+"seu próximo website com WordPress. Vem com linda tipografia, opções para "
+"customização de cores e um monte de opções para edição de conteúdo. "
+"Underskeleton foi desenhado para ser um tema base e vem com várias "
+"ferramentas para desenvolvimento. IMPORTANTE: Se você pretende fazer "
+"mudanças no Underskeleton leia o arquivo README.md no diretório raíz do tema "
+"para saber mais."
 
 #: comments.php:31
 msgctxt "comments title"
@@ -148,31 +196,6 @@ msgstr "&laquo; %title"
 msgid "%title &raquo;"
 msgstr "%title &raquo;"
 
-#: footer.php:23
-msgid "https://wordpress.org/"
-msgstr ""
-"https://wordpress.org/\n"
-
-#: footer.php:23
-msgid "Proudly powered by %s"
-msgstr "Orgulhosamente desenvolvido com %s"
-
-#: footer.php:25
-msgid "Theme: %1$s by %2$s."
-msgstr "Tema %1$s por %2$s."
-
-#: footer.php:25
-msgid "Underskeleton"
-msgstr "Underskeleton"
-
-#: footer.php:25
-msgid ""
-"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
-"com</a>"
-msgstr ""
-"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
-"com</a>"
-
 #: searchform.php:2 searchform.php:6
 msgctxt "label"
 msgid "Search for:"
@@ -192,15 +215,18 @@ msgstr "Pesquisar"
 msgid "Brand Colors"
 msgstr "Cores da marca"
 
-#: inc/customizer-colors.php:41
+#: inc/customizer-colors.php:41 inc/editor-formats.php:118 
+#: inc/editor-formats.php:147
 msgid "Primary Color"
 msgstr "Cor Primária"
 
-#: inc/customizer-colors.php:59
+#: inc/customizer-colors.php:59 inc/editor-formats.php:124 
+#: inc/editor-formats.php:152
 msgid "Secondary Color"
 msgstr "Cor Secundária"
 
-#: inc/customizer-colors.php:77
+#: inc/customizer-colors.php:77 inc/editor-formats.php:130 
+#: inc/editor-formats.php:157
 msgid "Tertiary Color"
 msgstr "Cor Terciária"
 
@@ -240,29 +266,75 @@ msgstr "Barra Lateral"
 msgid "Add widgets here."
 msgstr "Adicione widgets aqui."
 
+#: inc/widgets-areas.php:39
+msgid "Homepage Before Content (DEPRECATED)"
+msgstr ""
+"P&aacute;gina Inicial - Antes do Conte&uacute;do (MARCADO P/ REMO&Ccedil;"
+"&Atilde;O)"
+
+#: inc/widgets-areas.php:41
+msgid "Insert widgets before the content in the homepage template."
+msgstr ""
+"Adiciona widgets antes do conte&uacute;do no template de P&aacute;gina "
+"Inicial."
+
+#: inc/widgets-areas.php:52
+msgid "Homepage After Content (DEPRECATED)"
+msgstr ""
+"P&aacute;gina Inicial - Depois do Conte&uacute;do (MARCADO P/ REMO&Ccedil;"
+"&Atilde;O)"
+
+#: inc/widgets-areas.php:54
+msgid "Insert widgets after the content in the homepage template."
+msgstr ""
+"Adiciona widgets depois do conte&uacute;do no template de P&aacute;gina "
+"Inicial."
+
+#: inc/widgets-areas.php:75
+msgid "Posts Lists (DEPRECATED)"
+msgstr "Lista de Posts (MARCADO P/ REMO&Ccedil;&Atilde;O)"
+
+#: inc/widgets-areas.php:77
+msgid "Insert widgets after posts lists such as the blog page and archives."
+msgstr ""
+"Adicionar widgets depois dos posts em uma lista como na p&aacute;gina do "
+"blog e arquivos."
+
 #: inc/widgets-areas.php:100
 msgid "Footer Single"
 msgstr "Rodapé - Coluna única"
+
+#: inc/widgets-areas.php:102
+msgid "Widgets for one column footer."
+msgstr "Widgets para o rodap&eacute; de uma coluna."
 
 #: inc/widgets-areas.php:113
 msgid "Footer Left"
 msgstr "Rodapé - Coluna Esquerda"
 
+#: inc/widgets-areas.php:115
+msgid "Widgets for left column on three columns footer."
+msgstr "Widgets para a coluna esquerda do rodap&eacute; de 3 colunas."
+
 #: inc/widgets-areas.php:123
 msgid "Footer Center"
 msgstr "Rodapé - Coluna Central"
+
+#: inc/widgets-areas.php:125
+msgid "Widgets for center column on three columns footer."
+msgstr "Widgets para a coluna central do rodap&eacute; de 3 colunas."
 
 #: inc/widgets-areas.php:133
 msgid "Footer Right"
 msgstr "Rodapé - Coluna Direita"
 
+#: inc/widgets-areas.php:135
+msgid "Widgets for right column on three columns footer."
+msgstr "Widgets para a coluna direita do rodap&eacute; de 3 colunas."
+
 #: inc/theme-setup.php:49
 msgid "Primary"
 msgstr "Primário"
-
-#: inc/customizer.php:48
-msgid "Show Homepage Content"
-msgstr "Exibir conteúdo da página inicial"
 
 #: inc/customizer.php:49
 msgid ""
@@ -333,10 +405,6 @@ msgstr "Editar %s"
 msgid "Full-width"
 msgstr "Largura Completa"
 
-#. Name of the template
-msgid "Homepage"
-msgstr "Página Inicial"
-
 #: template-parts/content-page.php:26 template-parts/content.php:48 
 #: template-parts/content-homepage.php:18
 msgid "Pages:"
@@ -372,13 +440,8 @@ msgid ""
 msgstr ""
 "Parece que não podemos encontrar o que você procura. Talvez a pesquisa ajude."
 
-#. Description of the theme
-msgid ""
-"Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
-"Starter Theme for your next awesome WordPress Theme."
-msgstr ""
-"Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
-"Starter Theme for your next awesome WordPress Theme."
+msgid "Underskeleton"
+msgstr "Underskeleton"
 
 #. Theme URI of the theme
 msgid "http://getunderskeleton.com"

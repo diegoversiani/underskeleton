@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Underskeleton 0.1.1\n"
 "Report-Msgid-Bugs-To: http://github.com/diegoversiani/underskeleton\n"
-"POT-Creation-Date: 2017-01-03 16:19+0000\n"
+"POT-Creation-Date: 2017-01-05 20:41+0000\n"
 "POT-Revision-Date: Wed Jun 08 2016 16:17:57 GMT-0300 (E. South America "
 "Standard Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -98,28 +98,6 @@ msgstr ""
 msgid "%title &raquo;"
 msgstr ""
 
-#: footer.php:23
-msgid "https://wordpress.org/"
-msgstr ""
-
-#: footer.php:23
-msgid "Proudly powered by %s"
-msgstr ""
-
-#: footer.php:25
-msgid "Theme: %1$s by %2$s."
-msgstr ""
-
-#: footer.php:25
-msgid "Underskeleton"
-msgstr ""
-
-#: footer.php:25
-msgid ""
-"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
-"com</a>"
-msgstr ""
-
 #: searchform.php:2 searchform.php:6
 msgctxt "label"
 msgid "Search for:"
@@ -139,15 +117,18 @@ msgstr ""
 msgid "Brand Colors"
 msgstr ""
 
-#: inc/customizer-colors.php:41
+#: inc/customizer-colors.php:41 inc/editor-formats.php:118 
+#: inc/editor-formats.php:147
 msgid "Primary Color"
 msgstr ""
 
-#: inc/customizer-colors.php:59
+#: inc/customizer-colors.php:59 inc/editor-formats.php:124 
+#: inc/editor-formats.php:152
 msgid "Secondary Color"
 msgstr ""
 
-#: inc/customizer-colors.php:77
+#: inc/customizer-colors.php:77 inc/editor-formats.php:130 
+#: inc/editor-formats.php:157
 msgid "Tertiary Color"
 msgstr ""
 
@@ -243,12 +224,84 @@ msgstr ""
 msgid "Widgets for right column on three columns footer."
 msgstr ""
 
+#: inc/editor-formats.php:37
+msgid "Layout"
+msgstr ""
+
+#: inc/editor-formats.php:41
+msgid "Columns"
+msgstr ""
+
+#: inc/editor-formats.php:44
+msgid "Row"
+msgstr ""
+
+#: inc/editor-formats.php:50
+msgid "Block of 1/2"
+msgstr ""
+
+#: inc/editor-formats.php:56
+msgid "Block of 1/3"
+msgstr ""
+
+#: inc/editor-formats.php:62
+msgid "Block of 2/3"
+msgstr ""
+
+#: inc/editor-formats.php:68
+msgid "Content Container"
+msgstr ""
+
+#: inc/editor-formats.php:77
+msgid "Text Columns"
+msgstr ""
+
+#: inc/editor-formats.php:80
+msgid "Text in 2 Columns"
+msgstr ""
+
+#: inc/editor-formats.php:86
+msgid "Text in 3 Columns"
+msgstr ""
+
+#: inc/editor-formats.php:92
+msgid "Text in 4 Columns"
+msgstr ""
+
+#: inc/editor-formats.php:103
+msgid "Color Blocks"
+msgstr ""
+
+#: inc/editor-formats.php:106
+msgid "Light Grey Block"
+msgstr ""
+
+#: inc/editor-formats.php:112
+msgid "Dark Grey Block"
+msgstr ""
+
+#: inc/editor-formats.php:139
+msgid "Buttons"
+msgstr ""
+
+#: inc/editor-formats.php:142
+msgid "Default Color"
+msgstr ""
+
+#: inc/editor-formats.php:162
+msgid "Medium Size"
+msgstr ""
+
+#: inc/editor-formats.php:167
+msgid "Large Size"
+msgstr ""
+
 #: inc/theme-setup.php:49
 msgid "Primary"
 msgstr ""
 
 #: inc/customizer.php:48
-msgid "Show Homepage Content"
+msgid "Show Homepage Content (DEPRECATED)"
 msgstr ""
 
 #: inc/customizer.php:49
@@ -317,7 +370,7 @@ msgid "Full-width"
 msgstr ""
 
 #. Name of the template
-msgid "Homepage"
+msgid "Homepage (DEPRECATED)"
 msgstr ""
 
 #: template-parts/content-page.php:26 template-parts/content.php:48 
@@ -351,10 +404,18 @@ msgid ""
 "searching can help."
 msgstr ""
 
+msgid "Underskeleton"
+msgstr ""
+
 #. Description of the theme
 msgid ""
 "Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
-"Starter Theme for your next awesome WordPress Theme."
+"Starter Theme for your next WordPress Theme or Website. It has beautiful "
+"typography, custom colors options and a whole set of editing options in the "
+"content editor. Underskeleton is designed to be a starter theme and comes "
+"with many developer tools. IMPORTANT: If you plan to change Underskeleton "
+"please read the README.md file in the theme directory to learn more about "
+"developing with it."
 msgstr ""
 
 #. Theme URI of the theme
