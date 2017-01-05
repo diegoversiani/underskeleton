@@ -1,6 +1,9 @@
 # Underskeleton
 
-Underskeleton is a light superfast starter theme with minimalist, dead simple css boilerplate and grid system and just enough styling to get starter with your next WordPress theme.
+Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress Starter Theme for your next WordPress Theme or Website. It has beautiful typography, custom colors options and a whole set of editing options in the content editor.
+
+Underskeleton is designed to be a starter/base theme and comes with many developer tools. 
+
 
 Visit the Project Website: http://getunderskeleton.com
 
