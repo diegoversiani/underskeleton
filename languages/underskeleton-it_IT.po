@@ -1,0 +1,381 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Underskeleton 0.1.1\n"
+"Report-Msgid-Bugs-To: http://github.com/diegoversiani/underskeleton\n"
+"POT-Creation-Date: 2017-01-03 16:19+0000\n"
+"POT-Revision-Date: Wed Jun 08 2016 16:17:57 GMT-0300 (E. South America "
+"Standard Time)\n"
+"PO-Revision-Date: 2017-01-04 23:30+0200\n"
+"Last-Translator: Enrico Bassetti <enrico204@gmail.com>\n"
+"Language-Team: Italian\n"
+"Language: it-IT\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un commento su &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s commenti su &ldquo;%2$s&rdquo;"
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr "Sfoglia commenti"
+
+#: comments.php:43
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Commenti più vecchi"
+
+#: comments.php:44
+msgid "Newer Comments &raquo;"
+msgstr "Nuovi commenti &raquo;"
+
+#: comments.php:64
+msgid "Older Comments"
+msgstr "Commenti più vecchi"
+
+#: comments.php:65
+msgid "Newer Comments"
+msgstr "Nuovi commenti"
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr "Commenti chiusi"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Salta al contenuto"
+
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr "Risultati della ricerca per: %s"
+
+#: search.php:38 archive.php:41 index.php:46
+msgid "&laquo; Older posts"
+msgstr "&laquo; Vecchi articoli"
+
+#: search.php:39 archive.php:42 index.php:47
+msgid "Newer posts &raquo;"
+msgstr "Nuovi articoli &raquo;"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! La pagina non è stata trovata."
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "Sembra non ci sia nulla qui. Prova con un collegamento qui sotto o una ricerca"
+
+#: 404.php:34
+msgid "Most Used Categories"
+msgstr "Categorie più utilizzate"
+
+#. translators: %1$s: smiley
+#: 404.php:52
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Prova a guardare negli archivi mensili %1$s"
+
+#: single.php:23
+msgid "&laquo; %title"
+msgstr "&laquo; %title"
+
+#: single.php:24
+msgid "%title &raquo;"
+msgstr "%title &raquo;"
+
+#: footer.php:23
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: footer.php:23
+msgid "Proudly powered by %s"
+msgstr "Orgogliosamente offerto da %s"
+
+#: footer.php:25
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s by %2$s."
+
+#: footer.php:25
+msgid "Underskeleton"
+msgstr "Underskeleton"
+
+#: footer.php:25
+msgid ""
+"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
+"com</a>"
+msgstr ""
+"<a href=\"http://getunderskeleton.com\" rel=\"designer\">getunderskeleton."
+"com</a>"
+
+#: searchform.php:2 searchform.php:6
+msgctxt "label"
+msgid "Search for:"
+msgstr "Cerca per:"
+
+#: searchform.php:4
+msgctxt "placeholder"
+msgid "Search ..."
+msgstr "Cerca ..."
+
+#: searchform.php:6
+msgctxt "submit button"
+msgid "Search"
+msgstr "Cerca"
+
+#: inc/customizer-colors.php:23
+msgid "Brand Colors"
+msgstr "Colori del brand"
+
+#: inc/customizer-colors.php:41
+msgid "Primary Color"
+msgstr "Colore primario"
+
+#: inc/customizer-colors.php:59
+msgid "Secondary Color"
+msgstr "Colore secondario"
+
+#: inc/customizer-colors.php:77
+msgid "Tertiary Color"
+msgstr "Colore terziario"
+
+#: inc/customizer-colors.php:96
+msgid "Text Colors"
+msgstr "Colori del testo"
+
+#: inc/customizer-colors.php:114
+msgid "Text Color"
+msgstr "Colore del testo"
+
+#: inc/customizer-colors.php:132
+msgid "Heading Color"
+msgstr "Colore intestazione"
+
+#: inc/customizer-colors.php:150
+msgid "Link Color"
+msgstr "Colore collegamento"
+
+#: inc/customizer-colors.php:170
+msgid "Button Colors"
+msgstr "Colori dei pulsanti"
+
+#: inc/customizer-colors.php:188
+msgid "Button Text Color"
+msgstr "Colore del testo del pulsante"
+
+#: inc/customizer-colors.php:206
+msgid "Button Background Color"
+msgstr "Colore di sfondo del pulsante"
+
+#: inc/widgets-areas.php:15
+msgid "Sidebar"
+msgstr "Barra laterale"
+
+#: inc/widgets-areas.php:17
+msgid "Add widgets here."
+msgstr "Aggiungi i widget qui"
+
+#: inc/widgets-areas.php:39
+msgid "Homepage Before Content (DEPRECATED)"
+msgstr "Pagina principale prima del contenuto (DEPRECATA)"
+
+#: inc/widgets-areas.php:41
+msgid "Insert widgets before the content in the homepage template."
+msgstr "Inserisci i widgets prima del contenuto nel template della pagina principale"
+
+#: inc/widgets-areas.php:52
+msgid "Homepage After Content (DEPRECATED)"
+msgstr "Pagina principale dopo il contenuto (DEPRECATA)"
+
+#: inc/widgets-areas.php:54
+msgid "Insert widgets after the content in the homepage template."
+msgstr "Inserisci i widgets dopo il contenuto nel template della pagina principale"
+
+#: inc/widgets-areas.php:75
+msgid "Posts Lists (DEPRECATED)"
+msgstr "Lista degli articoli (DEPRECATA)"
+
+#: inc/widgets-areas.php:77
+msgid "Insert widgets after posts lists such as the blog page and archives."
+msgstr "Inserisci i widget dopo la lista degli articoli come nelle pagine e negli archivi"
+
+#: inc/widgets-areas.php:100
+msgid "Footer Single"
+msgstr "Singolo footer"
+
+#: inc/widgets-areas.php:102
+msgid "Widgets for one column footer."
+msgstr "Widgets per il footer ad una colonna"
+
+#: inc/widgets-areas.php:113
+msgid "Footer Left"
+msgstr "Footer di sinistra"
+
+#: inc/widgets-areas.php:115
+msgid "Widgets for left column on three columns footer."
+msgstr "Widgets per la colonna di sinistra nel footer a tre colonne"
+
+#: inc/widgets-areas.php:123
+msgid "Footer Center"
+msgstr "Footer di centro"
+
+#: inc/widgets-areas.php:125
+msgid "Widgets for center column on three columns footer."
+msgstr "Widgets per la colonna di centro nel footer a tre colonne"
+
+#: inc/widgets-areas.php:133
+msgid "Footer Right"
+msgstr "Footer di destra"
+
+#: inc/widgets-areas.php:135
+msgid "Widgets for right column on three columns footer."
+msgstr "Widgets per la colonna di destra nel footer a tre colonne"
+
+#: inc/theme-setup.php:49
+msgid "Primary"
+msgstr "Primario"
+
+#: inc/customizer.php:48
+msgid "Show Homepage Content"
+msgstr "Visualizza il contenuto della pagina principale"
+
+#: inc/customizer.php:49
+msgid ""
+"Show the content of the page selected as <code>Static Homepage</code>. The "
+"homepage supports adding widgets in the content area. We recommend using the "
+"plugin \"Customizer Building Blocks\" to create your homepage."
+msgstr ""
+"Visualizza il contenuto della pagina selezionata come <code>Pagina principale statica</code>"
+". La pagina principale supporta l'aggiunta di widgets nell'area del contenuto. Raccomandiamo "
+"di usare il plugin \"Customizer Building Blocks\" per creare la pagina principale."
+
+#: inc/customizer.php:69
+msgid "Page settings"
+msgstr "Impostazioni della pagina"
+
+#: inc/customizer.php:70
+msgid "Configure how pages are displayed."
+msgstr "Configura come le pagine sono visualizzate."
+
+#: inc/customizer.php:80
+msgid "Limit header content to container"
+msgstr "Limita il contenuto dell'intestazione al contenitore"
+
+#: inc/customizer.php:93
+msgid "Limit content to container"
+msgstr "Limita il contenuto della pagina al contenitore"
+
+#: inc/customizer.php:106
+msgid "Limit footer content to container"
+msgstr "Limita il contenuto del footer al contenitore"
+
+#: inc/template-tags.php:28
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Scritto in %s"
+
+#: inc/template-tags.php:33
+msgctxt "post author"
+msgid "by %s"
+msgstr "da %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:50 inc/template-tags.php:56
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:52
+msgid "Posted in %1$s"
+msgstr "Scritto in %1$s"
+
+#: inc/template-tags.php:58
+msgid "Tagged %1$s"
+msgstr "Marcato %1$s"
+
+#. translators: %s: post title
+#: inc/template-tags.php:65
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Commenta<span class=\"screen-reader-text\"> riguardo a %s</span>"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:72 template-parts/content-page.php:37
+#: template-parts/content-homepage.php:29
+msgid "Edit %s"
+msgstr "Modifica %s"
+
+#. Name of the template
+msgid "Full-width"
+msgstr "Larghezza piena"
+
+#. Name of the template
+msgid "Homepage"
+msgstr "Pagina principale"
+
+#: template-parts/content-page.php:26 template-parts/content.php:48
+#: template-parts/content-homepage.php:18
+msgid "Pages:"
+msgstr "Pagine:"
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:43
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continua la lettura %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Non è stato trovato nulla"
+
+#: template-parts/content-none.php:21
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto per pubblicare il tuo primo articolo? <a href=\"%1$s\">Inizia da qui</a>."
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Mi dispiace, ma niente corrisponde ai termini utilizzati per la ricerca. Per favore "
+"prova ancora con parole differenti."
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Sembra che non riusciamo a trovare quello che stai cercando. Forse utilizzare la "
+"funzione di ricerca può essere d'aiuto."
+
+#. Description of the theme
+msgid ""
+"Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress "
+"Starter Theme for your next awesome WordPress Theme."
+msgstr ""
+"Mobile Friendly, veloce e semplice da utilizzare. Underskeleton è un WordPress "
+"Starter Theme per il tuo prossimo eccezionale tema WordPress."
+
+#. Theme URI of the theme
+msgid "http://getunderskeleton.com"
+msgstr "http://getunderskeleton.com"
+
+#. Author of the theme
+msgid "Diego Versiani"
+msgstr "Diego Versiani"
+
+#. Author URI of the theme
+msgid "http://diegoversiani.me"
+msgstr "http://diegoversiani.me"
