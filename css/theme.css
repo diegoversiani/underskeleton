@@ -821,7 +821,8 @@ pre {
   pre > var,
   pre > samp {
     display: block;
-    padding: 1rem 1.5rem;
+    padding: 0;
+    border: 0;
     white-space: pre; }
 
 abbr,
