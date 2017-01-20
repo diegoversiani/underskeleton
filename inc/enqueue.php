@@ -36,8 +36,6 @@ add_action( 'customize_preview_init', 'underskeleton_customize_preview_js' );
 
 /**
  * Registers an editor stylesheet for the current theme.
- *
- * @global WP_Post $post Global post object.
  */
 function underskeleton_add_editor_styles() {
   // Load 'theme.min.css' as most of it is necessary for editor as well.

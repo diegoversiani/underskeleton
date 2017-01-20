@@ -5,7 +5,10 @@
  * @package underskeleton
  */
 
-function underskeleton_mce_buttons_2($buttons) {
+/*
+* Enable Editor Formats drop-down
+*/
+function underskeleton_mce_buttons_2( $buttons ) {
   array_unshift($buttons, 'styleselect');
   return $buttons;
 }
@@ -16,23 +19,22 @@ add_filter('mce_buttons_2', 'underskeleton_mce_buttons_2');
 /*
 * Callback function to filter the MCE settings
 */
-
 function underskeleton_mce_before_init_insert_formats( $init_array ) {  
-
-// Define the style_formats array
-
+  // Define the style_formats array
   $style_formats = array(
-/*
-* Each array child is a format with it's own settings
-* Notice that each array has title, block, classes, and wrapper arguments
-* Title is the label which will be visible in Formats menu
-* Block defines whether it is a span, div, selector, or inline style
-* Classes allows you to define CSS classes
-* Wrapper whether or not to add a new block-level element around any selected elements
-* 
-* To learn more visit http://getunderskeleton[dot]com/features/editor-formats
-*/
-
+    /*
+    * Each array child is a format with it's own settings
+    * Notice that each array has title, block or inline, classes, styles and wrapper arguments
+    * Title is the label which will be visible in Formats menu
+    * Block defines whether it is a span, div, selector, or inline style
+    * Inline defines which element will be used to wrap the inline styles
+    * Classes allows you to define CSS classes to be used
+    * Styles allows you to define inline css properties to be used
+    * Wrapper whether or not to add a new block-level element around any selected elements
+    * Items allows you create a tree of options
+    * 
+    * To learn more visit http://getunderskeleton[dot]com/features/editor-formats
+    */
     array(
       'title' => __('Layout', 'underskeleton'),
       'items' => array (
@@ -170,11 +172,11 @@ function underskeleton_mce_before_init_insert_formats( $init_array ) {
         ),
       ),
     ),
-  );  
+  );
+
   // Insert the array, JSON ENCODED, into 'style_formats'
   $init_array['style_formats'] = json_encode( $style_formats );
-  
+
   return $init_array;
-  
-} 
+}
 add_filter( 'tiny_mce_before_init', 'underskeleton_mce_before_init_insert_formats' );
