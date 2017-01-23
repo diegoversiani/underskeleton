@@ -1,6 +1,19 @@
 /*------------------------------------*\
-  #WOOCOMMERCE STYLES
+  #WOOCOMMERCE BUTTONS
 \*------------------------------------*/
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
   height: auto;
+}
+
+.woocommerce {
+  .button,
+  .widget_price_filter .price_slider_amount .button,
+  a.button,
+  button.button,
+  input.button 
+  {
+    padding: 0 1rem;
+    font-size: 11px;
+    line-height: 38px;
+  }
 }

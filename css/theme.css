@@ -1392,10 +1392,19 @@ input[type=submit].search-submit {
         padding-left: 2rem;
         padding-right: 2rem; } }
 
-/*------------------------------------*  #WOOCOMMERCE STYLES
+/*------------------------------------*  #WOOCOMMERCE BUTTONS
 \*------------------------------------*/
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
   height: auto; }
+
+.woocommerce .button,
+.woocommerce .widget_price_filter .price_slider_amount .button,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+  padding: 0 1rem;
+  font-size: 11px;
+  line-height: 38px; }
 
 /*------------------------------------*  #TRANSITIONS
 \*------------------------------------*/
