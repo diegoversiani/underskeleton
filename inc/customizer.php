@@ -66,7 +66,7 @@ function underskeleton_page_settings_customizer( $wp_customize ) {
 
     /* SECTION: PAGE SETTINGS */
     $wp_customize->add_section( 'underskeleton_page_settings_section' , array(
-        'title'       => __( 'Page settings', 'underskeleton' ),
+        'title'       => __( 'Page Settings', 'underskeleton' ),
         'description' => __( 'Configure how pages are displayed.', 'underskeleton' ),
         ));
 
