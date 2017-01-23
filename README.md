@@ -24,6 +24,7 @@ The stable version is aways the latest release and the version you get at WordPr
 ## Changelog
         == master branch ==
                - Add WooCommerce support.
+               - Fix footer sidebars/widget areas.
 
         == v1.0.4 January 23rd 2017 ==
                - Add it-IT Translation (thanks to @Enrico204).
