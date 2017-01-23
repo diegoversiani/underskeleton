@@ -22,6 +22,8 @@ The `master` branch is used for ongoing changes and integration of feature branc
 The stable version is aways the latest release and the version you get at WordPress Themes Directory, [see releases](https://github.com/diegoversiani/underskeleton/releases).
 
 ## Changelog
+        == master branch ==
+               - Add WooCommerce support.
 
         == v1.0.4 January 23rd 2017 ==
                - Add it-IT Translation (thanks to @Enrico204).

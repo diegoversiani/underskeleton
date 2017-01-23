@@ -86,16 +86,30 @@ add_action( 'widgets_init', 'underskeleton_posts_lists_widgets_init', 0);
 
 
 
+/*------------------------------------*\
+  #SHOP WIDGET AREAS
+\*------------------------------------*/
+function underskeleton_shop_widgets_init() {
+  register_sidebar( array(
+    'name'          => __( 'Shop Sidebar', 'underskeleton' ),
+    'id'            => 'sidebar-shop',
+    'description'   => __( 'Add widgets to shop sidebar here.', 'underskeleton' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ) );
+}
+add_action( 'widgets_init', 'underskeleton_shop_widgets_init' );
+
 
 
 /*------------------------------------*\
   #FOOTER WIDGET AREAS
 \*------------------------------------*/
-
 function underskeleton_footer_widgets_init() {
 
   /* #FOOTER WIDGETS 1 COLUMN */
-    
   register_sidebar( array(
     'name'          => __( 'Footer Single', 'underskeleton' ),
     'id'            => 'underskeleton_footer_single',
@@ -108,7 +122,6 @@ function underskeleton_footer_widgets_init() {
 
 
   /* #FOOTER WIDGETS 3 COLUMNS */
-
   register_sidebar( array(
     'name'          => __( 'Footer Left', 'underskeleton' ),
     'id'            => 'underskeleton_footer_left',

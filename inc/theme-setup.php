@@ -26,6 +26,11 @@ function underskeleton_setup() {
 	 */
 	load_theme_textdomain( 'underskeleton', get_template_directory() . '/languages' );
 
+	// This theme uses wp_nav_menu() in one location.
+	register_nav_menus( array(
+		'primary' => esc_html__( 'Primary', 'underskeleton' ),
+	) );
+
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -43,11 +48,6 @@ function underskeleton_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'underskeleton' ),
-	) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -77,6 +77,9 @@ function underskeleton_setup() {
 
 	// Add customizer selective refresh
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	// Add customizer selective refresh
+	add_theme_support( 'woocommerce' );
 	
 }
 endif;

@@ -1392,6 +1392,11 @@ input[type=submit].search-submit {
         padding-left: 2rem;
         padding-right: 2rem; } }
 
+/*------------------------------------*  #WOOCOMMERCE STYLES
+\*------------------------------------*/
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+  height: auto; }
+
 /*------------------------------------*  #TRANSITIONS
 \*------------------------------------*/
 /*------------------------------------*  #ANIMATIONS
