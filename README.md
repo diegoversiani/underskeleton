@@ -29,6 +29,7 @@ The stable version is aways the latest release, [see releases](https://github.co
                - Mark widget areas as DEPRECATED for future removal: 'Homepage Before Content', 'Homepage After Content', 'Posts Lists'.
                - Update theme description.
                - Update pt-BR Translation.
+               - Fix code block styles inside pre elements.
                - Fixed tertiary color css.
                - Fixed BrowserSync pattern to watch files in subfolders.
                - Fixed npm dependencies for dev tools.
