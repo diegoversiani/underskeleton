@@ -19,11 +19,11 @@ Why Underskeleton?
 
 The `master` branch is used for ongoing changes and integration of feature branches.
 
-The stable version is aways the latest release, [see releases](https://github.com/diegoversiani/underskeleton/releases).
+The stable version is aways the latest release and the version you get at WordPress Themes Directory, [see releases](https://github.com/diegoversiani/underskeleton/releases).
 
 ## Changelog
 
-        == master branch ==
+        == v1.0.4 January 23rd 2017 ==
                - Add it-IT Translation (thanks to @Enrico204).
                - Add editor formats for Layout, Text Columns, Color blocks and Buttons.
                - Mark widget areas as DEPRECATED for future removal: 'Homepage Before Content', 'Homepage After Content', 'Posts Lists'.
