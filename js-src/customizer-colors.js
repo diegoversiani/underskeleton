@@ -91,6 +91,13 @@
     } );
   } );
 
+  // Header text color
+  wp.customize( 'header_textcolor', function( value ) {
+    value.bind( function( to ) {
+      $( '.site-header, .site-branding .site-title, .site-branding .site-description' ).css( { 'color': to } );
+    } );
+  } );
+
 	// Text color
 	wp.customize( 'underskeleton_text_color', function( value ) {
 		value.bind( function( to ) {

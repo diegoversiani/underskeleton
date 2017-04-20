@@ -264,10 +264,12 @@ function underskeleton_colors_customizer_get_output() {
     // Start output buffering
     ob_start();
 
+    $header_textcolor_esc = esc_attr( get_theme_mod( 'header_textcolor', '#000' ) );
+
     $text_color_esc = esc_attr( get_theme_mod( 'underskeleton_text_color', '#222222' ) );
     $link_color_esc = esc_attr( get_theme_mod( 'underskeleton_link_color', '#155d4f' ) );
     $heading_color_esc = esc_attr( get_theme_mod( 'underskeleton_heading_color', '#d72d5c' ) );
-    $header_background_color_esc = esc_attr( get_theme_mod( 'underskeleton_header_background_color', '#bbc2ca' ) );
+    
     $button_text_color_esc = esc_attr( get_theme_mod( 'underskeleton_button_text_color', '#155d4f' ) ); 
     $button_background_color_esc = esc_attr( get_theme_mod( 'underskeleton_button_background_color', '#f3f3f3' ) ); 
     
@@ -278,6 +280,10 @@ function underskeleton_colors_customizer_get_output() {
     ?>
         /* default text color */
         body { color: <?php echo $text_color_esc; ?>; }
+        /* header*/
+        .site-branding .site-title,
+        .site-branding .site-description,
+        .site-header { color: #<?php echo $header_textcolor_esc; ?>;  }
         /* Headings */
         h1, h2, h3, h4, h5, h6 { color: <?php echo $heading_color_esc; ?>; }
         /* Links */
