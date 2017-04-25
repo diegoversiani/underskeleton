@@ -22,6 +22,13 @@ The `master` branch is used for ongoing changes and integration of feature branc
 The stable version is aways the latest release and the version you get at WordPress Themes Directory, [see releases](https://github.com/diegoversiani/underskeleton/releases).
 
 ## Changelog
+      
+        == master ==
+               - Separate editor-style.css from main theme css.
+               - Fix paragraph spacing.
+               - Fix spacing for no `container` around header, content-area and footer.
+               - Fix file permissions.
+
         == v1.0.5 January 23rd 2017 ==
                - Add WooCommerce support.
                - Fix footer sidebars/widget areas.

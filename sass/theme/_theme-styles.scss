@@ -15,6 +15,12 @@
  |     └── ...
 */
 
+
+/*
+* IMPORTANT: Remember to update `_editor-styles.scss`
+* to import new partial files.
+*/
+
 @import
   "mixins/mixins",
   "modifiers",

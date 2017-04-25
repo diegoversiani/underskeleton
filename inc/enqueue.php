@@ -35,10 +35,9 @@ add_action( 'customize_preview_init', 'underskeleton_customize_preview_js' );
 
 
 /**
- * Registers an editor stylesheet for the current theme.
+ * Registers editor stylesheet
  */
 function underskeleton_add_editor_styles() {
-  // Load 'theme.min.css' as most of it is necessary for editor as well.
-  add_editor_style( array( 'css/editor-style.min.css', 'css/theme.min.css' ) );
+  add_editor_style( array( 'css/editor-style.min.css' ) );
 }
 add_action( 'admin_init', 'underskeleton_add_editor_styles' );

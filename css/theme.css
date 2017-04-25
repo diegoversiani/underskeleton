@@ -821,9 +821,11 @@ pre {
   pre > var,
   pre > samp {
     display: block;
+    margin: 0;
     padding: 0;
     border: 0;
-    white-space: pre; }
+    white-space: pre;
+    background: transparent; }
 
 abbr,
 acronym {
@@ -876,6 +878,10 @@ h1, h2, h3, h4, h5, h6 {
  |     └── _buttons.scss
  |     └── _lists.scss
  |     └── ...
+*/
+/*
+* IMPORTANT: Remember to update `_editor-styles.scss`
+* to import new partial files.
 */
 /*------------------------------------*  #MIXINS IMPORT FILE
 \*------------------------------------*/
@@ -941,22 +947,18 @@ h1, h2, h3, h4, h5, h6 {
 .text-two-columns,
 .text-three-columns,
 .text-four-columns {
-  -moz-column-gap: 2rem;
   column-gap: 2rem; }
 
 @media (min-width: 550px) {
   .text-two-columns {
-    -moz-column-count: 2;
     column-count: 2; } }
 
 @media (min-width: 550px) {
   .text-three-columns {
-    -moz-column-count: 3;
     column-count: 3; } }
 
 @media (min-width: 550px) {
   .text-four-columns {
-    -moz-column-count: 4;
     column-count: 4; } }
 
 /*------------------------------------*  #BUTTON MODIFIERS
@@ -998,8 +1000,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 2rem; }
     @media (min-width: 550px) {
       .site-header__content:not(.container) {
-        padding-left: 2rem;
-        padding-right: 2rem; } }
+        padding-left: 3rem;
+        padding-right: 3rem; } }
 
 .custom-header-image {
   display: block;
@@ -1033,8 +1035,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 2rem; }
   @media (min-width: 550px) {
     .site-content:not(.container) {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 /*------------------------------------*  #FORMS
 \*------------------------------------*/
@@ -1110,7 +1112,8 @@ input[type="button"].button-light {
 a {
   text-decoration: none; }
 
-/* == TYPOGRAPHY STYLES == */
+/*------------------------------------*  #TYPOGRAPHY
+\*------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
   color: #d72d5c;
@@ -1161,6 +1164,15 @@ h6 {
     font-size: 2rem; }
   h6 {
     font-size: 1.8rem; } }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+p + p,
+p + blockquote,
+p + h2 {
+  margin-top: 1.6rem; }
 
 ul {
   list-style: disc inside; }
@@ -1389,8 +1401,8 @@ input[type=submit].search-submit {
     padding-right: 2rem; }
     @media (min-width: 550px) {
       .site-footer__content:not(.container) {
-        padding-left: 2rem;
-        padding-right: 2rem; } }
+        padding-left: 3rem;
+        padding-right: 3rem; } }
 
 /*------------------------------------*  #WOOCOMMERCE BUTTONS
 \*------------------------------------*/

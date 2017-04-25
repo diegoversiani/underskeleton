@@ -37,9 +37,11 @@ pre {
   > var,
   > samp {
     display: block;
+    margin: 0;
     padding: 0;
     border: 0;
     white-space: pre;
+    background: transparent;
   }
 }
 // !== Code style for code, keyboard-text, teletype and sample

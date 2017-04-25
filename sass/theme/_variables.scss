@@ -57,7 +57,10 @@ $column-starts-at-breakpoint: $bp-larger-than-phablet;
 
 // MISC
 $global-radius: 4px;
-$global-padding: 2rem;
+$global-spacing: 2rem;
+
+// DEPRECATED, will be remove in version 2.0, please use `$global-spacing` instead;
+$global-padding: $global-spacing;
 
 // MENU (more in _menu.scss)
 $menu-breakpoint:       $bp-larger-than-phablet; // breakpoint to stop showing hamburger menu

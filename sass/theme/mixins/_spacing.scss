@@ -1,7 +1,7 @@
 /*------------------------------------*\
   #SPACING MIXINS
 \*------------------------------------*/
-@mixin vertical-paddings( $place: '', $padding: $global-padding ) {
+@mixin vertical-paddings( $place: '', $padding: $global-spacing ) {
   $top: true;
   $bottom: true;
 
@@ -23,7 +23,7 @@
 
 
 
-@mixin lateral-paddings( $place: '', $padding: $global-padding ) {
+@mixin lateral-paddings( $place: '', $padding: $global-spacing ) {
   $left: true;
   $right: true;
 
@@ -44,7 +44,7 @@
 
 
 
-@mixin vertical-margins( $place: '', $margin: $global-padding ) {
+@mixin vertical-margins( $place: '', $margin: $global-spacing ) {
   $top: true;
   $bottom: true;
 
@@ -66,7 +66,7 @@
 
 
 
-@mixin lateral-margins( $place: '', $margin: $global-padding ) {
+@mixin lateral-margins( $place: '', $margin: $global-spacing ) {
   $left: true;
   $right: true;
 

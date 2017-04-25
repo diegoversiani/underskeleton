@@ -1,7 +1,32 @@
 /* == EDITOR STYLES ==
-* Import main editor styles files.
+* Import main resources needed for editor-style.
 */
 
-// == Imports
+
+/*------------------------------------*\
+  #IMPORT VARIABLES
+\*------------------------------------*/
+// Import theme variables before Skeleton to override its values
 @import
-  "editor-style/styles";
+  "theme/variables";
+
+
+
+/*------------------------------------*\
+  #IMPORT SKELETON AND UNDERSKELETON
+\*------------------------------------*/
+@import 
+  "../bower_components/skeleton-scss/scss/skeleton",
+  "base/mixins",
+  "base/reset",
+  "base/accessibility",
+  "base/alignment",
+  "base/galleries",
+  "base/styles";
+
+
+
+/*------------------------------------*\
+  #IMPORT EDITOR STYLES
+\*------------------------------------*/
+@import "theme/editor-styles";
