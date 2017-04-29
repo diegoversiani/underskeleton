@@ -873,10 +873,10 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*  #TEXT MIXINS
 \*------------------------------------*/
 /*------------------------------------*  #MODIFIERS
-  Some modifiers are defined in the file
-  /inc/customizer-colors.php if file exists.
+  Some modifiers might be impacted by
+  the file /inc/customizer-colors.php.
 \*------------------------------------*/
-/*------------------------------------*  #SECTION MODIFIERS
+/*------------------------------------*  #SPACING
 \*------------------------------------*/
 .vertical-paddings {
   padding-top: 2rem;
@@ -898,6 +898,12 @@ h1, h2, h3, h4, h5, h6 {
 .vertical-margin-bottom {
   margin-bottom: 2rem; }
 
+.block-spacing {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
 /*------------------------------------*  #BACKGROUND
 \*------------------------------------*/
 .full-background-image {
@@ -918,12 +924,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .tertiary-background {
   background-color: #f4da7a; }
-
-.block-spacing {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem; }
 
 /*------------------------------------*  #TEXT MODIFIERS
 \*------------------------------------*/

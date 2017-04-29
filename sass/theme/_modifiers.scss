@@ -1,15 +1,14 @@
 /*------------------------------------*\
   #MODIFIERS
-  Some modifiers are defined in the file
-  /inc/customizer-colors.php if file exists.
+  Some modifiers might be impacted by
+  the file /inc/customizer-colors.php.
 \*------------------------------------*/
 
 
 
 /*------------------------------------*\
-  #SECTION MODIFIERS
+  #SPACING
 \*------------------------------------*/
-
 .vertical-paddings {
   @include vertical-paddings();
 }
@@ -34,6 +33,10 @@
   @include vertical-margins('bottom');
 }
 
+.block-spacing {
+  @include vertical-paddings();
+  @include lateral-paddings();
+}
 
 
 
@@ -67,10 +70,6 @@
   background-color: $tertiary-color;
 }
 
-.block-spacing {
-  @include vertical-paddings();
-  @include lateral-paddings();
-}
 
 
 
@@ -78,7 +77,6 @@
 /*------------------------------------*\
   #TEXT MODIFIERS
 \*------------------------------------*/
-
 .text-two-columns,
 .text-three-columns,
 .text-four-columns {
@@ -111,7 +109,6 @@
 /*------------------------------------*\
   #BUTTON MODIFIERS
 \*------------------------------------*/
-
 .button-medium {
   max-width: 100%;
   width: 25rem;
