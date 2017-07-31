@@ -28,6 +28,7 @@ The stable version is aways the latest release and the version you get at WordPr
                - Fix paragraph spacing.
                - Fix spacing for no `container` around header, content-area and footer.
                - Fix file permissions.
+               - Change how css and js assets are versioned.
 
         == v1.0.5 January 23rd 2017 ==
                - Add WooCommerce support.
