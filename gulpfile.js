@@ -97,6 +97,11 @@ gulp.task('browser-sync', function() {
 gulp.task('watch-bs', ['browser-sync', 'watch'], function () { });
 
 // Run: 
+// gulp
+// Defines gulp default task
+gulp.task('default', ['watch-bs'], function () { });
+
+// Run: 
 // gulp build-scripts. 
 // Uglifies and concat all JS files into one
 gulp.task('build-scripts', function() {
