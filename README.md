@@ -23,7 +23,7 @@ The stable version is aways the latest release and the version you get at WordPr
 
 ## Changelog
       
-        == master ==
+        == 1.0.6 ==
                - Separate editor-style.css from main theme css.
                - Fix paragraph spacing.
                - Fix spacing for no `container` around header, content-area and footer.
@@ -44,48 +44,6 @@ The stable version is aways the latest release and the version you get at WordPr
                - Fixed tertiary color css.
                - Fixed BrowserSync pattern to watch files in subfolders.
                - Fixed npm dependencies for dev tools.
-
-        == v1.0.3 December 13th 2016 ==
-               - Add back `header text color` core functionality.
-               - Remove `post-formats` support.
-               - Remove `search-form` from html5 theme support as theme includes custom search form.
-               - Remove custom logo for login page - plugin territory.
-               - Fixed custom header image feature.
-               - Fixed editor-style enqueue.
-               - Fixed escaping issues.
-               - Fixed translation issues.
-               - Fixed theme tags.
-
-        == v1.0.1 December 10th 2016 ==
-               - Change license information for WordPress Theme Directory.
-               - Add full-width page template.
-               - Add color settings to customizer.
-               - Fixed enqueue editor styles.
-
-        == v1.0.0 September 22nd 2016 ==
-               - Lauched theme downloader in the website http://getunderskeleton.com/download
-               - Prepared theme for theme downloader
-               - Change licence to GPL, matching WordPress and making licensing easier to understand
-               - Add footer widget areas
-               - Add default styling to navigation links
-               - Add settings to allow change of container on header, content and footer
-               - Add scss files for various elements
-               - Add custom logo to login page, being same user's selected custom logo
-               - Add Customizer Selective Refresh support for Widgets
-               - Add homepage template with widget areas
-               - Add editor styles to match theme's styles
-               - Fixed date field styles to match other input types
-               - Fixed textarea height to match number of rows when specified
-               - Fixed image alignment inside page or post content
-               - Remove 'Raleway' as default font-family, changed to sans-serif
-
-        == v0.1.2 June 16th 2016 ==
-               - Add Custom Logo theme support for WordPress 4.5+
-               - Add pt-BR Translation.
-               - Minor fixes and tweaks.
-
-        == v0.1.1 May 2nd 2016 ==
-               - First stable version, with minor fixes from previous.
 
 ## Features
 

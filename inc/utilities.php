@@ -3,6 +3,22 @@
   #GLOBALLY AVAILABLE FUNCTIONS
 \*------------------------------------*/
 
+/**
+ * Get current version of underskeleton from style.css
+ * @return String Version of installed underskeleton theme.
+ */
+function underskeleton_get_version() {
+  $theme = wp_get_theme( 'underskeleton' );
+  return $theme->get( 'Version' );
+}
+
+
+/**
+ * Adjust brightness of colors, negative values make the color darker.
+ * @param  String $hex   Color hex code.
+ * @param  Int    $steps Values between -255 and 255.
+ * @return String        Adjusted color hex code.
+ */
 function underskeleton_adjust_brightness($hex, $steps) {
   // Steps should be between -255 and 255. Negative = darker, positive = lighter
   $steps = max(-255, min(255, $steps));
@@ -25,3 +41,4 @@ function underskeleton_adjust_brightness($hex, $steps) {
 
   return $return;
 }
+
