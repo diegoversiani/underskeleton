@@ -5,7 +5,7 @@ Mobile Friendly, fast and easy to work with. Underskeleton is the WordPress Star
 Underskeleton is designed to be a starter/base theme and comes with many developer tools. 
 
 
-Visit the Project Website: http://getunderskeleton.com
+Visit the Project Website: https://getunderskeleton.com
 
 
 Why Underskeleton?
@@ -66,7 +66,7 @@ Have a feature request? Please [open an issue](https://github.com/diegoversiani/
 
 ## Installation
 
-Create your copy of Underskeleton and name it to your taste at [getunderskeleton.com/download](http://getunderskeleton.com/download), copy from [latest release](https://github.com/diegoversiani/underskeleton/releases). Then:
+Create your copy of Underskeleton and name it to your taste at [getunderskeleton.com/download](https://getunderskeleton.com/download), copy from [latest release](https://github.com/diegoversiani/underskeleton/releases). Then:
 
 - Login to your WordPress backend
 - Go to Appearance → Themes → Add New → Upload Theme
@@ -88,8 +88,8 @@ Create your copy of Underskeleton and name it to your taste at [getunderskeleton
 To change Underskeleton theme identification to your own you need to replace any 'underskeleton' text with your theme id and, optionally, replace the theme name as well.
 
 - Open the project in the editor of your choice (i.e [Sublime Text](https://www.sublimetext.com/))
-- Replace all 'underskeleton' matches with 'your_theme_id' (**case sensitive**) ([screenshot](http://getunderskeleton.com/images/replace_all_id.png))
-- Optionally, replace all 'Underskeleton' matches with 'Your Theme Name' (**case sensitive**) ([screenshot](http://getunderskeleton.com/images/replace_all_name.png))
+- Replace all 'underskeleton' matches with 'your_theme_id' (**case sensitive**) ([screenshot](https://getunderskeleton.com/images/replace_all_id.png))
+- Optionally, replace all 'Underskeleton' matches with 'Your Theme Name' (**case sensitive**) ([screenshot](https://getunderskeleton.com/images/replace_all_name.png))
 - That is it.
 
 ## Folder structure
@@ -177,6 +177,6 @@ Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web
 
 Skeleton-Sass was created by [Seth Coelen](http://sethcoelen.com) for a better Skeleton.
 
-Underskeleton was created by [Diego Versiani](http://diegoversiani.me) for a better WordPress.
+Underskeleton was created by [Diego Versiani](https://diegoversiani.me) for a better WordPress.
 
 <a href='https://ko-fi.com/A0212ZQ' target='_blank'><img height='32' style='border:0px;height:32px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=a' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
