@@ -14,3 +14,8 @@
     z-index: 11000;
   }
 }
+
+/* WOOCOMMERCE PRICE FILTER HANDLE */
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+  z-index: 1000;
+}

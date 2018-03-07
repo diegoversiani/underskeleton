@@ -989,6 +989,10 @@ h1, h2, h3, h4, h5, h6 {
   .main-navigation ul.menu li ul {
     z-index: 11000; } }
 
+/* WOOCOMMERCE PRICE FILTER HANDLE */
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+  z-index: 1000; }
+
 /* == HEADER STYLES == */
 .site-header {
   margin: 1.5rem auto 5rem; }
