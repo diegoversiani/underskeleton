@@ -57,8 +57,11 @@ $column-margin: 4%; // space between columns
 $column-starts-at-breakpoint: $bp-larger-than-phablet;
 
 // MISC
-$global-radius: 4px;
-$global-spacing: 2rem;
+$global-radius: .4rem;
+$global-spacing: 3rem;
+$global-spacing-big: 6rem;
+$global-animation-duration: .3s;
+$global-animation-easing: ease;
 
 // MENU (more in _menu.scss)
 $menu-breakpoint:       $bp-larger-than-phablet; // breakpoint to stop showing hamburger menu

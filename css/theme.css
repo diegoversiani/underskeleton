@@ -438,7 +438,7 @@ button {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box; }
@@ -457,7 +457,7 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box; }
@@ -522,7 +522,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   padding: 6px 10px;
   background-color: #fff;
   border: 1px solid #d1d1d1;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: border-box; }
 
@@ -553,7 +553,7 @@ select {
   padding: 6px 10px;
   background-color: #fff;
   border: 1px solid #d1d1d1;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: border-box; }
 
@@ -640,7 +640,7 @@ code {
   white-space: nowrap;
   background: #f1f1f1;
   border: 1px solid #e1e1e1;
-  border-radius: 4px; }
+  border-radius: 0.4rem; }
 
 pre > code {
   display: block;
@@ -803,14 +803,14 @@ samp {
   white-space: nowrap;
   background: #f1f1f1;
   border: 1px solid #e1e1e1;
-  border-radius: 4px; }
+  border-radius: 0.4rem; }
 
 pre {
   padding: .2rem .5rem;
   font-size: 90%;
   background: #f1f1f1;
   border: 1px solid #e1e1e1;
-  border-radius: 4px; }
+  border-radius: 0.4rem; }
   pre > code,
   pre > kbd,
   pre > tt,
@@ -875,33 +875,113 @@ h1, h2, h3, h4, h5, h6 {
   the Customizer Colors feature
   (see `/inc/customizer-colors.php`).
 \*------------------------------------*/
-/*------------------------------------*  #SPACING
+/*------------------------------------*  #SPACING MODIFIERS
 \*------------------------------------*/
 .vertical-paddings {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 .vertical-padding-top {
-  padding-top: 2rem; }
+  padding-top: 3rem; }
 
 .vertical-padding-bottom {
-  padding-bottom: 2rem; }
+  padding-bottom: 3rem; }
 
 .vertical-margin {
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 .vertical-margin-top {
-  margin-top: 2rem; }
+  margin-top: 3rem; }
 
 .vertical-margin-bottom {
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
 
-.block-spacing {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.lateral-paddings {
   padding-left: 2rem;
   padding-right: 2rem; }
+  @media (min-width: 550px) {
+    .lateral-paddings {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
+
+.lateral-padding-left {
+  padding-left: 2rem; }
+  @media (min-width: 550px) {
+    .lateral-padding-left {
+      padding-left: 3rem; } }
+
+.lateral-padding-right {
+  padding-right: 2rem; }
+  @media (min-width: 550px) {
+    .lateral-padding-right {
+      padding-right: 3rem; } }
+
+.lateral-margin {
+  margin-left: 3rem;
+  margin-right: 3rem; }
+
+.lateral-margin-left {
+  margin-left: 3rem; }
+
+.lateral-margin-right {
+  margin-right: 3rem; }
+
+.vertical-paddings-big {
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
+
+.vertical-padding-top-big {
+  padding-top: 6rem; }
+
+.vertical-padding-bottom-big {
+  padding-bottom: 6rem; }
+
+.vertical-margin-big {
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
+
+.vertical-margin-top-big {
+  margin-top: 6rem; }
+
+.vertical-margin-bottom-big {
+  margin-bottom: 6rem; }
+
+.lateral-paddings-big {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+  @media (min-width: 550px) {
+    .lateral-paddings-big {
+      padding-left: 6rem;
+      padding-right: 6rem; } }
+
+.lateral-padding-left-big {
+  padding-left: 3rem; }
+  @media (min-width: 550px) {
+    .lateral-padding-left-big {
+      padding-left: 6rem; } }
+
+.lateral-padding-right-big {
+  padding-right: 3rem; }
+  @media (min-width: 550px) {
+    .lateral-padding-right-big {
+      padding-right: 6rem; } }
+
+.lateral-margin-big {
+  margin-left: 6rem;
+  margin-right: 6rem; }
+
+.lateral-margin-left-big {
+  margin-left: 6rem; }
+
+.lateral-margin-right-big {
+  margin-right: 6rem; }
+
+.block-spacing {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem; }
 
 /*------------------------------------*  #BACKGROUND
 \*------------------------------------*/
@@ -915,6 +995,12 @@ h1, h2, h3, h4, h5, h6 {
 .dark-grey-background {
   background-color: #333; }
 
+.black-background {
+  background-color: #000; }
+
+.white-background {
+  background-color: #fff; }
+
 .primary-background {
   background-color: #d72d5c; }
 
@@ -923,6 +1009,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .tertiary-background {
   background-color: #f4da7a; }
+
+/*------------------------------------*  #TEXT COLOR
+\*------------------------------------*/
+.font-color {
+  color: #222; }
+
+.black-color {
+  color: #000; }
+
+.white-color {
+  color: #fff; }
+
+.dark-color {
+  color: #333; }
+
+.light-color {
+  color: #e1e1e1; }
+
+.primary-color {
+  color: #d72d5c; }
+
+.secondary-color {
+  color: #155d4f; }
+
+.tertiary-color {
+  color: #f4da7a; }
+
+/*------------------------------------*  #LAYOUT MODIFIERS
+\*------------------------------------*/
+.full-height {
+  min-height: 60rem;
+  min-height: 100vh; }
+
+.flex-box {
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-box-column {
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.flex-box-vertical-center {
+  -ms-flex-align: center;
+  align-items: center; }
+  .flex-box-vertical-center.flex-box-column {
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.flex-box-space-between {
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 /*------------------------------------*  #TEXT MODIFIERS
 \*------------------------------------*/
@@ -949,8 +1086,8 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   width: 25rem;
   font-size: 110%;
-  padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-left: 3rem;
+  padding-right: 3rem; }
 
 .button-large {
   max-width: 100%;
@@ -984,8 +1121,8 @@ h1, h2, h3, h4, h5, h6 {
 .site-header__content {
   border-bottom: solid 1px #bbb; }
   .site-header__content:not(.container) {
-    padding-left: 2rem;
-    padding-right: 2rem; }
+    padding-left: 3rem;
+    padding-right: 3rem; }
     @media (min-width: 550px) {
       .site-header__content:not(.container) {
         padding-left: 3rem;
@@ -1024,8 +1161,8 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*  #CONTENT AREA
 \*------------------------------------*/
 .site-content:not(.container) {
-  padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-left: 3rem;
+  padding-right: 3rem; }
   @media (min-width: 550px) {
     .site-content:not(.container) {
       padding-left: 3rem;
@@ -1038,7 +1175,7 @@ input[type="date"] {
   padding: 6px 10px;
   background-color: #fff;
   border: 1px solid #d1d1d1;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: border-box;
   -webkit-appearance: none;
@@ -1299,7 +1436,7 @@ input[type=submit].search-submit {
 .read-more,
 .more-link {
   padding: .2rem .5rem;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   background-color: #e1e1e1;
   font-size: 80%;
   text-transform: uppercase;
@@ -1312,8 +1449,8 @@ input[type=submit].search-submit {
   overflow: hidden; }
 
 .nav-links {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 .nav-links div:first-child a {
   margin-left: 0; }
@@ -1325,7 +1462,7 @@ input[type=submit].search-submit {
   max-width: 48%;
   margin-left: 4%;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   background-color: #e1e1e1; }
 
 .nav-next a {
@@ -1382,7 +1519,7 @@ input[type=submit].search-submit {
 
 .bypostauthor {
   background-color: #f8d8e1;
-  border-radius: 4px; }
+  border-radius: 0.4rem; }
 
 /*------------------------------------*  #FOOTER
 \*------------------------------------*/
@@ -1391,8 +1528,8 @@ input[type=submit].search-submit {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
   .site-footer__content:not(.container) {
-    padding-left: 2rem;
-    padding-right: 2rem; }
+    padding-left: 3rem;
+    padding-right: 3rem; }
     @media (min-width: 550px) {
       .site-footer__content:not(.container) {
         padding-left: 3rem;
@@ -1413,6 +1550,12 @@ input[type=submit].search-submit {
   line-height: 38px; }
 
 /*------------------------------------*  #TRANSITIONS
+
+  Control element's CSS transition
+  easing and duration.
 \*------------------------------------*/
 /*------------------------------------*  #ANIMATIONS
+
+  Control CSS animations easing and
+  duration and define custom animations.
 \*------------------------------------*/

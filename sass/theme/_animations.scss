@@ -1,21 +1,23 @@
 /*------------------------------------*\
   #TRANSITIONS
+
+  Control element's CSS transition
+  easing and duration.
 \*------------------------------------*/
-// Place transition values here. Example bellow.
 
-// button background
+// Buttons
 // .button {
-//   transition: ease-in .3s;
+//   transition: $global-animation-easing $global-animation-duration;
 // }
-
-
 
 
 
 /*------------------------------------*\
   #ANIMATIONS
+
+  Control CSS animations easing and
+  duration and define custom animations.
 \*------------------------------------*/
-// Place animations @keyframes and classes here. Example bellow.
 
 // BOUNCE
 // .bounce {
