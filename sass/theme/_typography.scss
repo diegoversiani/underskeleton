@@ -1,10 +1,19 @@
 /*------------------------------------*\
   #TYPOGRAPHY
 \*------------------------------------*/
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $font-line-height;
+  color: $font-color;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
-  color: $primary-color;
-  font-weight: 300;
+  color: $heading-font-color;
+  font-weight: $heading-font-weight;
 
   a {
     color: inherit;

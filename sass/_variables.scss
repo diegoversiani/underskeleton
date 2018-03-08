@@ -8,22 +8,28 @@
 
 // COLORS
 $light-grey:            #e1e1e1;
-$dark-grey:             #333;
+$dark-grey:             #222;
 $primary-color:         #4a4a4a;
 $secondary-color:       #9b9b9b;
-
-$border-color:          $dark-grey;
-$font-color:            $dark-grey;
-$link-color:            $font-color;
 
 $success-color:         #00b159;
 $error-color:           #d11141;
 $alert-color:           #ffc425;
 $info-color:            #00aedb;
 
+$font-color:            $dark-grey;
+$heading-font-color:    $font-color;
+$link-color:            $font-color;
+$border-color:          $dark-grey;
+
 // TYPOGRAPHY
+$font-size:             1.7rem;
+$font-size-small:       1.4rem;
+$font-weight:           normal;
+$font-line-height:      1.6;
 $font-family:           sans-serif;
 $heading-font-family:   sans-serif;
+$heading-font-weight:   normal;
 $h1-font-size:          3rem;
 $h2-font-size:          2.8rem;
 $h3-font-size:          2.5rem;
@@ -36,6 +42,11 @@ $h3-font-size-large-screen: $h3-font-size;
 $h4-font-size-large-screen: $h4-font-size;
 $h5-font-size-large-screen: $h5-font-size;
 $h6-font-size-large-screen: $h6-font-size;
+
+// BUTTONS
+$button-font-size:      $font-size-small;
+$button-font-weight:    normal;
+$button-text-transform: uppercase;
 
 // BREAKPOINTS
 $bp-larger-than-mobile    : "min-width: 400px";

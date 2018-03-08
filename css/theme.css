@@ -218,12 +218,12 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: sans-serif;
-  color: #333; }
+  color: #222; }
 
 a {
-  color: #333; }
+  color: #222; }
   a:hover {
-    color: #262626; }
+    color: #151515; }
 
 hr {
   margin-top: 3rem;
@@ -434,7 +434,7 @@ button {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #333;
+  border: 1px solid #222;
   cursor: pointer;
   box-sizing: border-box; }
 
@@ -453,30 +453,30 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #333;
+  border: 1px solid #222;
   cursor: pointer;
   box-sizing: border-box; }
 
 .button:hover,
 button:hover {
-  color: #333;
-  border-color: #888888;
+  color: #222;
+  border-color: #777777;
   outline: 0; }
 
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
-  color: #333;
-  border-color: #888888;
+  color: #222;
+  border-color: #777777;
   outline: 0; }
 
 .button:focus,
 button:focus {
-  color: #333;
-  border-color: #888888;
+  color: #222;
+  border-color: #777777;
   outline: 0; }
 
 input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
-  color: #333;
-  border-color: #888888;
+  color: #222;
+  border-color: #777777;
   outline: 0; }
 
 .button.button-primary,
@@ -493,30 +493,30 @@ input[type="submit"].button-primary, input[type="reset"].button-primary, input[t
 .button.button-primary:hover,
 button.button-primary:hover {
   color: #fff;
-  background-color: #333;
-  border-color: #333; }
+  background-color: #222;
+  border-color: #222; }
 
 input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
   color: #fff;
-  background-color: #333;
-  border-color: #333; }
+  background-color: #222;
+  border-color: #222; }
 
 .button.button-primary:focus,
 button.button-primary:focus {
   color: #fff;
-  background-color: #333;
-  border-color: #333; }
+  background-color: #222;
+  border-color: #222; }
 
 input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
   color: #fff;
-  background-color: #333;
-  border-color: #333; }
+  background-color: #222;
+  border-color: #222; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   height: 38px;
   padding: 6px 10px;
   background-color: #fff;
-  border: 1px solid #494949;
+  border: 1px solid #383838;
   border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: border-box; }
@@ -547,7 +547,7 @@ select {
   height: 38px;
   padding: 6px 10px;
   background-color: #fff;
-  border: 1px solid #494949;
+  border: 1px solid #383838;
   border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: border-box; }
@@ -784,7 +784,7 @@ This file contains WordPress gallery default styles
 This file contains underskeleton default styles
 */
 blockquote {
-  border-left: 0.3rem solid #333;
+  border-left: 0.3rem solid #222;
   padding-left: 1rem; }
 
 code,
@@ -988,7 +988,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #e1e1e1; }
 
 .dark-grey-background {
-  background-color: #333; }
+  background-color: #222; }
 
 .black-background {
   background-color: #000; }
@@ -1017,7 +1017,7 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*  #TEXT COLOR
 \*------------------------------------*/
 .font-color {
-  color: #333; }
+  color: #222; }
 
 .black-color {
   color: #000; }
@@ -1026,7 +1026,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff; }
 
 .dark-color {
-  color: #333; }
+  color: #222; }
 
 .light-color {
   color: #e1e1e1; }
@@ -1130,7 +1130,7 @@ input[type="date"] {
   height: 38px;
   padding: 6px 10px;
   background-color: #fff;
-  border: 1px solid #494949;
+  border: 1px solid #383838;
   border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: border-box;
@@ -1152,15 +1152,13 @@ textarea[rows] {
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"],
-.button.button-light,
-button.button-light,
-input[type="submit"].button-light,
-input[type="reset"].button-light,
-input[type="button"].button-light {
+input[type="button"] {
   border: none;
   background-color: #e1e1e1;
-  color: #333; }
+  color: #222;
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-transform: uppercase; }
   .button:hover, .button:focus, .button:active,
   button:hover,
   button:focus,
@@ -1173,10 +1171,19 @@ input[type="button"].button-light {
   input[type="reset"]:active,
   input[type="button"]:hover,
   input[type="button"]:focus,
-  input[type="button"]:active,
-  .button.button-light:hover,
-  .button.button-light:focus,
-  .button.button-light:active,
+  input[type="button"]:active {
+    background-color: #aeaeae;
+    color: #222; }
+
+.button.button-light,
+button.button-light,
+input[type="submit"].button-light,
+input[type="reset"].button-light,
+input[type="button"].button-light {
+  border: none;
+  background-color: #e1e1e1;
+  color: #222; }
+  .button.button-light:hover, .button.button-light:focus, .button.button-light:active,
   button.button-light:hover,
   button.button-light:focus,
   button.button-light:active,
@@ -1190,7 +1197,7 @@ input[type="button"].button-light {
   input[type="button"].button-light:focus,
   input[type="button"].button-light:active {
     background-color: #aeaeae;
-    color: #333; }
+    color: #222; }
 
 .button.button-dark,
 button.button-dark,
@@ -1198,7 +1205,7 @@ input[type="submit"].button-dark,
 input[type="reset"].button-dark,
 input[type="button"].button-dark {
   border: none;
-  background-color: #333;
+  background-color: #222;
   color: #fff; }
   .button.button-dark:hover, .button.button-dark:focus, .button.button-dark:active,
   button.button-dark:hover,
@@ -1213,7 +1220,7 @@ input[type="button"].button-dark {
   input[type="button"].button-dark:hover,
   input[type="button"].button-dark:focus,
   input[type="button"].button-dark:active {
-    background-color: #666666;
+    background-color: #555555;
     color: #fff; }
 
 .button.button-primary,
@@ -1271,10 +1278,17 @@ a {
 
 /*------------------------------------*  #TYPOGRAPHY
 \*------------------------------------*/
+body {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  color: #222; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
-  color: #4a4a4a;
-  font-weight: 300; }
+  color: #222;
+  font-weight: normal; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit; }
 
@@ -1337,7 +1351,7 @@ ul {
 /*------------------------------------*  #POSTS STYLES
 \*------------------------------------*/
 .sticky {
-  border-bottom: #333 solid 1px;
+  border-bottom: #222 solid 1px;
   padding-bottom: 2.5rem; }
 
 .byline,
@@ -1365,7 +1379,7 @@ ul {
   margin: 1.5rem auto 5rem; }
 
 .site-header__content {
-  border-bottom: solid 1px #333; }
+  border-bottom: solid 1px #222; }
   .site-header__content:not(.container) {
     padding-left: 3rem;
     padding-right: 3rem; }
@@ -1442,7 +1456,7 @@ input[type=submit].search-submit {
   padding: 0 1rem;
   margin: 1rem 0; }
   .main-navigation .menu-toggle:active .bars {
-    background: #888888; }
+    background: #777777; }
   .main-navigation .menu-toggle .bars {
     display: block;
     background: #9b9b9b;
@@ -1469,7 +1483,7 @@ input[type=submit].search-submit {
     .main-navigation ul ul ul a {
       padding-left: 4rem; }
   .main-navigation ul li {
-    border-top: #333 solid 1px;
+    border-top: #222 solid 1px;
     margin-bottom: 0; }
     .main-navigation ul li a {
       display: block;
@@ -1596,7 +1610,7 @@ input[type=submit].search-submit {
 /*------------------------------------*  #FOOTER
 \*------------------------------------*/
 .site-footer__content {
-  border-top: solid 1px #333;
+  border-top: solid 1px #222;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
   .site-footer__content:not(.container) {

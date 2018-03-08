@@ -2,12 +2,28 @@
   #BUTTONS
 \*------------------------------------*/
 
-// Default style same as button-light
 .button,
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"],
+input[type="button"] {
+  border: none;
+  background-color: $light-grey;
+  color: $dark-grey;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  text-transform: $button-text-transform;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken( $light-grey, 20% );
+    color: $dark-grey;
+  }
+}
+
+
+
 .button.button-light,
 button.button-light,
 input[type="submit"].button-light,
