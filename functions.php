@@ -50,9 +50,7 @@ require get_template_directory() . '/inc/editor-formats.php';
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer-separator-control.php';
 require get_template_directory() . '/inc/customizer.php';
-require get_template_directory() . '/inc/customizer-colors.php';
 
 /**
  * Load Jetpack compatibility file.

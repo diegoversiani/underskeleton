@@ -3,16 +3,10 @@
 
   Use this file to override default
   Skeleton and Underskeleton
-  variables and add your own.
-
-  Some variables are kept for Skeleton
-  to work or are overriden by styles set
-  by WordPress Customizer features,
-  look at each section for the filenames.
+  variables or add your own.
 \*------------------------------------*/
 
 // COLORS
-// (more in /inc/customizer-colors.php)
 $light-grey:            #e1e1e1;
 $dark-grey:             #333;
 $primary-color:         #d72d5c;
@@ -29,7 +23,6 @@ $alert-color:           #ffc425;
 $info-color:            #00aedb;
 
 // TYPOGRAPHY
-// (more in _typography.scss)
 $font-family:           sans-serif;
 $heading-font-family:   sans-serif;
 $h1-font-size:          3rem;
@@ -68,7 +61,7 @@ $global-spacing-big: 6rem;
 $global-animation-duration: .3s;
 $global-animation-easing: ease;
 
-// MENU (more in _menu.scss)
+// MENU
 $menu-breakpoint:       $bp-larger-than-phablet; // breakpoint to stop showing hamburger menu
 $menu-font-size:        1.1rem;
 $menu-font-weight:      600;
