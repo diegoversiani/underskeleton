@@ -9,13 +9,12 @@
 // COLORS
 $light-grey:            #e1e1e1;
 $dark-grey:             #333;
-$primary-color:         #d72d5c;
-$secondary-color:       #155d4f;
-$tertiary-color:        #f4da7a;
+$primary-color:         #4a4a4a;
+$secondary-color:       #9b9b9b;
 
-$border-color:          #bbb;
-$font-color:            #222;
-$link-color:            $secondary-color;
+$border-color:          $dark-grey;
+$font-color:            $dark-grey;
+$link-color:            $font-color;
 
 $success-color:         #00b159;
 $error-color:           #d11141;
