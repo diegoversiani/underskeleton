@@ -1163,9 +1163,15 @@ textarea[rows] {
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
-  background-color: #f3f3f3;
-  color: #155d4f; }
+input[type="button"],
+.button.button-light,
+button.button-light,
+input[type="submit"].button-light,
+input[type="reset"].button-light,
+input[type="button"].button-light {
+  border: none;
+  background-color: #e1e1e1;
+  color: #333; }
   .button:hover, .button:focus, .button:active,
   button:hover,
   button:focus,
@@ -1178,18 +1184,10 @@ input[type="button"] {
   input[type="reset"]:active,
   input[type="button"]:hover,
   input[type="button"]:focus,
-  input[type="button"]:active {
-    background-color: #b3b3b3; }
-
-.button.button-light,
-button.button-light,
-input[type="submit"].button-light,
-input[type="reset"].button-light,
-input[type="button"].button-light {
-  border: none;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #333; }
-  .button.button-light:hover, .button.button-light:focus, .button.button-light:active,
+  input[type="button"]:active,
+  .button.button-light:hover,
+  .button.button-light:focus,
+  .button.button-light:active,
   button.button-light:hover,
   button.button-light:focus,
   button.button-light:active,
@@ -1202,7 +1200,80 @@ input[type="button"].button-light {
   input[type="button"].button-light:hover,
   input[type="button"].button-light:focus,
   input[type="button"].button-light:active {
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: #aeaeae;
+    color: #333; }
+
+.button.button-dark,
+button.button-dark,
+input[type="submit"].button-dark,
+input[type="reset"].button-dark,
+input[type="button"].button-dark {
+  border: none;
+  background-color: #333;
+  color: #fff; }
+  .button.button-dark:hover, .button.button-dark:focus, .button.button-dark:active,
+  button.button-dark:hover,
+  button.button-dark:focus,
+  button.button-dark:active,
+  input[type="submit"].button-dark:hover,
+  input[type="submit"].button-dark:focus,
+  input[type="submit"].button-dark:active,
+  input[type="reset"].button-dark:hover,
+  input[type="reset"].button-dark:focus,
+  input[type="reset"].button-dark:active,
+  input[type="button"].button-dark:hover,
+  input[type="button"].button-dark:focus,
+  input[type="button"].button-dark:active {
+    background-color: #666666;
+    color: #fff; }
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  border: none;
+  background-color: #d72d5c;
+  color: #fff; }
+  .button.button-primary:hover, .button.button-primary:focus, .button.button-primary:active,
+  button.button-primary:hover,
+  button.button-primary:focus,
+  button.button-primary:active,
+  input[type="submit"].button-primary:hover,
+  input[type="submit"].button-primary:focus,
+  input[type="submit"].button-primary:active,
+  input[type="reset"].button-primary:hover,
+  input[type="reset"].button-primary:focus,
+  input[type="reset"].button-primary:active,
+  input[type="button"].button-primary:hover,
+  input[type="button"].button-primary:focus,
+  input[type="button"].button-primary:active {
+    background-color: #e7839f;
+    color: #fff; }
+
+.button.button-secondary,
+button.button-secondary,
+input[type="submit"].button-secondary,
+input[type="reset"].button-secondary,
+input[type="button"].button-secondary {
+  border: none;
+  background-color: #155d4f;
+  color: #fff; }
+  .button.button-secondary:hover, .button.button-secondary:focus, .button.button-secondary:active,
+  button.button-secondary:hover,
+  button.button-secondary:focus,
+  button.button-secondary:active,
+  input[type="submit"].button-secondary:hover,
+  input[type="submit"].button-secondary:focus,
+  input[type="submit"].button-secondary:active,
+  input[type="reset"].button-secondary:hover,
+  input[type="reset"].button-secondary:focus,
+  input[type="reset"].button-secondary:active,
+  input[type="button"].button-secondary:hover,
+  input[type="button"].button-secondary:focus,
+  input[type="button"].button-secondary:active {
+    background-color: #28b096;
+    color: #fff; }
 
 /*------------------------------------*  #LINKS
 \*------------------------------------*/

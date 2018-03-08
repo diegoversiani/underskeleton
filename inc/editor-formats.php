@@ -136,42 +136,7 @@ function underskeleton_mce_before_init_insert_formats( $init_array ) {
         ),
       ),
     ),
-
-    array(
-      'title' => __('Buttons', 'underskeleton'),
-      'items' => array (
-        array(
-          'title' => __('Default Color', 'underskeleton'),
-          'inline' => 'a',
-          'classes' => 'button',
-        ),
-        array(
-          'title' => __('Primary Color', 'underskeleton'),
-          'inline' => 'a',
-          'classes' => 'button button-primary',
-        ),
-        array(
-          'title' => __('Secondary Color', 'underskeleton'),
-          'inline' => 'a',
-          'classes' => 'button button-secondary',
-        ),
-        array(
-          'title' => __('Tertiary Color', 'underskeleton'),
-          'inline' => 'a',
-          'classes' => 'button button-tertiary',
-        ),
-        array(
-          'title' => __('Medium Size', 'underskeleton'),
-          'inline' => 'a',
-          'classes' => 'button secondary-background',
-        ),
-        array(
-          'title' => __('Large Size', 'underskeleton'),
-          'inline' => 'a',
-          'classes' => 'button tertiary-background',
-        ),
-      ),
-    ),
+    
   );
 
   // Insert the array, JSON ENCODED, into 'style_formats'

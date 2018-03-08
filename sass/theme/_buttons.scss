@@ -2,33 +2,82 @@
   #BUTTONS
 \*------------------------------------*/
 
+// Default style same as button-light
 .button,
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
-  background-color: #f3f3f3;
-  color: $secondary-color;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: darken(#f3f3f3, 25);
-  }
-}
-
+input[type="button"],
 .button.button-light,
 button.button-light,
 input[type="submit"].button-light,
 input[type="reset"].button-light,
 input[type="button"].button-light {
   border: none;
-  background-color: transparentize(#fff, .2);
+  background-color: $light-grey;
   color: $dark-grey;
 
   &:hover,
   &:focus,
   &:active {
-    background-color: transparentize(#fff, .5);
+    background-color: darken( $light-grey, 20% );
+    color: $dark-grey;
+  }
+}
+
+
+
+.button.button-dark,
+button.button-dark,
+input[type="submit"].button-dark,
+input[type="reset"].button-dark,
+input[type="button"].button-dark {
+  border: none;
+  background-color: $dark-grey;
+  color: #fff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($dark-grey, 20%);
+    color: #fff;
+  }
+}
+
+
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  border: none;
+  background-color: $primary-color;
+  color: #fff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($primary-color, 20%);
+    color: #fff;
+  }
+}
+
+
+
+.button.button-secondary,
+button.button-secondary,
+input[type="submit"].button-secondary,
+input[type="reset"].button-secondary,
+input[type="button"].button-secondary {
+  border: none;
+  background-color: $secondary-color;
+  color: #fff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($secondary-color, 20%);
+    color: #fff;
   }
 }
