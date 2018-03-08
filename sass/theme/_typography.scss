@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 
   a {
-    color: inherit !important; // !important necessary for customizer preview
+    color: inherit;
   }
 }
 
@@ -38,8 +38,6 @@ p + blockquote,
 p + h2 {
   margin-top: 1.6rem;
 }
-
-
 
 ul {
   list-style: disc inside;

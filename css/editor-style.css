@@ -866,8 +866,14 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*  #TEXT MIXINS
 \*------------------------------------*/
 /*------------------------------------*  #MODIFIERS
+
+  Modifiers classes are used to change
+  how look an element or component looks
+  or give extra spacing between them.
+
   Some modifiers might be impacted by
-  the file /inc/customizer-colors.php.
+  the Customizer Colors feature
+  (see `/inc/customizer-colors.php`).
 \*------------------------------------*/
 /*------------------------------------*  #SPACING
 \*------------------------------------*/
@@ -954,7 +960,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 130%; }
 
 /*------------------------------------*  #MANAGES Z-INDEX
-  Higher values first
+  
+  Higher values first.
 \*------------------------------------*/
 /* MENU */
 .main-navigation ul.menu {
@@ -1051,7 +1058,7 @@ input[type="button"].button-light {
 /*------------------------------------*  #LINKS
 \*------------------------------------*/
 a {
-  text-decoration: none; }
+  text-decoration: underline; }
 
 /*------------------------------------*  #TYPOGRAPHY
 \*------------------------------------*/
@@ -1060,7 +1067,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #d72d5c;
   font-weight: 300; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: inherit !important; }
+    color: inherit; }
 
 h1 {
   font-size: 3rem;
@@ -1142,3 +1149,18 @@ ul {
 
 .entry-title {
   margin-bottom: 0; }
+
+/*------------------------------------*  #EDITOR ONLY STYLES
+\*------------------------------------*/
+#tinymce {
+  margin: 2rem; }
+
+.row {
+  border: dotted .1rem #0073aa; }
+
+.column,
+.columns {
+  border: dashed .2rem #ddd; }
+
+.container {
+  border: dotted .1rem #ff0000; }

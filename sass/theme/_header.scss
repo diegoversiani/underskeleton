@@ -1,6 +1,6 @@
-/* == HEADER STYLES == */
-
-// == Site header
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
 .site-header {
   margin: 1.5rem auto 5rem;
 }
@@ -22,9 +22,12 @@
   text-align: center;
   width: 100%;
 }
-// !== Site header
 
-// == Site branding
+
+
+/*------------------------------------*\
+  #BRANDING
+\*------------------------------------*/
 .site-branding {
   float: left;
   max-width: 85%;
@@ -32,26 +35,25 @@
   @media (#{$column-starts-at-breakpoint}) {
     max-width: 100%;
   }
+}
 
-  .custom-logo-link {
-    float: left;
-    margin-right: 2rem;
-  }
+.custom-logo-link {
+  float: left;
+  margin-right: 2rem;
+}
 
-  .site-title {
-    display: inline-block;
-    font-size: 3rem;
-    margin: 1rem 0 0 0;
-    color: $primary-color;
+.site-title {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 1rem 0 0 0;
+  color: $primary-color;
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-  }
-
-  .site-description {
-    margin: 0 0 1rem 0;
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 }
-// !== Site branding
+
+.site-description {
+  margin: 0 0 1rem 0;
+}

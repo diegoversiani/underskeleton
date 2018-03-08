@@ -866,8 +866,14 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*  #TEXT MIXINS
 \*------------------------------------*/
 /*------------------------------------*  #MODIFIERS
+
+  Modifiers classes are used to change
+  how look an element or component looks
+  or give extra spacing between them.
+
   Some modifiers might be impacted by
-  the file /inc/customizer-colors.php.
+  the Customizer Colors feature
+  (see `/inc/customizer-colors.php`).
 \*------------------------------------*/
 /*------------------------------------*  #SPACING
 \*------------------------------------*/
@@ -954,7 +960,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 130%; }
 
 /*------------------------------------*  #MANAGES Z-INDEX
-  Higher values first
+  
+  Higher values first.
 \*------------------------------------*/
 /* MENU */
 .main-navigation ul.menu {
@@ -969,7 +976,8 @@ h1, h2, h3, h4, h5, h6 {
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
   z-index: 1000; }
 
-/* == HEADER STYLES == */
+/*------------------------------------*  #HEADER
+\*------------------------------------*/
 .site-header {
   margin: 1.5rem auto 5rem; }
 
@@ -988,25 +996,30 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   width: 100%; }
 
+/*------------------------------------*  #BRANDING
+\*------------------------------------*/
 .site-branding {
   float: left;
   max-width: 85%; }
   @media (min-width: 550px) {
     .site-branding {
       max-width: 100%; } }
-  .site-branding .custom-logo-link {
-    float: left;
-    margin-right: 2rem; }
-  .site-branding .site-title {
-    display: inline-block;
-    font-size: 3rem;
-    margin: 1rem 0 0 0;
-    color: #d72d5c; }
-    .site-branding .site-title a {
-      text-decoration: none;
-      color: inherit; }
-  .site-branding .site-description {
-    margin: 0 0 1rem 0; }
+
+.custom-logo-link {
+  float: left;
+  margin-right: 2rem; }
+
+.site-title {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 1rem 0 0 0;
+  color: #d72d5c; }
+  .site-title a {
+    text-decoration: none;
+    color: inherit; }
+
+.site-description {
+  margin: 0 0 1rem 0; }
 
 /*------------------------------------*  #CONTENT AREA
 \*------------------------------------*/
@@ -1090,7 +1103,7 @@ input[type="button"].button-light {
 /*------------------------------------*  #LINKS
 \*------------------------------------*/
 a {
-  text-decoration: none; }
+  text-decoration: underline; }
 
 /*------------------------------------*  #TYPOGRAPHY
 \*------------------------------------*/
@@ -1099,7 +1112,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #d72d5c;
   font-weight: 300; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: inherit !important; }
+    color: inherit; }
 
 h1 {
   font-size: 3rem;
@@ -1371,7 +1384,8 @@ input[type=submit].search-submit {
   background-color: #f8d8e1;
   border-radius: 4px; }
 
-/* == FOOTER STYLES == */
+/*------------------------------------*  #FOOTER
+\*------------------------------------*/
 .site-footer__content {
   border-top: solid 1px #bbb;
   padding-top: 2.5rem;
