@@ -1,36 +1,31 @@
-@charset "UTF-8";
-/* == THEME - MAIN SCSS FILE ==
-* Import main theme files.
-* 
-* ADDING YOUR OWN STYLES: You can add your  
-* styles in `/sass/themes/_theme_styles.scss`
-*/
-/*------------------------------------*  #IMPORT VARIABLES
+/*------------------------------------*  #THEME - STYLES
+  
+  Imports all necessary styles from 
+  Skeleton and Underskeleton and custom
+  styles from `theme` folder.
 \*------------------------------------*/
-/* == VARIABLES ==
-Use this file to override default Skeleton and Underskeleton
-variables or add your own
-*/
+/*------------------------------------*  #IMPORT VARIABLES
+
+  Import theme variables before Skeleton
+  to override its values
+\*------------------------------------*/
 /*------------------------------------*  #VARIABLES
+
+  Use this file to override default
+  Skeleton and Underskeleton
+  variables and add your own.
+
   Some variables are kept for Skeleton
-  to work and are set at the WordPress
-  Customizer settings files, look at
-  each section for the filename.
+  to work or are overriden by styles set
+  by WordPress Customizer features,
+  look at each section for the filenames.
 \*------------------------------------*/
 /*------------------------------------*  #CUSTOM VARIABLES
+
+  Create your own variables here
 \*------------------------------------*/
-/*------------------------------------*  #IMPORT SKELETON AND UNDERSKELETON
+/*------------------------------------*  #IMPORT SKELETON BASE
 \*------------------------------------*/
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/9/2014
-* Sass Version by Seth Coelen https://github.com/whatsnewsaes
-*/
-/* Base files. */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -307,7 +302,6 @@ h6 {
 p {
   margin-top: 0; }
 
-/* Modules */
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -320,7 +314,7 @@ p {
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 96rem;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -333,7 +327,7 @@ p {
 
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 80%;
     padding: 0; } }
 
 @media (min-width: 550px) {
@@ -532,6 +526,27 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   box-shadow: none;
   box-sizing: border-box; }
 
+button,
+.button {
+  margin-bottom: 1rem; }
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem; }
+
 textarea,
 select {
   height: 38px;
@@ -604,20 +619,6 @@ ol ol, ol ul {
 li {
   margin-bottom: 1rem; }
 
-code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px; }
-
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre; }
-
 th,
 td {
   padding: 12px 15px;
@@ -632,27 +633,22 @@ th:last-child,
 td:last-child {
   padding-right: 0; }
 
-button,
-.button {
-  margin-bottom: 1rem; }
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px; }
 
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
 
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form {
-  margin-bottom: 2.5rem; }
-
+/*------------------------------------*  #IMPORT UNDERSKELETON BASE
+\*------------------------------------*/
 /* == UNDERSKELETON MIXINS ==
 This file contains mixins for underskeleton default styles
 */
@@ -861,28 +857,8 @@ h1, h2, h3, h4, h5, h6 {
 .entry-footer > span {
   margin-right: 1rem; }
 
-/*------------------------------------*  #IMPORT THEME
+/*------------------------------------*  #IMPORT THEME STYLES
 \*------------------------------------*/
-/* == THEME STYLES ==
-*
-* Your awesome design goes here.
-*
-* CSS styles can get messy!
-* We recomend you create a scss file for each module, and
-* @import them in this file. Like bellow:
-*
-*|sass/
- | └── theme
- |     └── _navbar.scss
- |     └── _typography.scss
- |     └── _buttons.scss
- |     └── _lists.scss
- |     └── ...
-*/
-/*
-* IMPORTANT: Remember to update `_editor-styles.scss`
-* to import new partial files.
-*/
 /*------------------------------------*  #MIXINS IMPORT FILE
 \*------------------------------------*/
 /*------------------------------------*  #SPACING MIXINS

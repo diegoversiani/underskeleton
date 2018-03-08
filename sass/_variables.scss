@@ -1,18 +1,18 @@
-/* == VARIABLES ==
-Use this file to override default Skeleton and Underskeleton
-variables or add your own
-*/
-
-
 /*------------------------------------*\
   #VARIABLES
+
+  Use this file to override default
+  Skeleton and Underskeleton
+  variables and add your own.
+
   Some variables are kept for Skeleton
-  to work and are set at the WordPress
-  Customizer settings files, look at
-  each section for the filename.
+  to work or are overriden by styles set
+  by WordPress Customizer features,
+  look at each section for the filenames.
 \*------------------------------------*/
 
-// COLORS (more in /inc/customizer-colors.php)
+// COLORS
+// (more in /inc/customizer-colors.php)
 $light-grey:            #e1e1e1;
 $dark-grey:             #333;
 $primary-color:         #d72d5c;
@@ -23,7 +23,8 @@ $border-color:          #bbb;
 $font-color:            #222;
 $link-color:            $secondary-color;
 
-// TYPOGRAPHY (more in _typography.scss)
+// TYPOGRAPHY
+// (more in _typography.scss)
 $font-family:           sans-serif;
 $heading-font-family:   sans-serif;
 $h1-font-size:          3rem;
@@ -47,20 +48,17 @@ $bp-larger-than-desktop   : "min-width: 1000px";
 $bp-larger-than-desktophd : "min-width: 1200px";
 
 // GRID
-$container-width: 960px;
-$container-width-larger-than-mobile: 85%;
+$container-width: 96rem;
+$container-width-larger-than-mobile: 80%;
 $container-width-larger-than-phablet: 80%;
 $total-columns: 12;
-$column-width: 100 / $total-columns; // calculates individual column width based off of # of columns
+$column-width: 100 / $total-columns; // calculates column's width based on number of columns
 $column-margin: 4%; // space between columns
 $column-starts-at-breakpoint: $bp-larger-than-phablet;
 
 // MISC
 $global-radius: 4px;
 $global-spacing: 2rem;
-
-// DEPRECATED, will be remove in version 2.0, please use `$global-spacing` instead;
-$global-padding: $global-spacing;
 
 // MENU (more in _menu.scss)
 $menu-breakpoint:       $bp-larger-than-phablet; // breakpoint to stop showing hamburger menu
@@ -76,8 +74,12 @@ $menu-subitem-indent:   2rem;
 $menu-submenu-top:      $menu-item-padding + 2.4rem;
 
 
+
 /*------------------------------------*\
   #CUSTOM VARIABLES
+
+  Create your own variables here
 \*------------------------------------*/
-// Create your own variables here
 // $my-custom-variable:    'my-value';
+
+

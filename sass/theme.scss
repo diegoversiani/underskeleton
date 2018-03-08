@@ -1,25 +1,51 @@
-/* == THEME - MAIN SCSS FILE ==
-* Import main theme files.
-* 
-* ADDING YOUR OWN STYLES: You can add your  
-* styles in `/sass/themes/_theme_styles.scss`
-*/
+/*------------------------------------*\
+  #THEME - STYLES
+  
+  Imports all necessary styles from 
+  Skeleton and Underskeleton and custom
+  styles from `theme` folder.
+\*------------------------------------*/
+
 
 
 /*------------------------------------*\
   #IMPORT VARIABLES
+
+  Import theme variables before Skeleton
+  to override its values
 \*------------------------------------*/
-// Import theme variables before Skeleton to override its values
-@import
-  "theme/variables";
+@import "variables";
 
 
 
 /*------------------------------------*\
-  #IMPORT SKELETON AND UNDERSKELETON
+  #IMPORT SKELETON BASE
 \*------------------------------------*/
 @import 
-  "../bower_components/skeleton-scss/scss/skeleton",
+  /* Skeleton base */
+  "../bower_components/skeleton-scss/scss/base/normalize",
+  "../bower_components/skeleton-scss/scss/base/variables",
+  "../bower_components/skeleton-scss/scss/base/functions",
+  "../bower_components/skeleton-scss/scss/base/base-styles",
+  "../bower_components/skeleton-scss/scss/base/utils",
+  "../bower_components/skeleton-scss/scss/base/typography",
+
+  /* Skeleton Modules */
+  "../bower_components/skeleton-scss/scss/modules/grid",
+  "../bower_components/skeleton-scss/scss/modules/buttons",
+  "../bower_components/skeleton-scss/scss/modules/spacing",
+  "../bower_components/skeleton-scss/scss/modules/forms",
+  "../bower_components/skeleton-scss/scss/modules/lists",
+  "../bower_components/skeleton-scss/scss/modules/tables",
+  "../bower_components/skeleton-scss/scss/modules/code"
+  ;
+
+
+
+/*------------------------------------*\
+  #IMPORT UNDERSKELETON BASE
+\*------------------------------------*/
+@import 
   "base/mixins",
   "base/reset",
   "base/accessibility",
@@ -30,6 +56,27 @@
 
 
 /*------------------------------------*\
-  #IMPORT THEME
+  #IMPORT THEME STYLES
 \*------------------------------------*/
-@import "theme/theme-styles";
+@import
+  "theme/mixins/mixins",
+  "theme/modifiers",
+  "theme/zindex",
+  
+  "theme/header",
+  "theme/content-area",
+  "theme/forms",
+  "theme/buttons",
+  "theme/links",
+  "theme/typography",
+  "theme/search",
+  "theme/menu",
+  "theme/navigation",
+  "theme/posts",
+  "theme/comments",
+  "theme/footer",
+
+  "theme/woocommerce",
+
+  "theme/animations"
+  ;

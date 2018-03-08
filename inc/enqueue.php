@@ -10,6 +10,7 @@
  */
 function underskeleton_scripts() {
 	// Styles
+  // Above the fold
 	wp_enqueue_style( 'underskeleton-style', get_template_directory_uri() . '/css/theme.min.css', array(), underskeleton_get_version() );
 
 	// Scripts
