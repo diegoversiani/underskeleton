@@ -1010,6 +1010,18 @@ h1, h2, h3, h4, h5, h6 {
 .tertiary-background {
   background-color: #f4da7a; }
 
+.success-background {
+  background-color: #00b159; }
+
+.error-background {
+  background-color: #d11141; }
+
+.alert-background {
+  background-color: #ffc425; }
+
+.info-background {
+  background-color: #00aedb; }
+
 /*------------------------------------*  #TEXT COLOR
 \*------------------------------------*/
 .font-color {
