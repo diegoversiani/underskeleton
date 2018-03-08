@@ -4,10 +4,10 @@
   in the editor as it will look on
   the front-end.
 \*------------------------------------*/
-/*------------------------------------*  #IMPORT VARIABLES
+/*------------------------------------*  #IMPORT BASE FILES
 
   Import theme variables before Skeleton
-  to override its values
+  and Underskeleton to override them.
 \*------------------------------------*/
 /*------------------------------------*  #VARIABLES
 

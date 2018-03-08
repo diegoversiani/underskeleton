@@ -4,10 +4,10 @@
   Skeleton and Underskeleton and custom
   styles from `theme` folder.
 \*------------------------------------*/
-/*------------------------------------*  #IMPORT VARIABLES
+/*------------------------------------*  #IMPORT BASE FILES
 
   Import theme variables before Skeleton
-  to override its values
+  and Underskeleton to override them.
 \*------------------------------------*/
 /*------------------------------------*  #VARIABLES
 
@@ -1120,51 +1120,6 @@ h1, h2, h3, h4, h5, h6 {
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
   z-index: 1000; }
 
-/*------------------------------------*  #HEADER
-\*------------------------------------*/
-.site-header {
-  margin: 1.5rem auto 5rem; }
-
-.site-header__content {
-  border-bottom: solid 1px #bbb; }
-  .site-header__content:not(.container) {
-    padding-left: 3rem;
-    padding-right: 3rem; }
-    @media (min-width: 550px) {
-      .site-header__content:not(.container) {
-        padding-left: 3rem;
-        padding-right: 3rem; } }
-
-.custom-header-image {
-  display: block;
-  text-align: center;
-  width: 100%; }
-
-/*------------------------------------*  #BRANDING
-\*------------------------------------*/
-.site-branding {
-  float: left;
-  max-width: 85%; }
-  @media (min-width: 550px) {
-    .site-branding {
-      max-width: 100%; } }
-
-.custom-logo-link {
-  float: left;
-  margin-right: 2rem; }
-
-.site-title {
-  display: inline-block;
-  font-size: 3rem;
-  margin: 1rem 0 0 0;
-  color: #d72d5c; }
-  .site-title a {
-    text-decoration: none;
-    color: inherit; }
-
-.site-description {
-  margin: 0 0 1rem 0; }
-
 /*------------------------------------*  #CONTENT AREA
 \*------------------------------------*/
 .site-content:not(.container) {
@@ -1385,6 +1340,76 @@ p + h2 {
 ul {
   list-style: disc inside; }
 
+/*------------------------------------*  #POSTS STYLES
+\*------------------------------------*/
+.sticky {
+  border-bottom: #bbb solid 1px;
+  padding-bottom: 2.5rem; }
+
+.byline,
+.updated:not(.published) {
+  display: none; }
+
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+/*------------------------------------*  #POSTS SPACING
+\*------------------------------------*/
+.hentry {
+  margin-bottom: 2.5rem; }
+
+.entry-header {
+  margin-bottom: 2.5rem; }
+
+.entry-title {
+  margin-bottom: 0; }
+
+/*------------------------------------*  #HEADER
+\*------------------------------------*/
+.site-header {
+  margin: 1.5rem auto 5rem; }
+
+.site-header__content {
+  border-bottom: solid 1px #bbb; }
+  .site-header__content:not(.container) {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    @media (min-width: 550px) {
+      .site-header__content:not(.container) {
+        padding-left: 3rem;
+        padding-right: 3rem; } }
+
+.custom-header-image {
+  display: block;
+  text-align: center;
+  width: 100%; }
+
+/*------------------------------------*  #BRANDING
+\*------------------------------------*/
+.site-branding {
+  float: left;
+  max-width: 85%; }
+  @media (min-width: 550px) {
+    .site-branding {
+      max-width: 100%; } }
+
+.custom-logo-link {
+  float: left;
+  margin-right: 2rem; }
+
+.site-title {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 1rem 0 0 0;
+  color: #d72d5c; }
+  .site-title a {
+    text-decoration: none;
+    color: inherit; }
+
+.site-description {
+  margin: 0 0 1rem 0; }
+
 /*------------------------------------*  #SEARCH FIELDS
 \*------------------------------------*/
 input[type=search].search-field {
@@ -1546,31 +1571,6 @@ input[type=submit].search-submit {
 .nav-next a {
   float: right;
   text-align: right; }
-
-/*------------------------------------*  #POSTS STYLES
-\*------------------------------------*/
-.sticky {
-  border-bottom: #bbb solid 1px;
-  padding-bottom: 2.5rem; }
-
-.byline,
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-/*------------------------------------*  #POSTS SPACING
-\*------------------------------------*/
-.hentry {
-  margin-bottom: 2.5rem; }
-
-.entry-header {
-  margin-bottom: 2.5rem; }
-
-.entry-title {
-  margin-bottom: 0; }
 
 .comment-list {
   list-style: none; }
