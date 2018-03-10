@@ -1,5 +1,6 @@
-// == COMMENTS STYLES
-
+/*------------------------------------*\
+  #COMMENTS
+\*------------------------------------*/
 .comment-list {
   list-style: none;
 
@@ -14,6 +15,10 @@
   }
 }
 
+.comment {
+  padding: 0.5rem;
+}
+
 .comment-meta .vcard {
   line-height: 1;
   img {
@@ -22,17 +27,13 @@
   }
 }
 
-.comment {
-  padding: 0.5rem;
+.comment-content {
+  a {
+    word-wrap: break-word;
+  }
 
-  .comment-content {
-    a {
-      word-wrap: break-word;
-    }
-
-    p:last-child {
-      margin-bottom: 0.5rem;
-    }
+  p:last-child {
+    margin-bottom: 0.5rem;
   }
 }
 

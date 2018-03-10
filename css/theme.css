@@ -1462,7 +1462,8 @@ input[type=submit].search-submit {
     .search-box__button {
       margin-top: .7rem; } }
 
-/* == MENU STYLES == */
+/*------------------------------------*  #MENU
+\*------------------------------------*/
 .main-navigation .menu-toggle {
   float: right;
   padding: 0 1rem;
@@ -1592,6 +1593,8 @@ input[type=submit].search-submit {
   float: right;
   text-align: right; }
 
+/*------------------------------------*  #COMMENTS
+\*------------------------------------*/
 .comment-list {
   list-style: none; }
   .comment-list ol.children,
@@ -1602,18 +1605,20 @@ input[type=submit].search-submit {
     .comment-list ul.children li:last-child {
       margin-bottom: 0; }
 
+.comment {
+  padding: 0.5rem; }
+
 .comment-meta .vcard {
   line-height: 1; }
   .comment-meta .vcard img {
     float: left;
     margin-right: 1rem; }
 
-.comment {
-  padding: 0.5rem; }
-  .comment .comment-content a {
-    word-wrap: break-word; }
-  .comment .comment-content p:last-child {
-    margin-bottom: 0.5rem; }
+.comment-content a {
+  word-wrap: break-word; }
+
+.comment-content p:last-child {
+  margin-bottom: 0.5rem; }
 
 .bypostauthor {
   background-color: #b0b0b0;
