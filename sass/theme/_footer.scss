@@ -2,9 +2,8 @@
   #FOOTER
 \*------------------------------------*/
 .site-footer__content {
-  border-top: solid 1px $border-color;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: $global-spacing;
+  padding-bottom: $global-spacing;
 
   &:not(.container) {
     @include lateral-paddings();
@@ -13,4 +12,9 @@
       @include lateral-paddings('both', 3rem);
     }
   }
+}
+
+
+.site-info {
+  text-align: center;
 }

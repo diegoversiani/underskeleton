@@ -6,8 +6,6 @@
 }
 
 .site-header__content {
-  border-bottom: solid 1px $border-color;
-
   &:not(.container) {
     @include lateral-paddings();
 

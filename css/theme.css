@@ -1390,15 +1390,13 @@ blockquote {
 .site-header {
   margin: 1.5rem auto 5rem; }
 
-.site-header__content {
-  border-bottom: solid 1px #444; }
-  .site-header__content:not(.container) {
-    padding-left: 3rem;
-    padding-right: 3rem; }
-    @media (min-width: 550px) {
-      .site-header__content:not(.container) {
-        padding-left: 3rem;
-        padding-right: 3rem; } }
+.site-header__content:not(.container) {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+  @media (min-width: 550px) {
+    .site-header__content:not(.container) {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 .custom-header-image {
   display: block;
@@ -1627,9 +1625,8 @@ input[type=submit].search-submit {
 /*------------------------------------*  #FOOTER
 \*------------------------------------*/
 .site-footer__content {
-  border-top: solid 1px #444;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem; }
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
   .site-footer__content:not(.container) {
     padding-left: 3rem;
     padding-right: 3rem; }
@@ -1637,6 +1634,9 @@ input[type=submit].search-submit {
       .site-footer__content:not(.container) {
         padding-left: 3rem;
         padding-right: 3rem; } }
+
+.site-info {
+  text-align: center; }
 
 /*------------------------------------*  #WOOCOMMERCE BUTTONS
 \*------------------------------------*/
