@@ -218,12 +218,12 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: sans-serif;
-  color: #222; }
+  color: #444; }
 
 a {
-  color: #222; }
+  color: #444; }
   a:hover {
-    color: #151515; }
+    color: #373737; }
 
 hr {
   margin-top: 3rem;
@@ -434,7 +434,7 @@ button {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #222;
+  border: 1px solid #444;
   cursor: pointer;
   box-sizing: border-box; }
 
@@ -453,70 +453,70 @@ input[type="submit"], input[type="reset"], input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #222;
+  border: 1px solid #444;
   cursor: pointer;
   box-sizing: border-box; }
 
 .button:hover,
 button:hover {
-  color: #222;
-  border-color: #777777;
+  color: #444;
+  border-color: #999999;
   outline: 0; }
 
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
-  color: #222;
-  border-color: #777777;
+  color: #444;
+  border-color: #999999;
   outline: 0; }
 
 .button:focus,
 button:focus {
-  color: #222;
-  border-color: #777777;
+  color: #444;
+  border-color: #999999;
   outline: 0; }
 
 input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
-  color: #222;
-  border-color: #777777;
+  color: #444;
+  border-color: #999999;
   outline: 0; }
 
 .button.button-primary,
 button.button-primary {
   color: #fff;
-  background-color: #4a4a4a;
-  border-color: #4a4a4a; }
+  background-color: #444;
+  border-color: #444; }
 
 input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
   color: #fff;
-  background-color: #4a4a4a;
-  border-color: #4a4a4a; }
+  background-color: #444;
+  border-color: #444; }
 
 .button.button-primary:hover,
 button.button-primary:hover {
   color: #fff;
-  background-color: #222;
-  border-color: #222; }
+  background-color: #444;
+  border-color: #444; }
 
 input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
   color: #fff;
-  background-color: #222;
-  border-color: #222; }
+  background-color: #444;
+  border-color: #444; }
 
 .button.button-primary:focus,
 button.button-primary:focus {
   color: #fff;
-  background-color: #222;
-  border-color: #222; }
+  background-color: #444;
+  border-color: #444; }
 
 input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
   color: #fff;
-  background-color: #222;
-  border-color: #222; }
+  background-color: #444;
+  border-color: #444; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
   height: 38px;
   padding: 6px 10px;
   background-color: #fff;
-  border: 1px solid #383838;
+  border: 1px solid #5a5a5a;
   border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: border-box; }
@@ -547,7 +547,7 @@ select {
   height: 38px;
   padding: 6px 10px;
   background-color: #fff;
-  border: 1px solid #383838;
+  border: 1px solid #5a5a5a;
   border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: border-box; }
@@ -566,12 +566,12 @@ textarea {
   padding-bottom: 6px; }
 
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #4a4a4a;
+  border: 1px solid #444;
   outline: 0; }
 
 textarea:focus,
 select:focus {
-  border: 1px solid #4a4a4a;
+  border: 1px solid #444;
   outline: 0; }
 
 label,
@@ -784,7 +784,7 @@ This file contains WordPress gallery default styles
 This file contains underskeleton default styles
 */
 blockquote {
-  border-left: 0.3rem solid #222;
+  border-left: 0.3rem solid #444;
   padding-left: 1rem; }
 
 code,
@@ -988,7 +988,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #e1e1e1; }
 
 .dark-grey-background {
-  background-color: #222; }
+  background-color: #444; }
 
 .black-background {
   background-color: #000; }
@@ -997,7 +997,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff; }
 
 .primary-background {
-  background-color: #4a4a4a; }
+  background-color: #444; }
 
 .secondary-background {
   background-color: #9b9b9b; }
@@ -1017,7 +1017,7 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------*  #TEXT COLOR
 \*------------------------------------*/
 .font-color {
-  color: #222; }
+  color: #444; }
 
 .black-color {
   color: #000; }
@@ -1026,13 +1026,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff; }
 
 .dark-color {
-  color: #222; }
+  color: #444; }
 
 .light-color {
   color: #e1e1e1; }
 
 .primary-color {
-  color: #4a4a4a; }
+  color: #444; }
 
 .secondary-color {
   color: #9b9b9b; }
@@ -1130,7 +1130,7 @@ input[type="date"] {
   height: 38px;
   padding: 6px 10px;
   background-color: #fff;
-  border: 1px solid #383838;
+  border: 1px solid #5a5a5a;
   border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: border-box;
@@ -1139,7 +1139,7 @@ input[type="date"] {
   appearance: none; }
 
 input[type="date"]:focus {
-  border: 1px solid #4a4a4a;
+  border: 1px solid #444;
   outline: 0; }
 
 textarea[rows] {
@@ -1155,7 +1155,7 @@ input[type="reset"],
 input[type="button"] {
   border: none;
   background-color: #e1e1e1;
-  color: #222;
+  color: #444;
   font-size: 1.4rem;
   font-weight: normal;
   text-transform: uppercase; }
@@ -1173,7 +1173,7 @@ input[type="button"] {
   input[type="button"]:focus,
   input[type="button"]:active {
     background-color: #aeaeae;
-    color: #222; }
+    color: #444; }
 
 .button.button-light,
 button.button-light,
@@ -1182,7 +1182,7 @@ input[type="reset"].button-light,
 input[type="button"].button-light {
   border: none;
   background-color: #e1e1e1;
-  color: #222; }
+  color: #444; }
   .button.button-light:hover, .button.button-light:focus, .button.button-light:active,
   button.button-light:hover,
   button.button-light:focus,
@@ -1197,7 +1197,7 @@ input[type="button"].button-light {
   input[type="button"].button-light:focus,
   input[type="button"].button-light:active {
     background-color: #aeaeae;
-    color: #222; }
+    color: #444; }
 
 .button.button-dark,
 button.button-dark,
@@ -1205,7 +1205,7 @@ input[type="submit"].button-dark,
 input[type="reset"].button-dark,
 input[type="button"].button-dark {
   border: none;
-  background-color: #222;
+  background-color: #444;
   color: #fff; }
   .button.button-dark:hover, .button.button-dark:focus, .button.button-dark:active,
   button.button-dark:hover,
@@ -1220,7 +1220,7 @@ input[type="button"].button-dark {
   input[type="button"].button-dark:hover,
   input[type="button"].button-dark:focus,
   input[type="button"].button-dark:active {
-    background-color: #555555;
+    background-color: #777777;
     color: #fff; }
 
 .button.button-primary,
@@ -1229,7 +1229,7 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   border: none;
-  background-color: #4a4a4a;
+  background-color: #444;
   color: #fff; }
   .button.button-primary:hover, .button.button-primary:focus, .button.button-primary:active,
   button.button-primary:hover,
@@ -1244,7 +1244,7 @@ input[type="button"].button-primary {
   input[type="button"].button-primary:hover,
   input[type="button"].button-primary:focus,
   input[type="button"].button-primary:active {
-    background-color: #7d7d7d;
+    background-color: #777777;
     color: #fff; }
 
 .button.button-secondary,
@@ -1281,13 +1281,13 @@ a {
 body {
   font-family: sans-serif;
   font-weight: normal;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.6;
-  color: #222; }
+  color: #444; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif;
-  color: #222;
+  color: #444;
   font-weight: normal; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit; }
@@ -1358,12 +1358,12 @@ blockquote {
   blockquote cite {
     display: block;
     width: 100%;
-    font-size: 1.7rem; }
+    font-size: 1.8rem; }
 
 /*------------------------------------*  #POSTS STYLES
 \*------------------------------------*/
 .sticky {
-  border-bottom: #222 solid 1px;
+  border-bottom: #444 solid 1px;
   padding-bottom: 2.5rem; }
 
 .byline,
